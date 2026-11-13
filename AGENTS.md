@@ -88,3 +88,7 @@ For any UI, social, thumbnail, or motion task, follow [SKILL.md](SKILL.md).
 19. A new product piece needs an adopt, candidate, or leave-out decision.
    Why: Nothing undecided ships. A candidate joins the kit on its second use. A product-only piece stays out.
    Doc: [docs/product.md](docs/product.md)
+
+20. An adopted piece ships only at 10 out of 10. Anything less is parked for a person.
+   Why: A release gets a version number from the size of the change. A parked piece waits for a person to build it or drop it.
+   Doc: [docs/release.md](docs/release.md)

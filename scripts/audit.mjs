@@ -8,6 +8,14 @@ const hexPattern = new RegExp("#(?:" + "[0-9a-fA-F]{8}|[0-9a-fA-F]{6}|[0-9a-fA-F
 const rgbPattern = new RegExp("rgba?\\([^)]*\\)", "g");
 const pxPattern = new RegExp("\\d+" + "px\\b", "g");
 
+export function textHasRawValue(text) {
+  for (const pattern of [hexPattern, rgbPattern, pxPattern]) {
+    pattern.lastIndex = 0;
+    if (pattern.test(text)) return true;
+  }
+  return false;
+}
+
 export function collectFindings() {
   const catalog = readJson("catalog.json");
   const findings = [];

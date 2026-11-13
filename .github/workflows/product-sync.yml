@@ -4,10 +4,13 @@ on:
   schedule:
     - cron: "0 0,12 * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
 
 permissions:
   contents: write
   pull-requests: write
+  issues: write
 
 jobs:
   sync:
@@ -20,7 +23,10 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run sync:product
-      - name: Open a pull request when a decision changed
+      - run: npm run sync:engineer
+        env:
+          ENGINEER_API_KEY: ${{ secrets.ENGINEER_API_KEY }}
+      - name: Open a pull request when a decision or score changed
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -30,13 +36,17 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add decisions
-          git commit -m "Update product decisions."
+          git add decisions engineer
+          git commit -m "Update product decisions and engineer scores."
           if git ls-remote --exit-code --heads origin sync/product-decisions >/dev/null; then
             git push --force-with-lease origin HEAD:sync/product-decisions
           else
             git push origin HEAD:sync/product-decisions
           fi
           if ! gh pr view sync/product-decisions >/dev/null 2>&1; then
-            gh pr create --base main --head sync/product-decisions --title "Update product decisions" --body "The 12-hour job looked at the practice app. Each new piece is marked adopt, candidate, or leave out. A candidate is adopted on its second use."
+            gh pr create --base main --head sync/product-decisions --title "Update product decisions" --body "The 12-hour job looked at the practice app and scored each adopted piece. A 10 out of 10 can take a version number. Anything less is parked for a person."
           fi
+      - name: Open a note for each parked piece
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/engineer.mjs --issues

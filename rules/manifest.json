@@ -113,6 +113,12 @@
       "rule": "A new product piece needs an adopt, candidate, or leave-out decision.",
       "why": "Nothing undecided ships. A candidate joins the kit on its second use. A product-only piece stays out.",
       "doc": "docs/product.md"
+    },
+    {
+      "id": 20,
+      "rule": "An adopted piece ships only at 10 out of 10. Anything less is parked for a person.",
+      "why": "A release gets a version number from the size of the change. A parked piece waits for a person to build it or drop it.",
+      "doc": "docs/release.md"
     }
   ]
 }
