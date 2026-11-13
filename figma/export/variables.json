@@ -1,0 +1,2450 @@
+{
+  "generatedBy": "scripts/figma-export-from-mcp.mjs",
+  "fileKey": "N2DLpNwbJwzoNqFWgQdVwl",
+  "collections": [
+    {
+      "id": "VariableCollectionId:5:2",
+      "name": "Primitive",
+      "modes": [
+        {
+          "name": "Neutral",
+          "modeId": "5:0"
+        },
+        {
+          "name": "Okvy",
+          "modeId": "121:0"
+        }
+      ],
+      "variables": [
+        {
+          "id": "VariableID:5:3",
+          "name": "color/gray/0",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--raw-color-gray-0)"
+          },
+          "valuesByMode": {
+            "5:0": {
+              "r": 0.9647058844566345,
+              "g": 0.9647058844566345,
+              "b": 0.9607843160629272,
+              "a": 1
+            },
+            "121:0": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:4",
+          "name": "color/gray/50",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--raw-color-gray-50)"
+          },
+          "valuesByMode": {
+            "5:0": {
+              "r": 0.9333333373069763,
+              "g": 0.9333333373069763,
+              "b": 0.9254902005195618,
+              "a": 1
+            },
+            "121:0": {
+              "r": 0.9490196108818054,
+              "g": 0.9490196108818054,
+              "b": 0.9490196108818054,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:5",
+          "name": "color/gray/100",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--raw-color-gray-100)"
+          },
+          "valuesByMode": {
+            "5:0": {
+              "r": 0.886274516582489,
+              "g": 0.886274516582489,
+              "b": 0.8745098114013672,
+              "a": 1
+            },
+            "121:0": {
+              "r": 0.9019607901573181,
+              "g": 0.9019607901573181,
+              "b": 0.9019607901573181,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:6",
+          "name": "color/gray/200",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--raw-color-gray-200)"
+          },
+          "valuesByMode": {
+            "5:0": {
+              "r": 0.7843137383460999,
+              "g": 0.7843137383460999,
+              "b": 0.7686274647712708,
+              "a": 1
+            },
+            "121:0": {
+              "r": 0.8509804010391235,
+              "g": 0.8509804010391235,
+              "b": 0.8509804010391235,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:7",
+          "name": "color/gray/300",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--raw-color-gray-300)"
+          },
+          "valuesByMode": {
+            "5:0": {
+              "r": 0.6392157077789307,
+              "g": 0.6392157077789307,
+              "b": 0.615686297416687,
+              "a": 1
+            },
+            "121:0": {
+              "r": 0.7215686440467834,
+              "g": 0.7215686440467834,
+              "b": 0.7215686440467834,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:8",
+          "name": "color/gray/400",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--raw-color-gray-400)"
+          },
+          "valuesByMode": {
+            "5:0": {
+              "r": 0.48627451062202454,
+              "g": 0.48627451062202454,
+              "b": 0.4627451002597809,
+              "a": 1
+            },
+            "121:0": {
+              "r": 0.5490196347236633,
+              "g": 0.5490196347236633,
+              "b": 0.5490196347236633,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:9",
+          "name": "color/gray/500",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--raw-color-gray-500)"
+          },
+          "valuesByMode": {
+            "5:0": {
+              "r": 0.3686274588108063,
+              "g": 0.3686274588108063,
+              "b": 0.3450980484485626,
+              "a": 1
+            },
+            "121:0": {
+              "r": 0.3490196168422699,
+              "g": 0.3490196168422699,
+              "b": 0.3490196168422699,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:10",
+          "name": "color/gray/600",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--raw-color-gray-600)"
+          },
+          "valuesByMode": {
+            "5:0": {
+              "r": 0.27843138575553894,
+              "g": 0.27843138575553894,
+              "b": 0.25882354378700256,
+              "a": 1
+            },
+            "121:0": {
+              "r": 0.250980406999588,
+              "g": 0.250980406999588,
+              "b": 0.250980406999588,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:11",
+          "name": "color/gray/700",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--raw-color-gray-700)"
+          },
+          "valuesByMode": {
+            "5:0": {
+              "r": 0.19607843458652496,
+              "g": 0.19607843458652496,
+              "b": 0.18039216101169586,
+              "a": 1
+            },
+            "121:0": {
+              "r": 0.14901961386203766,
+              "g": 0.14901961386203766,
+              "b": 0.14901961386203766,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:12",
+          "name": "color/gray/800",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--raw-color-gray-800)"
+          },
+          "valuesByMode": {
+            "5:0": {
+              "r": 0.13725490868091583,
+              "g": 0.13725490868091583,
+              "b": 0.125490203499794,
+              "a": 1
+            },
+            "121:0": {
+              "r": 0.0784313753247261,
+              "g": 0.0784313753247261,
+              "b": 0.0784313753247261,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:13",
+          "name": "color/gray/900",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--raw-color-gray-900)"
+          },
+          "valuesByMode": {
+            "5:0": {
+              "r": 0.0784313753247261,
+              "g": 0.0784313753247261,
+              "b": 0.07058823853731155,
+              "a": 1
+            },
+            "121:0": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:14",
+          "name": "color/accent",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--raw-color-accent)"
+          },
+          "valuesByMode": {
+            "5:0": {
+              "r": 0.3686274588108063,
+              "g": 0.4156862795352936,
+              "b": 0.4431372582912445,
+              "a": 1
+            },
+            "121:0": {
+              "r": 0,
+              "g": 0,
+              "b": 0,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:15",
+          "name": "color/success",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--raw-color-success)"
+          },
+          "valuesByMode": {
+            "5:0": {
+              "r": 0.18431372940540314,
+              "g": 0.43529412150382996,
+              "b": 0.30588236451148987,
+              "a": 1
+            },
+            "121:0": {
+              "r": 0,
+              "g": 0.6313725709915161,
+              "b": 0.5098039507865906,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:16",
+          "name": "color/warning",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--raw-color-warning)"
+          },
+          "valuesByMode": {
+            "5:0": {
+              "r": 0.5411764979362488,
+              "g": 0.3529411852359772,
+              "b": 0.07058823853731155,
+              "a": 1
+            },
+            "121:0": {
+              "r": 0.8980392217636108,
+              "g": 0.47843137383461,
+              "b": 0,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:17",
+          "name": "color/error",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--raw-color-error)"
+          },
+          "valuesByMode": {
+            "5:0": {
+              "r": 0.5607843399047852,
+              "g": 0.1764705926179886,
+              "b": 0.1764705926179886,
+              "a": 1
+            },
+            "121:0": {
+              "r": 1,
+              "g": 0.3529411852359772,
+              "b": 0.30588236451148987,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:18",
+          "name": "color/info",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--raw-color-info)"
+          },
+          "valuesByMode": {
+            "5:0": {
+              "r": 0.1725490242242813,
+              "g": 0.37254902720451355,
+              "b": 0.5411764979362488,
+              "a": 1
+            },
+            "121:0": {
+              "r": 0.22745098173618317,
+              "g": 0.6039215922355652,
+              "b": 0.8509804010391235,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:19",
+          "name": "space/1",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--raw-space-1)"
+          },
+          "valuesByMode": {
+            "5:0": 4,
+            "121:0": 4
+          }
+        },
+        {
+          "id": "VariableID:5:20",
+          "name": "space/2",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--raw-space-2)"
+          },
+          "valuesByMode": {
+            "5:0": 8,
+            "121:0": 8
+          }
+        },
+        {
+          "id": "VariableID:5:21",
+          "name": "space/3",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--raw-space-3)"
+          },
+          "valuesByMode": {
+            "5:0": 12,
+            "121:0": 12
+          }
+        },
+        {
+          "id": "VariableID:5:22",
+          "name": "space/4",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--raw-space-4)"
+          },
+          "valuesByMode": {
+            "5:0": 16,
+            "121:0": 16
+          }
+        },
+        {
+          "id": "VariableID:5:23",
+          "name": "space/5",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--raw-space-5)"
+          },
+          "valuesByMode": {
+            "5:0": 24,
+            "121:0": 24
+          }
+        },
+        {
+          "id": "VariableID:5:24",
+          "name": "space/6",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--raw-space-6)"
+          },
+          "valuesByMode": {
+            "5:0": 32,
+            "121:0": 32
+          }
+        },
+        {
+          "id": "VariableID:5:25",
+          "name": "space/7",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--raw-space-7)"
+          },
+          "valuesByMode": {
+            "5:0": 48,
+            "121:0": 48
+          }
+        },
+        {
+          "id": "VariableID:5:26",
+          "name": "space/8",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--raw-space-8)"
+          },
+          "valuesByMode": {
+            "5:0": 64,
+            "121:0": 64
+          }
+        },
+        {
+          "id": "VariableID:5:27",
+          "name": "radius/none",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--raw-radius-none)"
+          },
+          "valuesByMode": {
+            "5:0": 0,
+            "121:0": 0
+          }
+        },
+        {
+          "id": "VariableID:5:28",
+          "name": "radius/sm",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--raw-radius-sm)"
+          },
+          "valuesByMode": {
+            "5:0": 4,
+            "121:0": 4
+          }
+        },
+        {
+          "id": "VariableID:5:29",
+          "name": "radius/md",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--raw-radius-md)"
+          },
+          "valuesByMode": {
+            "5:0": 8,
+            "121:0": 4
+          }
+        },
+        {
+          "id": "VariableID:5:30",
+          "name": "radius/full",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--raw-radius-full)"
+          },
+          "valuesByMode": {
+            "5:0": 999,
+            "121:0": 4
+          }
+        },
+        {
+          "id": "VariableID:5:31",
+          "name": "size/tap",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--raw-size-tap)"
+          },
+          "valuesByMode": {
+            "5:0": 44,
+            "121:0": 44
+          }
+        },
+        {
+          "id": "VariableID:5:32",
+          "name": "size/border",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--raw-size-border)"
+          },
+          "valuesByMode": {
+            "5:0": 1,
+            "121:0": 1
+          }
+        },
+        {
+          "id": "VariableID:5:33",
+          "name": "size/outline",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--raw-size-outline)"
+          },
+          "valuesByMode": {
+            "5:0": 2,
+            "121:0": 2
+          }
+        },
+        {
+          "id": "VariableID:5:34",
+          "name": "size/icon",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--raw-size-icon)"
+          },
+          "valuesByMode": {
+            "5:0": 20,
+            "121:0": 20
+          }
+        },
+        {
+          "id": "VariableID:5:35",
+          "name": "font/size/sm",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--raw-font-size-sm)"
+          },
+          "valuesByMode": {
+            "5:0": 14,
+            "121:0": 14
+          }
+        },
+        {
+          "id": "VariableID:5:36",
+          "name": "font/size/md",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--raw-font-size-md)"
+          },
+          "valuesByMode": {
+            "5:0": 16,
+            "121:0": 16
+          }
+        },
+        {
+          "id": "VariableID:5:37",
+          "name": "font/size/lg",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--raw-font-size-lg)"
+          },
+          "valuesByMode": {
+            "5:0": 28,
+            "121:0": 28
+          }
+        },
+        {
+          "id": "VariableID:5:38",
+          "name": "font/size/xl",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--raw-font-size-xl)"
+          },
+          "valuesByMode": {
+            "5:0": 40,
+            "121:0": 40
+          }
+        },
+        {
+          "id": "VariableID:5:39",
+          "name": "font/weight/regular",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--raw-font-weight-regular)"
+          },
+          "valuesByMode": {
+            "5:0": 400,
+            "121:0": 400
+          }
+        },
+        {
+          "id": "VariableID:5:40",
+          "name": "font/weight/medium",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--raw-font-weight-medium)"
+          },
+          "valuesByMode": {
+            "5:0": 600,
+            "121:0": 500
+          }
+        },
+        {
+          "id": "VariableID:5:41",
+          "name": "font/line-height/body",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--raw-font-line-height-body)"
+          },
+          "valuesByMode": {
+            "5:0": 1.5,
+            "121:0": 1.5
+          }
+        },
+        {
+          "id": "VariableID:5:42",
+          "name": "font/line-height/title",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--raw-font-line-height-title)"
+          },
+          "valuesByMode": {
+            "5:0": 1.25,
+            "121:0": 1.25
+          }
+        },
+        {
+          "id": "VariableID:5:43",
+          "name": "motion/duration/fast",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--raw-motion-duration-fast)"
+          },
+          "valuesByMode": {
+            "5:0": 120,
+            "121:0": 120
+          }
+        },
+        {
+          "id": "VariableID:5:44",
+          "name": "motion/duration/base",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--raw-motion-duration-base)"
+          },
+          "valuesByMode": {
+            "5:0": 200,
+            "121:0": 200
+          }
+        },
+        {
+          "id": "VariableID:5:45",
+          "name": "font/family/sans",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "STRING",
+          "codeSyntax": {
+            "WEB": "var(--raw-font-family-sans)"
+          },
+          "valuesByMode": {
+            "5:0": "Inter",
+            "121:0": "Inter"
+          }
+        },
+        {
+          "id": "VariableID:5:46",
+          "name": "motion/easing/standard",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "STRING",
+          "codeSyntax": {
+            "WEB": "var(--raw-motion-easing-standard)"
+          },
+          "valuesByMode": {
+            "5:0": "cubic-bezier(0.2, 0, 0, 1)",
+            "121:0": "cubic-bezier(0.2, 0, 0, 1)"
+          }
+        },
+        {
+          "id": "VariableID:50:2",
+          "name": "radius/lg",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--raw-radius-lg)"
+          },
+          "valuesByMode": {
+            "5:0": 8,
+            "121:0": 8
+          }
+        },
+        {
+          "id": "VariableID:50:3",
+          "name": "font/size/xs",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--raw-font-size-xs)"
+          },
+          "valuesByMode": {
+            "5:0": 12,
+            "121:0": 12
+          }
+        },
+        {
+          "id": "VariableID:50:4",
+          "name": "font/family/serif",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "STRING",
+          "codeSyntax": {
+            "WEB": "var(--raw-font-family-serif)"
+          },
+          "valuesByMode": {
+            "5:0": "EB Garamond",
+            "121:0": "Gart Serif Variable"
+          }
+        },
+        {
+          "id": "VariableID:50:5",
+          "name": "font/family/mono",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "STRING",
+          "codeSyntax": {
+            "WEB": "var(--raw-font-family-mono)"
+          },
+          "valuesByMode": {
+            "5:0": "JetBrains Mono",
+            "121:0": "JetBrains Mono"
+          }
+        },
+        {
+          "id": "VariableID:50:6",
+          "name": "color/success-text",
+          "description": "Primitive. Hidden from pickers. A theme fills this value; components never bind to it directly.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--raw-color-success-text)"
+          },
+          "valuesByMode": {
+            "5:0": {
+              "r": 0.18431372940540314,
+              "g": 0.43529412150382996,
+              "b": 0.30588236451148987,
+              "a": 1
+            },
+            "121:0": {
+              "r": 0.12156862765550613,
+              "g": 0.5411764979362488,
+              "b": 0.3960784375667572,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:114:15",
+          "name": "motion/duration/step",
+          "description": "Primitive. Expressive motion from the OS Social Kit. One step of a pop-in stagger, in ms.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--raw-motion-duration-step)"
+          },
+          "valuesByMode": {
+            "5:0": 100,
+            "121:0": 100
+          }
+        },
+        {
+          "id": "VariableID:114:16",
+          "name": "motion/duration/boil",
+          "description": "Primitive. Expressive motion from the OS Social Kit. How often a boiling layer changes its rotation, in ms.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--raw-motion-duration-boil)"
+          },
+          "valuesByMode": {
+            "5:0": 200,
+            "121:0": 200
+          }
+        },
+        {
+          "id": "VariableID:114:17",
+          "name": "motion/duration/hold",
+          "description": "Primitive. Expressive motion from the OS Social Kit. How long one image holds in a flip, in ms.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--raw-motion-duration-hold)"
+          },
+          "valuesByMode": {
+            "5:0": 600,
+            "121:0": 600
+          }
+        },
+        {
+          "id": "VariableID:114:18",
+          "name": "motion/easing/flip",
+          "description": "Primitive. Expressive motion from the OS Social Kit. Easing into the first flip.",
+          "resolvedType": "STRING",
+          "codeSyntax": {
+            "WEB": "var(--raw-motion-easing-flip)"
+          },
+          "valuesByMode": {
+            "5:0": "cubic-bezier(0.5, 0, 0.5, 1)",
+            "121:0": "cubic-bezier(0.5, 0, 0.5, 1)"
+          }
+        },
+        {
+          "id": "VariableID:114:19",
+          "name": "motion/easing/cut",
+          "description": "Primitive. Expressive motion from the OS Social Kit. No tween: the value jumps at the keyframe.",
+          "resolvedType": "STRING",
+          "codeSyntax": {
+            "WEB": "var(--raw-motion-easing-cut)"
+          },
+          "valuesByMode": {
+            "5:0": "steps(1, end)",
+            "121:0": "steps(1, end)"
+          }
+        },
+        {
+          "id": "VariableID:114:20",
+          "name": "motion/rotation/boil",
+          "description": "Primitive. Expressive motion from the OS Social Kit. Largest boil rotation, in degrees either way.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--raw-motion-rotation-boil)"
+          },
+          "valuesByMode": {
+            "5:0": 1.5,
+            "121:0": 1.5
+          }
+        },
+        {
+          "id": "VariableID:121:15",
+          "name": "color/secondary/blue",
+          "description": "Primitive. PROPOSED okvy palette (Basic OS brand book, Color Spec).",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--raw-color-secondary-blue)"
+          },
+          "valuesByMode": {
+            "5:0": {
+              "r": 0.22745098173618317,
+              "g": 0.6039215922355652,
+              "b": 0.8509804010391235,
+              "a": 1
+            },
+            "121:0": {
+              "r": 0.22745098173618317,
+              "g": 0.6039215922355652,
+              "b": 0.8509804010391235,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:121:16",
+          "name": "color/secondary/red",
+          "description": "Primitive. PROPOSED okvy palette (Basic OS brand book, Color Spec).",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--raw-color-secondary-red)"
+          },
+          "valuesByMode": {
+            "5:0": {
+              "r": 1,
+              "g": 0.3529411852359772,
+              "b": 0.30588236451148987,
+              "a": 1
+            },
+            "121:0": {
+              "r": 1,
+              "g": 0.3529411852359772,
+              "b": 0.30588236451148987,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:121:17",
+          "name": "color/secondary/yellow",
+          "description": "Primitive. PROPOSED okvy palette (Basic OS brand book, Color Spec).",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--raw-color-secondary-yellow)"
+          },
+          "valuesByMode": {
+            "5:0": {
+              "r": 0.9882352948188782,
+              "g": 0.8235294222831726,
+              "b": 0.32549020648002625,
+              "a": 1
+            },
+            "121:0": {
+              "r": 0.9882352948188782,
+              "g": 0.8235294222831726,
+              "b": 0.32549020648002625,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:121:18",
+          "name": "color/secondary/green",
+          "description": "Primitive. PROPOSED okvy palette (Basic OS brand book, Color Spec).",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--raw-color-secondary-green)"
+          },
+          "valuesByMode": {
+            "5:0": {
+              "r": 0,
+              "g": 0.6313725709915161,
+              "b": 0.5098039507865906,
+              "a": 1
+            },
+            "121:0": {
+              "r": 0,
+              "g": 0.6313725709915161,
+              "b": 0.5098039507865906,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:121:19",
+          "name": "color/secondary/orange",
+          "description": "Primitive. PROPOSED okvy palette (Basic OS brand book, Color Spec).",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--raw-color-secondary-orange)"
+          },
+          "valuesByMode": {
+            "5:0": {
+              "r": 1,
+              "g": 0.5411764979362488,
+              "b": 0.239215686917305,
+              "a": 1
+            },
+            "121:0": {
+              "r": 1,
+              "g": 0.5411764979362488,
+              "b": 0.239215686917305,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:121:20",
+          "name": "color/secondary/purple",
+          "description": "Primitive. PROPOSED okvy palette (Basic OS brand book, Color Spec).",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--raw-color-secondary-purple)"
+          },
+          "valuesByMode": {
+            "5:0": {
+              "r": 0.5490196347236633,
+              "g": 0.49803921580314636,
+              "b": 0.8509804010391235,
+              "a": 1
+            },
+            "121:0": {
+              "r": 0.5490196347236633,
+              "g": 0.49803921580314636,
+              "b": 0.8509804010391235,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:121:21",
+          "name": "color/shade/blue",
+          "description": "Primitive. PROPOSED okvy palette (Basic OS brand book, Color Spec).",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--raw-color-shade-blue)"
+          },
+          "valuesByMode": {
+            "5:0": {
+              "r": 0.05882352963089943,
+              "g": 0.1568627506494522,
+              "b": 0.21960784494876862,
+              "a": 1
+            },
+            "121:0": {
+              "r": 0.05882352963089943,
+              "g": 0.1568627506494522,
+              "b": 0.21960784494876862,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:121:22",
+          "name": "color/shade/red",
+          "description": "Primitive. PROPOSED okvy palette (Basic OS brand book, Color Spec).",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--raw-color-shade-red)"
+          },
+          "valuesByMode": {
+            "5:0": {
+              "r": 0.5058823823928833,
+              "g": 0.003921568859368563,
+              "b": 0.003921568859368563,
+              "a": 1
+            },
+            "121:0": {
+              "r": 0.5058823823928833,
+              "g": 0.003921568859368563,
+              "b": 0.003921568859368563,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:121:23",
+          "name": "color/shade/yellow",
+          "description": "Primitive. PROPOSED okvy palette (Basic OS brand book, Color Spec).",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--raw-color-shade-yellow)"
+          },
+          "valuesByMode": {
+            "5:0": {
+              "r": 0.8980392217636108,
+              "g": 0.47843137383461,
+              "b": 0,
+              "a": 1
+            },
+            "121:0": {
+              "r": 0.8980392217636108,
+              "g": 0.47843137383461,
+              "b": 0,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:121:24",
+          "name": "color/shade/green",
+          "description": "Primitive. PROPOSED okvy palette (Basic OS brand book, Color Spec).",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--raw-color-shade-green)"
+          },
+          "valuesByMode": {
+            "5:0": {
+              "r": 0.019607843831181526,
+              "g": 0.25882354378700256,
+              "b": 0.21176470816135406,
+              "a": 1
+            },
+            "121:0": {
+              "r": 0.019607843831181526,
+              "g": 0.25882354378700256,
+              "b": 0.21176470816135406,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:121:25",
+          "name": "color/shade/orange",
+          "description": "Primitive. PROPOSED okvy palette (Basic OS brand book, Color Spec).",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--raw-color-shade-orange)"
+          },
+          "valuesByMode": {
+            "5:0": {
+              "r": 0.6549019813537598,
+              "g": 0.06666667014360428,
+              "b": 0,
+              "a": 1
+            },
+            "121:0": {
+              "r": 0.6549019813537598,
+              "g": 0.06666667014360428,
+              "b": 0,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:121:26",
+          "name": "color/shade/purple",
+          "description": "Primitive. PROPOSED okvy palette (Basic OS brand book, Color Spec).",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--raw-color-shade-purple)"
+          },
+          "valuesByMode": {
+            "5:0": {
+              "r": 0.0941176488995552,
+              "g": 0.07450980693101883,
+              "b": 0.20392157137393951,
+              "a": 1
+            },
+            "121:0": {
+              "r": 0.0941176488995552,
+              "g": 0.07450980693101883,
+              "b": 0.20392157137393951,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:121:27",
+          "name": "color/neutral/stone",
+          "description": "Primitive. PROPOSED okvy palette (Basic OS brand book, Color Spec).",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--raw-color-neutral-stone)"
+          },
+          "valuesByMode": {
+            "5:0": {
+              "r": 0.8666666746139526,
+              "g": 0.8352941274642944,
+              "b": 0.7921568751335144,
+              "a": 1
+            },
+            "121:0": {
+              "r": 0.8666666746139526,
+              "g": 0.8352941274642944,
+              "b": 0.7921568751335144,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:121:28",
+          "name": "color/neutral/sand",
+          "description": "Primitive. PROPOSED okvy palette (Basic OS brand book, Color Spec).",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--raw-color-neutral-sand)"
+          },
+          "valuesByMode": {
+            "5:0": {
+              "r": 0.8313725590705872,
+              "g": 0.7372549176216125,
+              "b": 0.5960784554481506,
+              "a": 1
+            },
+            "121:0": {
+              "r": 0.8313725590705872,
+              "g": 0.7372549176216125,
+              "b": 0.5960784554481506,
+              "a": 1
+            }
+          }
+        },
+        {
+          "id": "VariableID:121:29",
+          "name": "color/neutral/sage",
+          "description": "Primitive. PROPOSED okvy palette (Basic OS brand book, Color Spec).",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--raw-color-neutral-sage)"
+          },
+          "valuesByMode": {
+            "5:0": {
+              "r": 0.658823549747467,
+              "g": 0.658823549747467,
+              "b": 0.529411792755127,
+              "a": 1
+            },
+            "121:0": {
+              "r": 0.658823549747467,
+              "g": 0.658823549747467,
+              "b": 0.529411792755127,
+              "a": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "VariableCollectionId:5:47",
+      "name": "Semantic",
+      "modes": [
+        {
+          "name": "Light",
+          "modeId": "5:2"
+        },
+        {
+          "name": "Dark",
+          "modeId": "5:3"
+        }
+      ],
+      "variables": [
+        {
+          "id": "VariableID:5:48",
+          "name": "color/bg/canvas",
+          "description": "Page background behind all content. Contract role in tokens/schema.json.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--color-bg-canvas)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:3"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:13"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:49",
+          "name": "color/bg/surface",
+          "description": "Surface for inputs, badges, and grouped specimens. Contract role in tokens/schema.json.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--color-bg-surface)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:4"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:12"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:50",
+          "name": "color/bg/subtle",
+          "description": "Quiet fill behind a secondary action. Contract role in tokens/schema.json.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--color-bg-subtle)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:5"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:11"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:51",
+          "name": "color/fg/default",
+          "description": "Default text. Contract role in tokens/schema.json.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--color-fg-default)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:13"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:3"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:52",
+          "name": "color/fg/muted",
+          "description": "Secondary text. Contract role in tokens/schema.json.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--color-fg-muted)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:9"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:7"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:53",
+          "name": "color/fg/on-primary",
+          "description": "Text on the primary action. Contract role in tokens/schema.json.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--color-fg-on-primary)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:3"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:13"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:54",
+          "name": "color/border/default",
+          "description": "Default border. Contract role in tokens/schema.json.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--color-border-default)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:6"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:10"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:55",
+          "name": "color/border/focus",
+          "description": "Focus ring. Contract role in tokens/schema.json.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--color-border-focus)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:14"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:14"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:56",
+          "name": "color/action/primary",
+          "description": "Fill of the one primary action. Contract role in tokens/schema.json.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--color-action-primary)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:13"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:3"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:57",
+          "name": "color/action/secondary",
+          "description": "Fill of a secondary action. Contract role in tokens/schema.json.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--color-action-secondary)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:5"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:11"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:58",
+          "name": "color/status/success",
+          "description": "Success status. Contract role in tokens/schema.json.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--color-status-success)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:15"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:15"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:59",
+          "name": "color/status/warning",
+          "description": "Warning status. Contract role in tokens/schema.json.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--color-status-warning)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:16"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:16"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:60",
+          "name": "color/status/error",
+          "description": "Error status. Contract role in tokens/schema.json.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--color-status-error)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:17"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:17"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:61",
+          "name": "color/status/info",
+          "description": "Info status. Contract role in tokens/schema.json.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--color-status-info)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:18"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:18"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:62",
+          "name": "font/family/body",
+          "description": "Body and UI font stack. Contract role in tokens/schema.json.",
+          "resolvedType": "STRING",
+          "codeSyntax": {
+            "WEB": "var(--font-family-body)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:45"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:45"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:63",
+          "name": "font/size/display",
+          "description": "Largest type size. Contract role in tokens/schema.json.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--font-size-display)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:38"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:38"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:64",
+          "name": "font/size/title",
+          "description": "Section title size. Contract role in tokens/schema.json.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--font-size-title)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:37"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:37"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:65",
+          "name": "font/size/body",
+          "description": "Body size. Contract role in tokens/schema.json.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--font-size-body)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:36"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:36"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:66",
+          "name": "font/size/label",
+          "description": "Label, button, and badge size. Contract role in tokens/schema.json.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--font-size-label)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:35"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:35"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:67",
+          "name": "font/weight/body",
+          "description": "Body weight. Contract role in tokens/schema.json.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--font-weight-body)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:39"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:39"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:68",
+          "name": "font/weight/label",
+          "description": "Label and title weight. Contract role in tokens/schema.json.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--font-weight-label)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:40"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:40"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:69",
+          "name": "font/line-height/body",
+          "description": "Body line height. Contract role in tokens/schema.json.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--font-line-height-body)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:41"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:41"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:70",
+          "name": "font/line-height/title",
+          "description": "Title line height. Contract role in tokens/schema.json.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--font-line-height-title)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:42"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:42"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:71",
+          "name": "space/gap",
+          "description": "Gap inside a control or a row. Contract role in tokens/schema.json.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--space-gap)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:20"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:20"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:72",
+          "name": "space/inset",
+          "description": "Horizontal padding inside a control. Contract role in tokens/schema.json.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--space-inset)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:21"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:21"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:73",
+          "name": "space/stack",
+          "description": "Space between stacked items. Contract role in tokens/schema.json.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--space-stack)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:22"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:22"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:74",
+          "name": "space/section",
+          "description": "Space between sections. Contract role in tokens/schema.json.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--space-section)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:25"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:25"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:75",
+          "name": "radius/control",
+          "description": "Corner radius of buttons and inputs. Contract role in tokens/schema.json.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--radius-control)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:29"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:29"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:76",
+          "name": "radius/badge",
+          "description": "Corner radius of badges. Contract role in tokens/schema.json.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--radius-badge)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:30"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:30"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:77",
+          "name": "motion/duration/control",
+          "description": "Duration of a control state change. Contract role in tokens/schema.json.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--motion-duration-control)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:43"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:43"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:78",
+          "name": "motion/easing/standard",
+          "description": "Easing of a control state change. Contract role in tokens/schema.json.",
+          "resolvedType": "STRING",
+          "codeSyntax": {
+            "WEB": "var(--motion-easing-standard)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:46"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:46"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:79",
+          "name": "size/tap",
+          "description": "Minimum tap target. Contract role in tokens/schema.json.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--size-tap)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:31"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:31"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:80",
+          "name": "size/border",
+          "description": "Border thickness. Contract role in tokens/schema.json.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--size-border)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:32"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:32"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:81",
+          "name": "size/outline",
+          "description": "Focus outline thickness. Contract role in tokens/schema.json.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--size-outline)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:33"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:33"
+            }
+          }
+        },
+        {
+          "id": "VariableID:5:82",
+          "name": "size/icon",
+          "description": "Icon box size. Contract role in tokens/schema.json.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--size-icon)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:34"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:34"
+            }
+          }
+        },
+        {
+          "id": "VariableID:50:7",
+          "name": "color/fg/accent",
+          "description": "PROPOSED. Accent text for short punctuation such as a link or a highlight. Not in tokens/schema.json yet; needs a contract pull request before code can use it.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--color-fg-accent)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:18"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:18"
+            }
+          }
+        },
+        {
+          "id": "VariableID:50:8",
+          "name": "color/fg/secondary",
+          "description": "PROPOSED. Text between default and muted. Not in tokens/schema.json yet; needs a contract pull request before code can use it.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--color-fg-secondary)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:8"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:7"
+            }
+          }
+        },
+        {
+          "id": "VariableID:50:9",
+          "name": "color/fg/subtle",
+          "description": "PROPOSED. Faintest readable text, such as a placeholder. Not in tokens/schema.json yet; needs a contract pull request before code can use it.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--color-fg-subtle)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:7"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:9"
+            }
+          }
+        },
+        {
+          "id": "VariableID:50:10",
+          "name": "color/fg/inverse",
+          "description": "PROPOSED. Text on an inverse surface, such as a tooltip. Not in tokens/schema.json yet; needs a contract pull request before code can use it.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--color-fg-inverse)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:3"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:13"
+            }
+          }
+        },
+        {
+          "id": "VariableID:50:11",
+          "name": "color/icon/default",
+          "description": "PROPOSED. Default icon stroke. Not in tokens/schema.json yet; needs a contract pull request before code can use it.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--color-icon-default)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:9"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:7"
+            }
+          }
+        },
+        {
+          "id": "VariableID:50:12",
+          "name": "color/bg/inverse",
+          "description": "PROPOSED. Inverse surface, such as a tooltip. Not in tokens/schema.json yet; needs a contract pull request before code can use it.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--color-bg-inverse)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:13"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:3"
+            }
+          }
+        },
+        {
+          "id": "VariableID:50:13",
+          "name": "color/bg/overlay",
+          "description": "PROPOSED. Scrim behind a modal. Not in tokens/schema.json yet; needs a contract pull request before code can use it.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--color-bg-overlay)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:13"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:13"
+            }
+          }
+        },
+        {
+          "id": "VariableID:50:14",
+          "name": "color/border/subtle",
+          "description": "PROPOSED. Divider inside a list or a tab track. Not in tokens/schema.json yet; needs a contract pull request before code can use it.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--color-border-subtle)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:5"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:11"
+            }
+          }
+        },
+        {
+          "id": "VariableID:50:15",
+          "name": "color/action/warm",
+          "description": "PROPOSED. In-product warm action. Brand-specific; review before adopting. Not in tokens/schema.json yet; needs a contract pull request before code can use it.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--color-action-warm)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:16"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:16"
+            }
+          }
+        },
+        {
+          "id": "VariableID:50:16",
+          "name": "color/action/success",
+          "description": "PROPOSED. In-product confirm action. Not in tokens/schema.json yet; needs a contract pull request before code can use it.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--color-action-success)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:15"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:15"
+            }
+          }
+        },
+        {
+          "id": "VariableID:50:17",
+          "name": "font/family/serif",
+          "description": "PROPOSED. Editorial serif for long reading. Not in tokens/schema.json yet; needs a contract pull request before code can use it.",
+          "resolvedType": "STRING",
+          "codeSyntax": {
+            "WEB": "var(--font-family-serif)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:50:4"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:50:4"
+            }
+          }
+        },
+        {
+          "id": "VariableID:50:18",
+          "name": "font/family/mono",
+          "description": "PROPOSED. Mono for meta lines, shortcuts, and code. Not in tokens/schema.json yet; needs a contract pull request before code can use it.",
+          "resolvedType": "STRING",
+          "codeSyntax": {
+            "WEB": "var(--font-family-mono)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:50:5"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:50:5"
+            }
+          }
+        },
+        {
+          "id": "VariableID:50:19",
+          "name": "font/size/caption",
+          "description": "PROPOSED. Caption size. Not in tokens/schema.json yet; needs a contract pull request before code can use it.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--font-size-caption)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:50:3"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:50:3"
+            }
+          }
+        },
+        {
+          "id": "VariableID:50:20",
+          "name": "radius/modal",
+          "description": "PROPOSED. Corner radius of a modal. Not in tokens/schema.json yet; needs a contract pull request before code can use it.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--radius-modal)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:50:2"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:50:2"
+            }
+          }
+        },
+        {
+          "id": "VariableID:114:21",
+          "name": "motion/duration/stagger",
+          "description": "PROPOSED. Expressive motion. Delay between layers in a pop-in. Not in tokens/schema.json yet; needs a contract pull request before code can use it.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--motion-duration-stagger)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:114:15"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:114:15"
+            }
+          }
+        },
+        {
+          "id": "VariableID:114:22",
+          "name": "motion/duration/boil",
+          "description": "PROPOSED. Expressive motion. Interval between boil jitters. Not in tokens/schema.json yet; needs a contract pull request before code can use it.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--motion-duration-boil)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:114:16"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:114:16"
+            }
+          }
+        },
+        {
+          "id": "VariableID:114:23",
+          "name": "motion/duration/hold",
+          "description": "PROPOSED. Expressive motion. Hold time per image in a flip. Not in tokens/schema.json yet; needs a contract pull request before code can use it.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--motion-duration-hold)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:114:17"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:114:17"
+            }
+          }
+        },
+        {
+          "id": "VariableID:114:24",
+          "name": "motion/easing/flip",
+          "description": "PROPOSED. Expressive motion. Easing into a flip. Not in tokens/schema.json yet; needs a contract pull request before code can use it.",
+          "resolvedType": "STRING",
+          "codeSyntax": {
+            "WEB": "var(--motion-easing-flip)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:114:18"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:114:18"
+            }
+          }
+        },
+        {
+          "id": "VariableID:114:25",
+          "name": "motion/easing/cut",
+          "description": "PROPOSED. Expressive motion. Cut between states without a tween. Not in tokens/schema.json yet; needs a contract pull request before code can use it.",
+          "resolvedType": "STRING",
+          "codeSyntax": {
+            "WEB": "var(--motion-easing-cut)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:114:19"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:114:19"
+            }
+          }
+        },
+        {
+          "id": "VariableID:114:26",
+          "name": "motion/rotation/boil",
+          "description": "PROPOSED. Expressive motion. Boil amplitude in degrees. Not in tokens/schema.json yet; needs a contract pull request before code can use it.",
+          "resolvedType": "FLOAT",
+          "codeSyntax": {
+            "WEB": "var(--motion-rotation-boil)"
+          },
+          "valuesByMode": {
+            "5:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:114:20"
+            },
+            "5:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:114:20"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "VariableCollectionId:121:30",
+      "name": "Lead",
+      "modes": [
+        {
+          "name": "Blue",
+          "modeId": "121:1"
+        },
+        {
+          "name": "Red",
+          "modeId": "121:2"
+        },
+        {
+          "name": "Yellow",
+          "modeId": "121:3"
+        },
+        {
+          "name": "Green",
+          "modeId": "121:4"
+        },
+        {
+          "name": "Orange",
+          "modeId": "121:5"
+        },
+        {
+          "name": "Purple",
+          "modeId": "121:6"
+        }
+      ],
+      "variables": [
+        {
+          "id": "VariableID:121:31",
+          "name": "lead/color",
+          "description": "PROPOSED. The one secondary color that leads this piece. Set the Lead mode on a frame to pick the one secondary color for that piece.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--lead-color)"
+          },
+          "valuesByMode": {
+            "121:1": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:121:15"
+            },
+            "121:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:121:16"
+            },
+            "121:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:121:17"
+            },
+            "121:4": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:121:18"
+            },
+            "121:5": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:121:19"
+            },
+            "121:6": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:121:20"
+            }
+          }
+        },
+        {
+          "id": "VariableID:121:32",
+          "name": "lead/shade",
+          "description": "PROPOSED. The deep shade of the lead color; motion snaps to it. Set the Lead mode on a frame to pick the one secondary color for that piece.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--lead-shade)"
+          },
+          "valuesByMode": {
+            "121:1": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:121:21"
+            },
+            "121:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:121:22"
+            },
+            "121:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:121:23"
+            },
+            "121:4": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:121:24"
+            },
+            "121:5": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:121:25"
+            },
+            "121:6": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:121:26"
+            }
+          }
+        },
+        {
+          "id": "VariableID:121:33",
+          "name": "lead/on-color",
+          "description": "PROPOSED. Text and icons set on the lead color. Black on yellow, white on the rest. Set the Lead mode on a frame to pick the one secondary color for that piece.",
+          "resolvedType": "COLOR",
+          "codeSyntax": {
+            "WEB": "var(--lead-on-color)"
+          },
+          "valuesByMode": {
+            "121:1": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:3"
+            },
+            "121:2": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:3"
+            },
+            "121:3": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:13"
+            },
+            "121:4": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:3"
+            },
+            "121:5": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:3"
+            },
+            "121:6": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:5:3"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

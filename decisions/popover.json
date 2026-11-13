@@ -1,0 +1,15 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "Popover",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "Shows a short task or detail next to its trigger.",
+  "source": "figma",
+  "purpose": "Shows a short task or detail next to its trigger.",
+  "useWhen": "A small decision that keeps the page in view.",
+  "dontUseWhen": "Long or blocking content (use Modal).",
+  "props": "Title, Body, Show actions, Show close",
+  "catalog": "candidate (no catalog entry yet)",
+  "figmaKey": "b19bb528812a99764fc4f7a19aaafe3b49deccfb",
+  "figmaId": "67:29"
+}

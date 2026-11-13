@@ -1,0 +1,17 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "Social/L8 Artist Quote",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "The artist speaks, with their face or their work.",
+  "source": "figma",
+  "purpose": "The artist speaks, with their face or their work.",
+  "useWhen": "A sourced quote from the person the post is about. Portrait puts the photo on top and the quote below; Work puts the quote over their work; None is a long text-only quote.",
+  "dontUseWhen": "Agents: do not use until approved. An unsourced quote, or a short punchy line (use L4 Quote).",
+  "props": "Image (Portrait/Work/None), Font (Sans/Serif), Context, Quote, Attribution, Handle",
+  "catalog": "candidate (DRAFT in the OS Social Kit; not approved; agents do not use)",
+  "figmaKey": "2306b5fa5417f598f233c10a61a2dbccc3b6dbe0",
+  "figmaId": "97:44",
+  "surface": "social",
+  "needsHuman": true
+}

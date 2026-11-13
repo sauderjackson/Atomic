@@ -1,0 +1,16 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "Paper",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "A textured backdrop surface.",
+  "source": "figma",
+  "purpose": "A textured backdrop surface.",
+  "useWhen": "Large backdrops such as a hero or an empty state.",
+  "dontUseWhen": "Behind small controls or dense content.",
+  "props": "Show sample text, Grain (None/Fine/Coarse)",
+  "catalog": "candidate (no catalog entry yet; review as possibly brand-only)",
+  "figmaKey": "2ee74383ebd9646e1c9ba39c79b54120a3b400a2",
+  "figmaId": "74:35",
+  "needsHuman": true
+}

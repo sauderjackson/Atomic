@@ -1,0 +1,15 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "Textarea",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "Collects several lines of text.",
+  "source": "figma",
+  "purpose": "Collects several lines of text.",
+  "useWhen": "Notes, descriptions, or messages.",
+  "dontUseWhen": "A short single answer (use Input).",
+  "props": "Value, State",
+  "catalog": "candidate (no catalog entry yet)",
+  "figmaKey": "0685fb7c73aecae981b1c188b9edc439618e51d6",
+  "figmaId": "60:44"
+}

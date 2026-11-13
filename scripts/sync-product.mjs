@@ -80,6 +80,40 @@ export function renderDecision(decision) {
   )}\n`;
 }
 
+function isFigmaDecision(file) {
+  try {
+    const data = JSON.parse(readFileSync(join(decisionsDir, file), "utf8"));
+    return data.source === "figma";
+  } catch {
+    return false;
+  }
+}
+
+export function figmaDecisionIssues() {
+  const issues = [];
+  if (!existsSync(decisionsDir)) return issues;
+  for (const entry of readdirSync(decisionsDir)) {
+    if (!entry.endsWith(".json") || !isFigmaDecision(entry)) continue;
+    let data;
+    try {
+      data = JSON.parse(readFileSync(join(decisionsDir, entry), "utf8"));
+    } catch {
+      issues.push(`decisions/${entry} is not valid JSON.`);
+      continue;
+    }
+    if (data.status !== "candidate" && data.status !== "adopt" && data.status !== "leave out") {
+      issues.push(`decisions/${entry} has an unknown status.`);
+    }
+    if (data.status === "adopt" && (data.uses ?? 0) < 2) {
+      issues.push(`decisions/${entry}: a Figma candidate becomes adopt only when the practice app (or later creative output) uses it twice. Publishing alone is not use.`);
+    }
+    if (typeof data.purpose !== "string" || !data.purpose.trim()) {
+      issues.push(`decisions/${entry} needs a purpose from Figma.`);
+    }
+  }
+  return issues;
+}
+
 export function decisionIssues() {
   let planned;
   try {
@@ -94,6 +128,7 @@ export function decisionIssues() {
     return issues;
   }
   for (const entry of readdirSync(decisionsDir)) {
+    if (isFigmaDecision(entry)) continue;
     if (!expected.has(entry)) issues.push(`decisions/${entry} is not a current practice-app piece.`);
   }
   for (const decision of planned) {
@@ -110,7 +145,7 @@ export function decisionIssues() {
       issues.push(`decisions/${decision.id}.json disagrees with the practice app. Run npm run sync:product.`);
     }
   }
-  return issues;
+  return [...issues, ...figmaDecisionIssues()];
 }
 
 export function writeDecisions() {
@@ -118,6 +153,7 @@ export function writeDecisions() {
   mkdirSync(decisionsDir, { recursive: true });
   const expected = new Set(planned.map((decision) => `${decision.id}.json`));
   for (const entry of readdirSync(decisionsDir)) {
+    if (isFigmaDecision(entry)) continue;
     if (!expected.has(entry)) rmSync(join(decisionsDir, entry));
   }
   for (const decision of planned) {

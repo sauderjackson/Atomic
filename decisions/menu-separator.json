@@ -1,0 +1,15 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "Menu Separator",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "Separates groups inside a Menu.",
+  "source": "figma",
+  "purpose": "Separates groups inside a Menu.",
+  "useWhen": "Between groups of MenuItem rows.",
+  "dontUseWhen": "Outside a Menu.",
+  "props": "none",
+  "catalog": "candidate (no catalog entry yet)",
+  "figmaKey": "299401d81d1b28258c76cdc5d9848aa052884b5d",
+  "figmaId": "65:33"
+}

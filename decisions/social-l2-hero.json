@@ -1,0 +1,16 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "Social/L2 Hero",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "Cover, chapter break, or statement on a photo or a solid.",
+  "source": "figma",
+  "purpose": "Cover, chapter break, or statement on a photo or a solid.",
+  "useWhen": "Opening a post or breaking a carousel into chapters. Middle dims the photo 40%; Bottom fades it.",
+  "dontUseWhen": "A headline over about 90 characters (split it across slides).",
+  "props": "BG (Image/Black), Position (Middle/Bottom), Support (Byline/Dek), Eyebrow, Headline, Byline, Dek",
+  "catalog": "candidate (from the OS Social Kit; no catalog entry yet)",
+  "figmaKey": "fed85b5b32e93618db415488ae7496aeba8e369a",
+  "figmaId": "94:67",
+  "surface": "social"
+}

@@ -1,0 +1,124 @@
+{
+  "fontFallbacks": {
+    "sans": ", ui-sans-serif, system-ui, sans-serif",
+    "serif": ", ui-serif, Georgia, serif",
+    "mono": ", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace"
+  },
+  "Primitive": {
+    "modeToTheme": {
+      "Neutral": "themes/neutral.json",
+      "Okvy": "themes/okvy.json"
+    },
+    "baseFromMode": "Neutral",
+    "pathMap": {
+      "color/gray/{n}": "color.gray.{n}",
+      "color/accent": "color.accent",
+      "color/success": "color.success",
+      "color/warning": "color.warning",
+      "color/error": "color.error",
+      "color/info": "color.info",
+      "space/{n}": "space.{n}",
+      "radius/{k}": "radius.{k}",
+      "font/size/{k}": "font.size.{k}",
+      "font/weight/{k}": "font.weight.{k}",
+      "font/line-height/{k}": "font.lineHeight.{k}",
+      "font/family/sans": "font.family.sans",
+      "size/{k}": "size.{k}",
+      "motion/duration/{k}": "motion.duration.{k}",
+      "motion/easing/{k}": "motion.easing.{k}"
+    },
+    "unitFields": {
+      "space": "px",
+      "radius": "px",
+      "font.size": "px",
+      "size": "px",
+      "motion.duration": "ms"
+    },
+    "numberFields": ["font.weight", "font.lineHeight"],
+    "proposedPrimitives": [
+      "radius/lg",
+      "font/size/xs",
+      "font/family/serif",
+      "font/family/mono",
+      "color/success-text",
+      "color/secondary/blue",
+      "color/secondary/red",
+      "color/secondary/yellow",
+      "color/secondary/green",
+      "color/secondary/orange",
+      "color/secondary/purple",
+      "color/shade/blue",
+      "color/shade/red",
+      "color/shade/yellow",
+      "color/shade/green",
+      "color/shade/orange",
+      "color/shade/purple",
+      "color/neutral/stone",
+      "color/neutral/sand",
+      "color/neutral/sage",
+      "motion/duration/step",
+      "motion/duration/boil",
+      "motion/duration/hold",
+      "motion/easing/flip",
+      "motion/easing/cut",
+      "motion/rotation/boil"
+    ]
+  },
+  "Semantic": {
+    "lightFile": "tokens/modes/light.json",
+    "darkFile": "tokens/modes/dark.json",
+    "semanticFile": "tokens/semantic.json",
+    "webSyntaxToRole": {
+      "var(--color-bg-canvas)": "color.bg.canvas",
+      "var(--color-bg-surface)": "color.bg.surface",
+      "var(--color-bg-subtle)": "color.bg.subtle",
+      "var(--color-fg-default)": "color.fg.default",
+      "var(--color-fg-muted)": "color.fg.muted",
+      "var(--color-fg-on-primary)": "color.fg.onPrimary",
+      "var(--color-border-default)": "color.border.default",
+      "var(--color-border-focus)": "color.border.focus",
+      "var(--color-action-primary)": "color.action.primary",
+      "var(--color-action-secondary)": "color.action.secondary",
+      "var(--color-status-success)": "color.status.success",
+      "var(--color-status-warning)": "color.status.warning",
+      "var(--color-status-error)": "color.status.error",
+      "var(--color-status-info)": "color.status.info",
+      "var(--font-family-body)": "font.family.body",
+      "var(--font-size-display)": "font.size.display",
+      "var(--font-size-title)": "font.size.title",
+      "var(--font-size-body)": "font.size.body",
+      "var(--font-size-label)": "font.size.label",
+      "var(--font-weight-body)": "font.weight.body",
+      "var(--font-weight-label)": "font.weight.label",
+      "var(--font-line-height-body)": "font.lineHeight.body",
+      "var(--font-line-height-title)": "font.lineHeight.title",
+      "var(--space-gap)": "space.gap",
+      "var(--space-inset)": "space.inset",
+      "var(--space-stack)": "space.stack",
+      "var(--space-section)": "space.section",
+      "var(--radius-control)": "radius.control",
+      "var(--radius-badge)": "radius.badge",
+      "var(--motion-duration-control)": "motion.duration.control",
+      "var(--motion-easing-standard)": "motion.easing.standard",
+      "var(--size-tap)": "size.tap",
+      "var(--size-border)": "size.border",
+      "var(--size-outline)": "size.outline",
+      "var(--size-icon)": "size.icon"
+    }
+  },
+  "Type": {
+    "textStyles": {
+      "Type/Display": "display",
+      "Type/Title": "title",
+      "Type/Body": "body",
+      "Type/Label": "label"
+    }
+  },
+  "components": {
+    "Button": { "catalog": "Button", "variantMap": { "Primary": "primary", "Secondary": "secondary" }, "unmappedVariants": ["Ghost", "Amber", "Forest"] },
+    "Input": { "catalog": "TextInput" },
+    "Status": { "catalog": "Badge", "style": "Tag", "toneMap": { "Success": "success", "Warning": "warning", "Error": "error", "Info": "info" }, "unmappedTones": ["Neutral"] },
+    "IconSwap": { "catalog": "Icon" },
+    "Field": { "catalog": "FieldGroup", "parked": true }
+  }
+}

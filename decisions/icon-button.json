@@ -1,0 +1,15 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "IconButton",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "Starts an action with an icon only.",
+  "source": "figma",
+  "purpose": "Starts an action with an icon only.",
+  "useWhen": "Toolbars and navigation where the icon is well known. Ghost on a bar, Secondary when it needs a surface.",
+  "dontUseWhen": "The action needs words to be understood, or it is the main action of the screen.",
+  "props": "Icon, Variant, State",
+  "catalog": "candidate (no catalog entry yet)",
+  "figmaKey": "dc0fee7cfb26c38b2603cd431110ff40e937b4c5",
+  "figmaId": "58:247"
+}

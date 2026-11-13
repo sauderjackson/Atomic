@@ -14,6 +14,9 @@ A change does not merge unless every check below passes. GitHub runs them on eve
 | Product build | `npm run build --prefix examples/product` | The practice app still builds from the kit. |
 | Decisions | `npx atomic decisions` | Every practice-app piece is adopt, candidate, or leave out, and a candidate is adopted on its second use. |
 | Engineer | `npx atomic engineer` | An adopted piece scores 10 out of 10, or it is parked for a person. |
-| Tests | `npm test` | The audit suggestion, the layer sync, and the decision rule stay true on this repo. |
+| Tests | `npm test` | The audit suggestion, the layer sync, the Figma pull rules, and the decision rule stay true on this repo. |
+| Figma drift | part of `npm run check` | Token files and Code Connect templates match the committed Figma export (or the live API when `FIGMA_TOKEN` is set). |
 
 The audit prints a findings count and how long it took. A clean run says `0 findings`. The layer sync prints `layer-sync ok` when the four readers still match.
+
+Protect `main` so Gate is required before merge. Do not allow direct pushes to `main`.

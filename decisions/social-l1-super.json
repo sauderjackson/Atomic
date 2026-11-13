@@ -1,0 +1,16 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "Social/L1 Super",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "Cover or opener: a super headline over a photo.",
+  "source": "figma",
+  "purpose": "Cover or opener: a super headline over a photo.",
+  "useWhen": "The first slide of a post. Headline under 70 characters.",
+  "dontUseWhen": "Any slide after the first (use L2 Hero or L10 Headline), or a headline that needs more than five lines.",
+  "props": "Eyebrow, Headline, Byline",
+  "catalog": "candidate (from the OS Social Kit; no catalog entry yet)",
+  "figmaKey": "af2189f9c16a1278fa90164e5086e0f6abd1f2ba",
+  "figmaId": "94:15",
+  "surface": "social"
+}

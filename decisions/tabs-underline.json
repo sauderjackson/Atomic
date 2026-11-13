@@ -1,0 +1,15 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "Tabs/Underline",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "Switches between sections of one page.",
+  "source": "figma",
+  "purpose": "Switches between sections of one page.",
+  "useWhen": "Peer sections of the same object.",
+  "dontUseWhen": "Moving between different pages (use navigation).",
+  "props": "none (compose from Tab; exactly one Active)",
+  "catalog": "candidate (no catalog entry yet)",
+  "figmaKey": "310f0f3077d4e6554b3d9cc86a8425543795a84f",
+  "figmaId": "78:40"
+}

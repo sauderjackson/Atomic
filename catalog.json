@@ -12,7 +12,7 @@
           "dark": "#141412"
         },
         "okvy": {
-          "light": "#FFFFFF",
+          "light": "#ffffff",
           "dark": "#000000"
         }
       }
@@ -28,7 +28,7 @@
           "dark": "#232320"
         },
         "okvy": {
-          "light": "#F2F2F2",
+          "light": "#f2f2f2",
           "dark": "#141414"
         }
       }
@@ -44,7 +44,7 @@
           "dark": "#32322e"
         },
         "okvy": {
-          "light": "#E6E6E6",
+          "light": "#e6e6e6",
           "dark": "#262626"
         }
       }
@@ -61,7 +61,7 @@
         },
         "okvy": {
           "light": "#000000",
-          "dark": "#FFFFFF"
+          "dark": "#ffffff"
         }
       }
     },
@@ -77,7 +77,7 @@
         },
         "okvy": {
           "light": "#595959",
-          "dark": "#B8B8B8"
+          "dark": "#b8b8b8"
         }
       }
     },
@@ -89,11 +89,11 @@
       "values": {
         "neutral": {
           "light": "#f6f6f5",
-          "dark": "#f6f6f5"
+          "dark": "#141412"
         },
         "okvy": {
-          "light": "#FFFFFF",
-          "dark": "#FFFFFF"
+          "light": "#ffffff",
+          "dark": "#000000"
         }
       }
     },
@@ -108,7 +108,7 @@
           "dark": "#474742"
         },
         "okvy": {
-          "light": "#D9D9D9",
+          "light": "#d9d9d9",
           "dark": "#404040"
         }
       }
@@ -136,12 +136,12 @@
       "type": "color",
       "values": {
         "neutral": {
-          "light": "#5e6a71",
-          "dark": "#5e6a71"
+          "light": "#141412",
+          "dark": "#f6f6f5"
         },
         "okvy": {
           "light": "#000000",
-          "dark": "#000000"
+          "dark": "#ffffff"
         }
       }
     },
@@ -156,7 +156,7 @@
           "dark": "#32322e"
         },
         "okvy": {
-          "light": "#E6E6E6",
+          "light": "#e6e6e6",
           "dark": "#262626"
         }
       }
@@ -172,8 +172,8 @@
           "dark": "#2f6f4e"
         },
         "okvy": {
-          "light": "#00A182",
-          "dark": "#00A182"
+          "light": "#00a182",
+          "dark": "#00a182"
         }
       }
     },
@@ -188,8 +188,8 @@
           "dark": "#8a5a12"
         },
         "okvy": {
-          "light": "#E57A00",
-          "dark": "#E57A00"
+          "light": "#e57a00",
+          "dark": "#e57a00"
         }
       }
     },
@@ -204,8 +204,8 @@
           "dark": "#8f2d2d"
         },
         "okvy": {
-          "light": "#FF5A4E",
-          "dark": "#FF5A4E"
+          "light": "#ff5a4e",
+          "dark": "#ff5a4e"
         }
       }
     },
@@ -220,8 +220,8 @@
           "dark": "#2c5f8a"
         },
         "okvy": {
-          "light": "#3A9AD9",
-          "dark": "#3A9AD9"
+          "light": "#3a9ad9",
+          "dark": "#3a9ad9"
         }
       }
     },
@@ -232,8 +232,8 @@
       "type": "fontFamily",
       "values": {
         "neutral": {
-          "light": "ui-sans-serif, system-ui, sans-serif",
-          "dark": "ui-sans-serif, system-ui, sans-serif"
+          "light": "\"Inter\", ui-sans-serif, system-ui, sans-serif",
+          "dark": "\"Inter\", ui-sans-serif, system-ui, sans-serif"
         },
         "okvy": {
           "light": "\"Inter\", ui-sans-serif, system-ui, sans-serif",
@@ -697,8 +697,8 @@
     },
     {
       "id": 2,
-      "rule": "The repo is the source of truth. Figma mirrors it.",
-      "why": "Two sources that both lead will drift.",
+      "rule": "Figma owns token values and visual specs. The repo owns the token contract, the rules, and component behavior. Agents may regenerate token files and catalog entries but must not overwrite component source. All changes land through a pull request that passes Gate.",
+      "why": "Two sources that both lead will drift. Values move one way: Figma to the repo.",
       "doc": "RULES.md"
     },
     {
@@ -793,8 +793,8 @@
     },
     {
       "id": 18,
-      "rule": "The first live surface is web, and the first export is CSS variables.",
-      "why": "Social, thumbnail, video, and Tailwind wait until this base is the source.",
+      "rule": "The first live surface is web, and the first export is CSS variables. Social, thumbnail, and video follow as short specs in specs/.",
+      "why": "One export keeps the kit readable. Specs extend it without forking the base.",
       "doc": "BRIEF.md"
     },
     {

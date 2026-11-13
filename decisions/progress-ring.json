@@ -1,0 +1,15 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "ProgressRing",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "Shows how much of a task is done.",
+  "source": "figma",
+  "purpose": "Shows how much of a task is done.",
+  "useWhen": "Work with a known percent.",
+  "dontUseWhen": "Unknown duration (use ShimmerText).",
+  "props": "Show value, Size (20/40), Progress",
+  "catalog": "candidate (no catalog entry yet)",
+  "figmaKey": "4106d561c54d2abdd4863406b9ea04ff4ac4c5cb",
+  "figmaId": "72:68"
+}

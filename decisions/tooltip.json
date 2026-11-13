@@ -1,0 +1,15 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "Tooltip",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "Names a control on hover or focus.",
+  "source": "figma",
+  "purpose": "Names a control on hover or focus.",
+  "useWhen": "An icon-only control, or to show a keyboard shortcut.",
+  "dontUseWhen": "Information a person must read to finish a task.",
+  "props": "Label, Shortcut, Show shortcut, Position",
+  "catalog": "candidate (no catalog entry yet)",
+  "figmaKey": "32caeba3f50b06cb3412b919abf6f8aca67d2a6d",
+  "figmaId": "64:26"
+}

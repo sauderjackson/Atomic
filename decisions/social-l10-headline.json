@@ -1,0 +1,17 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "Social/L10 Headline",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "A headline alone over one photo.",
+  "source": "figma",
+  "purpose": "A headline alone over one photo.",
+  "useWhen": "News or a statement that needs no eyebrow or byline. Serif for an editorial tone, Sans for a punchy one.",
+  "dontUseWhen": "Agents: do not use until approved. A headline over 70 characters.",
+  "props": "Font (Serif/Sans), Support (None/Dek), Headline, Dek",
+  "catalog": "candidate (DRAFT in the OS Social Kit; not approved; agents do not use)",
+  "figmaKey": "b4f754710bd95c8a3e521024c80e9ce31ad83739",
+  "figmaId": "97:92",
+  "surface": "social",
+  "needsHuman": true
+}

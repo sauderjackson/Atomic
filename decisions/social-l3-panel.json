@@ -1,0 +1,16 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "Social/L3 Panel",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "A context beat over a photo, such as \"Who is X\" or \"Why it matters\".",
+  "source": "figma",
+  "purpose": "A context beat over a photo, such as \"Who is X\" or \"Why it matters\".",
+  "useWhen": "Introducing a person, place, or reason partway through a carousel.",
+  "dontUseWhen": "The opening slide (use L1 Super) or a long passage (use L5 Paragraph).",
+  "props": "Eyebrow, Headline, Byline",
+  "catalog": "candidate (from the OS Social Kit; no catalog entry yet)",
+  "figmaKey": "70a3ddfc710e10fc70a3f5f3040c473dee2c9b63",
+  "figmaId": "94:68",
+  "surface": "social"
+}

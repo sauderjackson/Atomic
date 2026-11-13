@@ -1,0 +1,16 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "Social/L5 Paragraph",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "Long-form story text.",
+  "source": "figma",
+  "purpose": "Long-form story text.",
+  "useWhen": "The story needs a full passage. Body 300 to 450 characters.",
+  "dontUseWhen": "Over 600 characters (split into two slides), or a third paragraph slide in a row.",
+  "props": "Position (Top/Bottom), Body, Footer",
+  "catalog": "candidate (from the OS Social Kit; no catalog entry yet)",
+  "figmaKey": "97c9a28050ed720cf80bdfdf5b291b93332c0857",
+  "figmaId": "96:25",
+  "surface": "social"
+}

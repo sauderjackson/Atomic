@@ -1,0 +1,15 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "Tab",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "One option in a Tabs bar.",
+  "source": "figma",
+  "purpose": "One option in a Tabs bar.",
+  "useWhen": "Inside Tabs only.",
+  "dontUseWhen": "On its own.",
+  "props": "Label, Count, Show count, Style (Underline/Segmented), State",
+  "catalog": "candidate (no catalog entry yet)",
+  "figmaKey": "fc8d2c954437877f15653c2ed7ac4e77200d5b93",
+  "figmaId": "78:26"
+}

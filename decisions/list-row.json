@@ -1,0 +1,15 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "ListRow",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "One item in a List.",
+  "source": "figma",
+  "purpose": "One item in a List.",
+  "useWhen": "Rows of similar items a person scans or opens.",
+  "dontUseWhen": "A single item on its own (use a card).",
+  "props": "Title, Meta, Show status, Show chevron, Icon, State",
+  "catalog": "candidate (no catalog entry yet)",
+  "figmaKey": "3111895a52f61e30433a232a1cbfbda24204b216",
+  "figmaId": "77:41"
+}

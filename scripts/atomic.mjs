@@ -1,9 +1,12 @@
 #!/usr/bin/env node
+import { readdirSync, readFileSync } from "node:fs";
+import { join } from "node:path";
 import { performance } from "node:perf_hooks";
 import { collectFindings } from "./audit.mjs";
 import { engineerIssues, planEngineer } from "./engineer.mjs";
 import { decisionIssues, planDecisions } from "./sync-product.mjs";
 import { layerSyncIssues } from "./sync.mjs";
+import { root } from "./tokens.mjs";
 
 const command = process.argv[2];
 
@@ -41,10 +44,17 @@ if (command === "decisions") {
   for (const decision of planned) {
     console.log(`${decision.status}  ${decision.name}  used ${decision.uses}  ${decision.reason}`);
   }
+  const decisionsDir = join(root, "decisions");
+  for (const entry of readdirSync(decisionsDir)) {
+    if (!entry.endsWith(".json")) continue;
+    const data = JSON.parse(readFileSync(join(decisionsDir, entry), "utf8"));
+    if (data.source !== "figma") continue;
+    console.log(`${data.status}  ${data.name}  figma  ${data.reason}`);
+  }
   const issues = planError ? [planError] : decisionIssues();
   const elapsed = Math.round(performance.now() - started);
   for (const issue of issues) console.error(issue);
-  if (issues.length === 0) console.log(`${planned.length} decisions in ${elapsed}ms`);
+  if (issues.length === 0) console.log(`decisions ok in ${elapsed}ms`);
   else console.error(`${issues.length} disagreements in ${elapsed}ms`);
   process.exit(issues.length > 0 ? 1 : 0);
 }

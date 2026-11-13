@@ -1,0 +1,15 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "Tabs/Segmented",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "Switches between views of the same content.",
+  "source": "figma",
+  "purpose": "Switches between views of the same content.",
+  "useWhen": "Two to four view options.",
+  "dontUseWhen": "Five or more options (use Select).",
+  "props": "none (compose from Tab; exactly one Active)",
+  "catalog": "candidate (no catalog entry yet)",
+  "figmaKey": "182e18313302463b4d8e3ce7d14080f56598441e",
+  "figmaId": "78:51"
+}

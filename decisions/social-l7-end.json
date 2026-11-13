@@ -1,0 +1,17 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "Social/L7 End",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "The last slide of a post.",
+  "source": "figma",
+  "purpose": "The last slide of a post.",
+  "useWhen": "Closing a carousel. Takeaway for shares (text top), Question for comments (one real question, never bait; text bottom), Series for saves (text middle).",
+  "dontUseWhen": "Agents: do not use until approved. Never mid-carousel.",
+  "props": "Type (Takeaway/Question/Series), Eyebrow, Main, Support, Handle",
+  "catalog": "candidate (DRAFT in the OS Social Kit; not approved; agents do not use)",
+  "figmaKey": "b518a29c71a7a88b530baa223b589434d82dd492",
+  "figmaId": "96:56",
+  "surface": "social",
+  "needsHuman": true
+}

@@ -1,0 +1,15 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "Select Options",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "The open list of a Select.",
+  "source": "figma",
+  "purpose": "The open list of a Select.",
+  "useWhen": "Below a Select trigger only.",
+  "dontUseWhen": "As a standalone menu (use Menu).",
+  "props": "none",
+  "catalog": "candidate (no catalog entry yet)",
+  "figmaKey": "d8483d15a2807bc8cc07e4e80adc183b8d59998c",
+  "figmaId": "66:56"
+}

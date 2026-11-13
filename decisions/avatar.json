@@ -1,0 +1,15 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "Avatar",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "Shows who a person is.",
+  "source": "figma",
+  "purpose": "Shows who a person is.",
+  "useWhen": "Next to a name, in a list row, or in a FacePile.",
+  "dontUseWhen": "Decorations, or a logo.",
+  "props": "Initials, Size (24/32/40), Type (Initials/Icon/Photo)",
+  "catalog": "candidate (no catalog entry yet)",
+  "figmaKey": "4709571edce69daeacf99e7569e80b828a949f78",
+  "figmaId": "63:26"
+}

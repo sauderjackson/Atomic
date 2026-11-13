@@ -1,0 +1,16 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "Social/L6 Image",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "Lets the photo or artwork carry the slide.",
+  "source": "figma",
+  "purpose": "Lets the photo or artwork carry the slide.",
+  "useWhen": "The image says more than words would.",
+  "dontUseWhen": "Text over the image (use L2 Hero or L10 Headline), or an image with no credit that is not ours.",
+  "props": "Credit",
+  "catalog": "candidate (from the OS Social Kit; no catalog entry yet)",
+  "figmaKey": "39701a3fda9ec69b78bb15cbdc5adc7571a07301",
+  "figmaId": "96:26",
+  "surface": "social"
+}

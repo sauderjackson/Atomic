@@ -17,8 +17,8 @@ For any UI, social, thumbnail, or motion task, follow [SKILL.md](SKILL.md).
    Why: An agent that skips this order invents a piece that is not in the system.
    Doc: [SKILL.md](SKILL.md)
 
-2. The repo is the source of truth. Figma mirrors it.
-   Why: Two sources that both lead will drift.
+2. Figma owns token values and visual specs. The repo owns the token contract, the rules, and component behavior. Agents may regenerate token files and catalog entries but must not overwrite component source. All changes land through a pull request that passes Gate.
+   Why: Two sources that both lead will drift. Values move one way: Figma to the repo.
    Doc: [RULES.md](RULES.md)
 
 3. Components use semantic tokens such as color.action.primary.
@@ -81,8 +81,8 @@ For any UI, social, thumbnail, or motion task, follow [SKILL.md](SKILL.md).
    Why: A broken theme, a raw color, or a stale catalog should not merge.
    Doc: [docs/gate.md](docs/gate.md)
 
-18. The first live surface is web, and the first export is CSS variables.
-   Why: Social, thumbnail, video, and Tailwind wait until this base is the source.
+18. The first live surface is web, and the first export is CSS variables. Social, thumbnail, and video follow as short specs in specs/.
+   Why: One export keeps the kit readable. Specs extend it without forking the base.
    Doc: [BRIEF.md](BRIEF.md)
 
 19. A new product piece needs an adopt, candidate, or leave-out decision.

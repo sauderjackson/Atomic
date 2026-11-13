@@ -8,8 +8,8 @@
     },
     {
       "id": 2,
-      "rule": "The repo is the source of truth. Figma mirrors it.",
-      "why": "Two sources that both lead will drift.",
+      "rule": "Figma owns token values and visual specs. The repo owns the token contract, the rules, and component behavior. Agents may regenerate token files and catalog entries but must not overwrite component source. All changes land through a pull request that passes Gate.",
+      "why": "Two sources that both lead will drift. Values move one way: Figma to the repo.",
       "doc": "RULES.md"
     },
     {
@@ -104,8 +104,8 @@
     },
     {
       "id": 18,
-      "rule": "The first live surface is web, and the first export is CSS variables.",
-      "why": "Social, thumbnail, video, and Tailwind wait until this base is the source.",
+      "rule": "The first live surface is web, and the first export is CSS variables. Social, thumbnail, and video follow as short specs in specs/.",
+      "why": "One export keeps the kit readable. Specs extend it without forking the base.",
       "doc": "BRIEF.md"
     },
     {

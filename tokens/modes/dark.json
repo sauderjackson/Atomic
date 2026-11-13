@@ -1,16 +1,18 @@
 {
+  "generatedBy": "scripts/figma-pull.mjs",
   "color.bg.canvas": "{color.gray.900}",
   "color.bg.surface": "{color.gray.800}",
   "color.bg.subtle": "{color.gray.700}",
   "color.fg.default": "{color.gray.0}",
   "color.fg.muted": "{color.gray.300}",
-  "color.fg.onPrimary": "{color.gray.0}",
+  "color.fg.onPrimary": "{color.gray.900}",
   "color.border.default": "{color.gray.600}",
   "color.border.focus": "{color.accent}",
-  "color.action.primary": "{color.accent}",
+  "color.action.primary": "{color.gray.0}",
   "color.action.secondary": "{color.gray.700}",
   "color.status.success": "{color.success}",
   "color.status.warning": "{color.warning}",
   "color.status.error": "{color.error}",
-  "color.status.info": "{color.info}"
+  "color.status.info": "{color.info}",
+  "hash": "86d9a94d3391add3"
 }

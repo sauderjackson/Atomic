@@ -1,0 +1,6 @@
+# Human review required for contract, rules, and component behavior.
+components/ @sauderjackson
+RULES.md @sauderjackson
+rules/ @sauderjackson
+tokens/schema.json @sauderjackson
+specs/ @sauderjackson

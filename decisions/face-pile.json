@@ -1,0 +1,15 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "FacePile",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "Shows a small group of people.",
+  "source": "figma",
+  "purpose": "Shows a small group of people.",
+  "useWhen": "Up to three people plus an overflow count.",
+  "dontUseWhen": "A full member list (use List).",
+  "props": "Show overflow, Overflow",
+  "catalog": "candidate (no catalog entry yet)",
+  "figmaKey": "e0b7d1625c1de62610a3bba5d0d5b41dd26c556b",
+  "figmaId": "63:36"
+}

@@ -1,0 +1,16 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "Social/L4 Quote",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "A short pull quote.",
+  "source": "figma",
+  "purpose": "A short pull quote.",
+  "useWhen": "Opening a carousel or standing alone. Quote ≤60 characters, 4 lines at most.",
+  "dontUseWhen": "A long or sourced artist quote (use L8 Artist Quote).",
+  "props": "Label, Quote, Attribution",
+  "catalog": "candidate (from the OS Social Kit; no catalog entry yet)",
+  "figmaKey": "909de75d27c6b2b38905c814789f5e44a04b0393",
+  "figmaId": "94:77",
+  "surface": "social"
+}

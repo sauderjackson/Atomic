@@ -7,7 +7,7 @@ The type roles a screen may use. Write the "What to write" column in a component
 
 | Token | Job | What to write | Neutral light | Neutral dark | Okvy light | Okvy dark |
 | --- | --- | --- | --- | --- | --- | --- |
-| `font.family.body` | Body and UI font stack. | `var(--font-family-body)` | `ui-sans-serif, system-ui, sans-serif` | `ui-sans-serif, system-ui, sans-serif` | `"Inter", ui-sans-serif, system-ui, sans-serif` | `"Inter", ui-sans-serif, system-ui, sans-serif` |
+| `font.family.body` | Body and UI font stack. | `var(--font-family-body)` | `"Inter", ui-sans-serif, system-ui, sans-serif` | `"Inter", ui-sans-serif, system-ui, sans-serif` | `"Inter", ui-sans-serif, system-ui, sans-serif` | `"Inter", ui-sans-serif, system-ui, sans-serif` |
 | `font.size.display` | Largest type size. | `var(--font-size-display)` | `40px` | `40px` | `40px` | `40px` |
 | `font.size.title` | Section title size. | `var(--font-size-title)` | `28px` | `28px` | `28px` | `28px` |
 | `font.size.body` | Body size. | `var(--font-size-body)` | `16px` | `16px` | `16px` | `16px` |

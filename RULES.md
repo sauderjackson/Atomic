@@ -1,6 +1,6 @@
 # Atomic rules
 
-Read this file before adding a token, a component, or a theme. The repo is the source of truth. Figma mirrors it.
+Read this file before adding a token, a component, or a theme. Figma owns token values and visual specs. The repo owns the token contract, the rules, and component behavior. Agents may regenerate token files and catalog entries but must not overwrite component source. All changes land through a pull request that passes Gate.
 
 ## Tokens
 
