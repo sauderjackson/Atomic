@@ -24,4 +24,5 @@ jobs:
       - run: npx atomic audit
       - run: npx atomic sync
       - run: npx atomic decisions
+      - run: npx atomic engineer
       - run: npm test

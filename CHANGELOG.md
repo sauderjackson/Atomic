@@ -1,5 +1,11 @@
 # atomic
 
+## 0.4.0
+
+### Minor Changes
+
+- Add the engineer score and the release bump. An adopted piece ships at 10 out of 10, with a minor bump for a new piece and a patch bump for an original piece. Anything less is parked for a person. Read docs/release.md.
+
 ## 0.3.0
 
 ### Minor Changes

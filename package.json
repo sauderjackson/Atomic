@@ -1,6 +1,6 @@
 {
   "name": "atomic",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "private": true,
   "type": "module",
   "bin": {
@@ -12,6 +12,7 @@
     "build:docs": "node scripts/build-docs.mjs",
     "check": "node checks/check.mjs",
     "sync:product": "node scripts/sync-product.mjs --write",
+    "sync:engineer": "node scripts/engineer.mjs --write",
     "product": "npm run dev --prefix examples/product",
     "test": "node --test",
     "catalog": "npm run dev --prefix catalog",

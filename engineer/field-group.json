@@ -1,0 +1,14 @@
+{
+  "generatedBy": "scripts/engineer.mjs",
+  "name": "FieldGroup",
+  "score": 7,
+  "passed": false,
+  "bump": null,
+  "failed": [
+    "kit file",
+    "kit doc",
+    "in the catalog"
+  ],
+  "reason": "Scored 7 out of 10. A person needs to build it into the kit or drop it.",
+  "source": "examples/product/src/pieces/FieldGroup.tsx"
+}

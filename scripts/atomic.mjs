@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import { performance } from "node:perf_hooks";
 import { collectFindings } from "./audit.mjs";
+import { engineerIssues, planEngineer } from "./engineer.mjs";
 import { decisionIssues, planDecisions } from "./sync-product.mjs";
 import { layerSyncIssues } from "./sync.mjs";
 
@@ -48,5 +49,26 @@ if (command === "decisions") {
   process.exit(issues.length > 0 ? 1 : 0);
 }
 
-console.error("Use: atomic audit    or    atomic sync    or    atomic decisions");
+if (command === "engineer") {
+  const started = performance.now();
+  let planned = [];
+  let planError = "";
+  try {
+    planned = planEngineer();
+  } catch (error) {
+    planError = error instanceof Error ? error.message : String(error);
+  }
+  for (const record of planned) {
+    const bump = record.bump ? `  ${record.bump}` : "";
+    console.log(`${record.passed ? "release" : "parked"}  ${record.name}  ${record.score} out of 10${bump}  ${record.reason}`);
+  }
+  const issues = planError ? [planError] : engineerIssues();
+  const elapsed = Math.round(performance.now() - started);
+  for (const issue of issues) console.error(issue);
+  if (issues.length === 0) console.log(`${planned.length} scores in ${elapsed}ms`);
+  else console.error(`${issues.length} disagreements in ${elapsed}ms`);
+  process.exit(issues.length > 0 ? 1 : 0);
+}
+
+console.error("Use: atomic audit, atomic sync, atomic decisions, or atomic engineer");
 process.exit(1);
