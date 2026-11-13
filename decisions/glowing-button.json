@@ -1,0 +1,16 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "GlowingButton",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "The one agent call-to-action on a screen.",
+  "source": "figma",
+  "purpose": "The one agent call-to-action on a screen.",
+  "useWhen": "A single agent action that must stand out.",
+  "dontUseWhen": "More than one per view, any marketing surface, or a normal primary action (use Button).",
+  "props": "Label, Show icon, Icon, State",
+  "catalog": "candidate (no catalog entry yet; review as possibly brand-only)",
+  "figmaKey": "2e89aba23ff900337d62e3c407d28877bb61bbfc",
+  "figmaId": "73:41",
+  "needsHuman": true
+}

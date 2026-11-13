@@ -1,33 +1,31 @@
 {
-  "name": "harbor",
+  "generatedBy": "scripts/figma-pull.mjs",
+  "name": "okvy",
   "icon": "lucide",
   "logo": {
-    "wordmark": "Harbor"
+    "wordmark": "Okvy"
   },
   "color": {
     "gray": {
-      "0": "#f4f7f8",
-      "50": "#e7eef1",
-      "100": "#d5e0e6",
-      "200": "#b7c7d1",
-      "300": "#8ea3b0",
-      "400": "#6a8494",
-      "500": "#4e6878",
-      "600": "#3b5160",
-      "700": "#2a3c48",
-      "800": "#1c2a33",
-      "900": "#10181e"
+      "0": "#ffffff",
+      "50": "#f2f2f2",
+      "100": "#e6e6e6",
+      "200": "#d9d9d9",
+      "300": "#b8b8b8",
+      "400": "#8c8c8c",
+      "500": "#595959",
+      "600": "#404040",
+      "700": "#262626",
+      "800": "#141414",
+      "900": "#000000"
     },
-    "accent": "#2f6fed",
-    "success": "#2f6f4e",
-    "warning": "#8a5a12",
-    "error": "#8f2d2d",
-    "info": "#2c5f8a"
+    "accent": "#000000",
+    "success": "#00a182",
+    "warning": "#e57a00",
+    "error": "#ff5a4e",
+    "info": "#3a9ad9"
   },
   "font": {
-    "family": {
-      "sans": "\"Trebuchet MS\", \"Segoe UI\", sans-serif"
-    },
     "size": {
       "sm": "14px",
       "md": "16px",
@@ -36,11 +34,14 @@
     },
     "weight": {
       "regular": 400,
-      "medium": 600
+      "medium": 500
     },
     "lineHeight": {
       "body": 1.5,
       "title": 1.25
+    },
+    "family": {
+      "sans": "\"Inter\", ui-sans-serif, system-ui, sans-serif"
     }
   },
   "space": {
@@ -56,8 +57,8 @@
   "radius": {
     "none": "0px",
     "sm": "4px",
-    "md": "16px",
-    "full": "999px"
+    "md": "4px",
+    "full": "4px"
   },
   "motion": {
     "duration": {
@@ -73,5 +74,6 @@
     "border": "1px",
     "outline": "2px",
     "icon": "20px"
-  }
+  },
+  "hash": "d3919ede623b5df6"
 }

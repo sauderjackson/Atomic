@@ -1,0 +1,17 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "Social/L9 Split",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "Half color panel, half photo.",
+  "source": "figma",
+  "purpose": "Half color panel, half photo.",
+  "useWhen": "Bridging two photos in a carousel. The panel takes its color from the previous slide’s photo so the color carries across the swipe.",
+  "dontUseWhen": "Agents: do not use until approved. A headline over 50 characters.",
+  "props": "Image (Right/Left), Font (Serif/Sans), Headline",
+  "catalog": "candidate (DRAFT in the OS Social Kit; not approved; agents do not use)",
+  "figmaKey": "41bb2227cb1361a9d2da533bb955834c8b64f5e0",
+  "figmaId": "97:65",
+  "surface": "social",
+  "needsHuman": true
+}

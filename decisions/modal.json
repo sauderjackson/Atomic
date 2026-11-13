@@ -1,0 +1,15 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "Modal",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "Interrupts to ask for one decision.",
+  "source": "figma",
+  "purpose": "Interrupts to ask for one decision.",
+  "useWhen": "A blocking decision or a short focused task.",
+  "dontUseWhen": "Information that can wait (use Popover or a page).",
+  "props": "Title, Body, Show footer, Size (400/560)",
+  "catalog": "candidate (no catalog entry yet)",
+  "figmaKey": "c9912826ac29aeb6febec6ce0dd0b2d419798a06",
+  "figmaId": "70:54"
+}

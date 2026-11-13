@@ -1,0 +1,16 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "Social/Logo",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "Holds the brand mark on a social slide.",
+  "source": "figma",
+  "purpose": "Holds the brand mark on a social slide.",
+  "useWhen": "Bottom right of every slide, at 40% over a photo and 100% over a solid panel.",
+  "dontUseWhen": "Drawing a brand logo into a layout; swap this instance for the mark from the theme instead.",
+  "props": "none",
+  "catalog": "candidate (no catalog entry yet)",
+  "figmaKey": "f197b3430dc734e2d028ba617a2ea3ca7c7b77a9",
+  "figmaId": "93:25",
+  "surface": "social"
+}

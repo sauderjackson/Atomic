@@ -42,7 +42,7 @@ Atomic is a shared kit of colors, type, and pieces. A brand adds values. It does
 
 ## Read this first
 
-- Foundations lists every token, what it is for, and its value in Neutral and Harbor.
+- Foundations lists every token, what it is for, and its value in Neutral and Okvy.
 - Components lists the five pieces and when to use them.
 - The gallery shows those pieces in light and dark, for both themes.
 
@@ -65,8 +65,8 @@ function renderTokenPage(title, description, tokens) {
       code(token.use),
       code(String(token.values.neutral.light)),
       code(String(token.values.neutral.dark)),
-      code(String(token.values.harbor.light)),
-      code(String(token.values.harbor.dark)),
+      code(String(token.values.okvy.light)),
+      code(String(token.values.okvy.dark)),
     ];
     return `| ${cells.join(" | ")} |`;
   });
@@ -77,7 +77,7 @@ description: ${description}
 
 ${description} Write the "What to write" column in a component. The numbers are the values for the two test themes.
 
-| Token | Job | What to write | Neutral light | Neutral dark | Harbor light | Harbor dark |
+| Token | Job | What to write | Neutral light | Neutral dark | Okvy light | Okvy dark |
 | --- | --- | --- | --- | --- | --- | --- |
 ${rows.join("\n")}
 `;
@@ -129,7 +129,7 @@ See this piece in every theme and mode on the [gallery](/gallery/).
 function renderGallery() {
   return `---
 title: Gallery
-description: The five pieces in Neutral and Harbor, light and dark.
+description: The five pieces in Neutral and Okvy, light and dark.
 tableOfContents: false
 ---
 

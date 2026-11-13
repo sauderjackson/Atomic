@@ -2,7 +2,7 @@ import { readdirSync, readFileSync, statSync } from "node:fs";
 import { join, relative } from "node:path";
 import { readJson, root } from "./tokens.mjs";
 
-const skipDirs = new Set(["node_modules", "dist", ".git", "tokens", "themes", "agents"]);
+const skipDirs = new Set(["node_modules", "dist", ".git", "tokens", "themes", "agents", "figma"]);
 const extensions = new Set([".css", ".ts", ".tsx", ".js", ".jsx", ".mjs", ".md", ".json"]);
 const hexPattern = new RegExp("#(?:" + "[0-9a-fA-F]{8}|[0-9a-fA-F]{6}|[0-9a-fA-F]{3})\\b", "g");
 const rgbPattern = new RegExp("rgba?\\([^)]*\\)", "g");

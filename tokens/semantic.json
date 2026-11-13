@@ -1,4 +1,5 @@
 {
+  "generatedBy": "scripts/figma-pull.mjs",
   "color.bg.canvas": {
     "value": "{color.gray.0}",
     "type": "color",
@@ -40,7 +41,7 @@
     "description": "Focus ring."
   },
   "color.action.primary": {
-    "value": "{color.accent}",
+    "value": "{color.gray.900}",
     "type": "color",
     "description": "Fill of the one primary action."
   },
@@ -173,5 +174,6 @@
     "value": "{size.icon}",
     "type": "dimension",
     "description": "Icon box size."
-  }
+  },
+  "hash": "eb084f633aaf69c3"
 }

@@ -1,0 +1,15 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "MenuItem",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "One action in a Menu or ContextMenu.",
+  "source": "figma",
+  "purpose": "One action in a Menu or ContextMenu.",
+  "useWhen": "Inside Menu or Select Options only.",
+  "dontUseWhen": "On its own on a screen (use Button or ListRow).",
+  "props": "Label, Shortcut, Show shortcut, Show icon, Icon, State (incl. Destructive)",
+  "catalog": "candidate (no catalog entry yet)",
+  "figmaKey": "c8edd077c081924d8ac240169bd7772a4ff8d954",
+  "figmaId": "65:30"
+}

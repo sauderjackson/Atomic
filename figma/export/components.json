@@ -1,0 +1,737 @@
+{
+  "generatedBy": "scripts/figma-export-from-mcp.mjs",
+  "fileKey": "N2DLpNwbJwzoNqFWgQdVwl",
+  "components": [
+    {
+      "id": "58:93",
+      "name": "Button",
+      "type": "COMPONENT_SET",
+      "page": "Button",
+      "key": "bb66e9936149cb33049f9e45cd98c70fc0e21a04",
+      "description": "Purpose: Starts an action.\nUse when: A person needs to do one thing now. Use Primary once per group; every other action is Secondary or Ghost.\nDon't use when: Navigation between pages (use a link or Tabs), an icon-only control (use IconButton), or a second Primary on the same screen.\nProps: Label, Icon, Trailing icon, Variant (Primary/Secondary/Ghost/Amber/Forest), State\nCatalog: Button\nSpec: Primary fills color/action/primary, Secondary fills color/action/secondary. Amber and Forest are proposed in-product variants (color/action/warm, color/action/success). color/status/info is never a button fill.",
+      "pageRole": "library",
+      "parsed": {
+        "purpose": "Starts an action.",
+        "useWhen": "A person needs to do one thing now. Use Primary once per group; every other action is Secondary or Ghost.",
+        "dontUseWhen": "Navigation between pages (use a link or Tabs), an icon-only control (use IconButton), or a second Primary on the same screen.",
+        "props": "Label, Icon, Trailing icon, Variant (Primary/Secondary/Ghost/Amber/Forest), State",
+        "catalog": "Button",
+        "spec": "Primary fills color/action/primary, Secondary fills color/action/secondary. Amber and Forest are proposed in-product variants (color/action/warm, color/action/success). color/status/info is never a button fill."
+      }
+    },
+    {
+      "id": "58:247",
+      "name": "IconButton",
+      "type": "COMPONENT_SET",
+      "page": "IconButton",
+      "key": "dc0fee7cfb26c38b2603cd431110ff40e937b4c5",
+      "description": "Purpose: Starts an action with an icon only.\nUse when: Toolbars and navigation where the icon is well known. Ghost on a bar, Secondary when it needs a surface.\nDon't use when: The action needs words to be understood, or it is the main action of the screen.\nProps: Icon, Variant, State\nCatalog: candidate (no catalog entry yet)\nSpec: 32px target with a 20px Lucide icon (size/icon). Code must add an accessible label.",
+      "pageRole": "library",
+      "parsed": {
+        "purpose": "Starts an action with an icon only.",
+        "useWhen": "Toolbars and navigation where the icon is well known. Ghost on a bar, Secondary when it needs a surface.",
+        "dontUseWhen": "The action needs words to be understood, or it is the main action of the screen.",
+        "props": "Icon, Variant, State",
+        "catalog": "candidate (no catalog entry yet)",
+        "spec": "32px target with a 20px Lucide icon (size/icon). Code must add an accessible label."
+      }
+    },
+    {
+      "id": "59:50",
+      "name": "Checkbox",
+      "type": "COMPONENT_SET",
+      "page": "Checkbox",
+      "key": "707f91403e72e4e97889f130cfcacf8fd2cecc3e",
+      "description": "Purpose: Lets a person turn one option on or off, or pick several from a list.\nUse when: Multiple independent choices, or one opt-in that is submitted with a form.\nDon't use when: A setting that takes effect at once (use Toggle) or one choice from a set (use Select or Tabs).\nProps: Label, Show label, Checked (Off/On/Mixed), State\nCatalog: candidate (no catalog entry yet)\nSpec: 16px box, radius/control. Checked fills color/action/primary with a Lucide check; Mixed shows minus. Disabled is 40% opacity.",
+      "pageRole": "library",
+      "parsed": {
+        "purpose": "Lets a person turn one option on or off, or pick several from a list.",
+        "useWhen": "Multiple independent choices, or one opt-in that is submitted with a form.",
+        "dontUseWhen": "A setting that takes effect at once (use Toggle) or one choice from a set (use Select or Tabs).",
+        "props": "Label, Show label, Checked (Off/On/Mixed), State",
+        "catalog": "candidate (no catalog entry yet)",
+        "spec": "16px box, radius/control. Checked fills color/action/primary with a Lucide check; Mixed shows minus. Disabled is 40% opacity."
+      }
+    },
+    {
+      "id": "60:31",
+      "name": "Input",
+      "type": "COMPONENT_SET",
+      "page": "Input and Textarea",
+      "key": "6d25e09bf22f4fe63a4c3731649b3b12733575ab",
+      "description": "Purpose: Collects one short line of text.\nUse when: A single short answer such as a name or an email.\nDon't use when: Long text (use Textarea) or a fixed set of answers (use Select).\nProps: Value, Leading icon, Icon, State\nCatalog: TextInput\nSpec: 40px tall on color/bg/surface with a size/border color/border/default border. Focus shows a size/outline ring. Error uses color/status/error and a circle-alert icon. Wrap in Field for label and helper.",
+      "pageRole": "library",
+      "parsed": {
+        "purpose": "Collects one short line of text.",
+        "useWhen": "A single short answer such as a name or an email.",
+        "dontUseWhen": "Long text (use Textarea) or a fixed set of answers (use Select).",
+        "props": "Value, Leading icon, Icon, State",
+        "catalog": "TextInput",
+        "spec": "40px tall on color/bg/surface with a size/border color/border/default border. Focus shows a size/outline ring. Error uses color/status/error and a circle-alert icon. Wrap in Field for label and helper."
+      }
+    },
+    {
+      "id": "60:44",
+      "name": "Textarea",
+      "type": "COMPONENT_SET",
+      "page": "Input and Textarea",
+      "key": "0685fb7c73aecae981b1c188b9edc439618e51d6",
+      "description": "Purpose: Collects several lines of text.\nUse when: Notes, descriptions, or messages.\nDon't use when: A short single answer (use Input).\nProps: Value, State\nCatalog: candidate (no catalog entry yet)\nSpec: 96px default height, resizable. Same surface, border, and focus ring as Input.",
+      "pageRole": "library",
+      "parsed": {
+        "purpose": "Collects several lines of text.",
+        "useWhen": "Notes, descriptions, or messages.",
+        "dontUseWhen": "A short single answer (use Input).",
+        "props": "Value, State",
+        "catalog": "candidate (no catalog entry yet)",
+        "spec": "96px default height, resizable. Same surface, border, and focus ring as Input."
+      }
+    },
+    {
+      "id": "60:53",
+      "name": "Field",
+      "type": "COMPONENT",
+      "page": "Input and Textarea",
+      "key": "41bf16a5546076ee45613d7a26406d8b57f03697",
+      "description": "Purpose: Groups a label, one control, and helper text.\nUse when: Any form control that needs a visible label or an error message.\nDon't use when: A control that has its own label, such as Checkbox or Toggle.\nProps: Label, Helper, Show helper, Control (swap: Input, Textarea, Select)\nCatalog: FieldGroup (parked at 7/10, issue 8)\nSpec: Helper text turns color/status/error for errors.",
+      "pageRole": "library",
+      "parsed": {
+        "purpose": "Groups a label, one control, and helper text.",
+        "useWhen": "Any form control that needs a visible label or an error message.",
+        "dontUseWhen": "A control that has its own label, such as Checkbox or Toggle.",
+        "props": "Label, Helper, Show helper, Control (swap: Input, Textarea, Select)",
+        "catalog": "FieldGroup (parked at 7/10, issue 8)",
+        "spec": "Helper text turns color/status/error for errors."
+      }
+    },
+    {
+      "id": "61:32",
+      "name": "Toggle",
+      "type": "COMPONENT_SET",
+      "page": "Toggle",
+      "key": "98c4dc5e89e6aebd77e2010d12af950b145e02c9",
+      "description": "Purpose: Turns a setting on or off right away.\nUse when: A setting that applies the moment it changes.\nDon't use when: An option that waits for a form submit (use Checkbox).\nProps: Label, Show label, Checked, State\nCatalog: candidate (no catalog entry yet)\nSpec: 36×20 track, 16px thumb. The one rounded control. On uses color/action/primary; Off uses color/bg/subtle with a hairline border.",
+      "pageRole": "library",
+      "parsed": {
+        "purpose": "Turns a setting on or off right away.",
+        "useWhen": "A setting that applies the moment it changes.",
+        "dontUseWhen": "An option that waits for a form submit (use Checkbox).",
+        "props": "Label, Show label, Checked, State",
+        "catalog": "candidate (no catalog entry yet)",
+        "spec": "36×20 track, 16px thumb. The one rounded control. On uses color/action/primary; Off uses color/bg/subtle with a hairline border."
+      }
+    },
+    {
+      "id": "62:24",
+      "name": "Slider",
+      "type": "COMPONENT_SET",
+      "page": "Slider",
+      "key": "2cdd0bd9a4ae71ec685c3b0b00e67185879c8902",
+      "description": "Purpose: Picks one value on a range.\nUse when: A value where the rough position matters more than the exact number.\nDon't use when: An exact number (use Input) or fewer than five steps (use Tabs Segmented).\nProps: Value, Show value, State\nCatalog: candidate (no catalog entry yet)\nSpec: 4px rail on color/bg/subtle, range in color/action/primary, 16px thumb. Mono readout optional.",
+      "pageRole": "library",
+      "parsed": {
+        "purpose": "Picks one value on a range.",
+        "useWhen": "A value where the rough position matters more than the exact number.",
+        "dontUseWhen": "An exact number (use Input) or fewer than five steps (use Tabs Segmented).",
+        "props": "Value, Show value, State",
+        "catalog": "candidate (no catalog entry yet)",
+        "spec": "4px rail on color/bg/subtle, range in color/action/primary, 16px thumb. Mono readout optional."
+      }
+    },
+    {
+      "id": "63:26",
+      "name": "Avatar",
+      "type": "COMPONENT_SET",
+      "page": "Avatar and FacePile",
+      "key": "4709571edce69daeacf99e7569e80b828a949f78",
+      "description": "Purpose: Shows who a person is.\nUse when: Next to a name, in a list row, or in a FacePile.\nDon't use when: Decorations, or a logo.\nProps: Initials, Size (24/32/40), Type (Initials/Icon/Photo)\nCatalog: candidate (no catalog entry yet)\nSpec: Initials on color/bg/subtle with a hairline ring. Photo uses an image fill.",
+      "pageRole": "library",
+      "parsed": {
+        "purpose": "Shows who a person is.",
+        "useWhen": "Next to a name, in a list row, or in a FacePile.",
+        "dontUseWhen": "Decorations, or a logo.",
+        "props": "Initials, Size (24/32/40), Type (Initials/Icon/Photo)",
+        "catalog": "candidate (no catalog entry yet)",
+        "spec": "Initials on color/bg/subtle with a hairline ring. Photo uses an image fill."
+      }
+    },
+    {
+      "id": "63:36",
+      "name": "FacePile",
+      "type": "COMPONENT",
+      "page": "Avatar and FacePile",
+      "key": "e0b7d1625c1de62610a3bba5d0d5b41dd26c556b",
+      "description": "Purpose: Shows a small group of people.\nUse when: Up to three people plus an overflow count.\nDon't use when: A full member list (use List).\nProps: Show overflow, Overflow\nCatalog: candidate (no catalog entry yet)\nSpec: Medium avatars overlap by 8px with a 2px canvas ring.",
+      "pageRole": "library",
+      "parsed": {
+        "purpose": "Shows a small group of people.",
+        "useWhen": "Up to three people plus an overflow count.",
+        "dontUseWhen": "A full member list (use List).",
+        "props": "Show overflow, Overflow",
+        "catalog": "candidate (no catalog entry yet)",
+        "spec": "Medium avatars overlap by 8px with a 2px canvas ring."
+      }
+    },
+    {
+      "id": "64:26",
+      "name": "Tooltip",
+      "type": "COMPONENT_SET",
+      "page": "Tooltip",
+      "key": "32caeba3f50b06cb3412b919abf6f8aca67d2a6d",
+      "description": "Purpose: Names a control on hover or focus.\nUse when: An icon-only control, or to show a keyboard shortcut.\nDon't use when: Information a person must read to finish a task.\nProps: Label, Shortcut, Show shortcut, Position\nCatalog: candidate (no catalog entry yet)\nSpec: color/bg/inverse surface, color/fg/inverse caption. Appears after motion/duration/base.",
+      "pageRole": "library",
+      "parsed": {
+        "purpose": "Names a control on hover or focus.",
+        "useWhen": "An icon-only control, or to show a keyboard shortcut.",
+        "dontUseWhen": "Information a person must read to finish a task.",
+        "props": "Label, Shortcut, Show shortcut, Position",
+        "catalog": "candidate (no catalog entry yet)",
+        "spec": "color/bg/inverse surface, color/fg/inverse caption. Appears after motion/duration/base."
+      }
+    },
+    {
+      "id": "65:30",
+      "name": "MenuItem",
+      "type": "COMPONENT_SET",
+      "page": "Menu and ContextMenu",
+      "key": "c8edd077c081924d8ac240169bd7772a4ff8d954",
+      "description": "Purpose: One action in a Menu or ContextMenu.\nUse when: Inside Menu or Select Options only.\nDon't use when: On its own on a screen (use Button or ListRow).\nProps: Label, Shortcut, Show shortcut, Show icon, Icon, State (incl. Destructive)\nCatalog: candidate (no catalog entry yet)\nSpec: 32px tall, 16px icon, mono shortcut. Hover uses color/bg/subtle. Destructive uses color/status/error.",
+      "pageRole": "library",
+      "parsed": {
+        "purpose": "One action in a Menu or ContextMenu.",
+        "useWhen": "Inside Menu or Select Options only.",
+        "dontUseWhen": "On its own on a screen (use Button or ListRow).",
+        "props": "Label, Shortcut, Show shortcut, Show icon, Icon, State (incl. Destructive)",
+        "catalog": "candidate (no catalog entry yet)",
+        "spec": "32px tall, 16px icon, mono shortcut. Hover uses color/bg/subtle. Destructive uses color/status/error."
+      }
+    },
+    {
+      "id": "65:33",
+      "name": "Menu Separator",
+      "type": "COMPONENT",
+      "page": "Menu and ContextMenu",
+      "key": "299401d81d1b28258c76cdc5d9848aa052884b5d",
+      "description": "Purpose: Separates groups inside a Menu.\nUse when: Between groups of MenuItem rows.\nDon't use when: Outside a Menu.\nProps: none\nCatalog: candidate (no catalog entry yet)\nSpec: Hairline in color/border/subtle.",
+      "pageRole": "library",
+      "parsed": {
+        "purpose": "Separates groups inside a Menu.",
+        "useWhen": "Between groups of MenuItem rows.",
+        "dontUseWhen": "Outside a Menu.",
+        "props": "none",
+        "catalog": "candidate (no catalog entry yet)",
+        "spec": "Hairline in color/border/subtle."
+      }
+    },
+    {
+      "id": "65:91",
+      "name": "Menu",
+      "type": "COMPONENT",
+      "page": "Menu and ContextMenu",
+      "key": "4b5b8ec683ac2e484f11219f0ac39afa6d7405a8",
+      "description": "Purpose: Holds a short list of actions.\nUse when: A menu from a trigger, or a ContextMenu at the pointer.\nDon't use when: More than about seven items (chunk them or use a page).\nProps: none (compose from MenuItem and Menu Separator)\nCatalog: candidate (no catalog entry yet)\nSpec: color/bg/surface, 4px padding, Elevation/Popover.",
+      "pageRole": "library",
+      "parsed": {
+        "purpose": "Holds a short list of actions.",
+        "useWhen": "A menu from a trigger, or a ContextMenu at the pointer.",
+        "dontUseWhen": "More than about seven items (chunk them or use a page).",
+        "props": "none (compose from MenuItem and Menu Separator)",
+        "catalog": "candidate (no catalog entry yet)",
+        "spec": "color/bg/surface, 4px padding, Elevation/Popover."
+      }
+    },
+    {
+      "id": "66:22",
+      "name": "Select",
+      "type": "COMPONENT_SET",
+      "page": "Select",
+      "key": "242a1b28b6249efaf65154d5d6a403094dcd7c3a",
+      "description": "Purpose: Picks one option from a list.\nUse when: Five or more options, or options that change.\nDon't use when: Two to four options (use Tabs Segmented) or several picks (use Checkbox).\nProps: Value, State\nCatalog: candidate (no catalog entry yet)\nSpec: 40px tall, same surface and border as Input. Open shows the focus ring and flips the chevron. Wrap in Field.",
+      "pageRole": "library",
+      "parsed": {
+        "purpose": "Picks one option from a list.",
+        "useWhen": "Five or more options, or options that change.",
+        "dontUseWhen": "Two to four options (use Tabs Segmented) or several picks (use Checkbox).",
+        "props": "Value, State",
+        "catalog": "candidate (no catalog entry yet)",
+        "spec": "40px tall, same surface and border as Input. Open shows the focus ring and flips the chevron. Wrap in Field."
+      }
+    },
+    {
+      "id": "66:56",
+      "name": "Select Options",
+      "type": "COMPONENT",
+      "page": "Select",
+      "key": "d8483d15a2807bc8cc07e4e80adc183b8d59998c",
+      "description": "Purpose: The open list of a Select.\nUse when: Below a Select trigger only.\nDon't use when: As a standalone menu (use Menu).\nProps: none\nCatalog: candidate (no catalog entry yet)\nSpec: MenuItem rows, shortcut hidden, check on the selected row. Elevation/Popover.",
+      "pageRole": "library",
+      "parsed": {
+        "purpose": "The open list of a Select.",
+        "useWhen": "Below a Select trigger only.",
+        "dontUseWhen": "As a standalone menu (use Menu).",
+        "props": "none",
+        "catalog": "candidate (no catalog entry yet)",
+        "spec": "MenuItem rows, shortcut hidden, check on the selected row. Elevation/Popover."
+      }
+    },
+    {
+      "id": "67:29",
+      "name": "Popover",
+      "type": "COMPONENT",
+      "page": "Popover and PreviewCard",
+      "key": "b19bb528812a99764fc4f7a19aaafe3b49deccfb",
+      "description": "Purpose: Shows a short task or detail next to its trigger.\nUse when: A small decision that keeps the page in view.\nDon't use when: Long or blocking content (use Modal).\nProps: Title, Body, Show actions, Show close\nCatalog: candidate (no catalog entry yet)\nSpec: color/bg/surface, Elevation/Popover. At most one Primary.",
+      "pageRole": "library",
+      "parsed": {
+        "purpose": "Shows a short task or detail next to its trigger.",
+        "useWhen": "A small decision that keeps the page in view.",
+        "dontUseWhen": "Long or blocking content (use Modal).",
+        "props": "Title, Body, Show actions, Show close",
+        "catalog": "candidate (no catalog entry yet)",
+        "spec": "color/bg/surface, Elevation/Popover. At most one Primary."
+      }
+    },
+    {
+      "id": "67:39",
+      "name": "PreviewCard",
+      "type": "COMPONENT",
+      "page": "Popover and PreviewCard",
+      "key": "eabe3cfa22a92a856cd11eaa06c89dbd2d6b97c1",
+      "description": "Purpose: Previews a link or file on hover.\nUse when: A link or file whose content helps a person decide to open it.\nDon't use when: Content a person must act on.\nProps: Title, Meta, Description, Show description\nCatalog: candidate (no catalog entry yet)\nSpec: Thumbnail on color/bg/subtle, Elevation/Card, radius/control.",
+      "pageRole": "library",
+      "parsed": {
+        "purpose": "Previews a link or file on hover.",
+        "useWhen": "A link or file whose content helps a person decide to open it.",
+        "dontUseWhen": "Content a person must act on.",
+        "props": "Title, Meta, Description, Show description",
+        "catalog": "candidate (no catalog entry yet)",
+        "spec": "Thumbnail on color/bg/subtle, Elevation/Card, radius/control."
+      }
+    },
+    {
+      "id": "70:54",
+      "name": "Modal",
+      "type": "COMPONENT_SET",
+      "page": "Modal",
+      "key": "c9912826ac29aeb6febec6ce0dd0b2d419798a06",
+      "description": "Purpose: Interrupts to ask for one decision.\nUse when: A blocking decision or a short focused task.\nDon't use when: Information that can wait (use Popover or a page).\nProps: Title, Body, Show footer, Size (400/560)\nCatalog: candidate (no catalog entry yet)\nSpec: radius/modal, Elevation/Modal, sits over color/bg/overlay. One Primary plus one Secondary.",
+      "pageRole": "library",
+      "parsed": {
+        "purpose": "Interrupts to ask for one decision.",
+        "useWhen": "A blocking decision or a short focused task.",
+        "dontUseWhen": "Information that can wait (use Popover or a page).",
+        "props": "Title, Body, Show footer, Size (400/560)",
+        "catalog": "candidate (no catalog entry yet)",
+        "spec": "radius/modal, Elevation/Modal, sits over color/bg/overlay. One Primary plus one Secondary."
+      }
+    },
+    {
+      "id": "71:52",
+      "name": "ScrollContainer",
+      "type": "COMPONENT_SET",
+      "page": "ScrollContainer",
+      "key": "ee28e1df8ac0a6f77f26cb7a75b688a52578e87b",
+      "description": "Purpose: Clips long content into a scroll region.\nUse when: A list or panel taller than its space.\nDon't use when: The whole page (let the page scroll).\nProps: Show scrollbar, Axis\nCatalog: candidate (no catalog entry yet)\nSpec: color/bg/surface, hairline border, 6px overlay scrollbar.",
+      "pageRole": "library",
+      "parsed": {
+        "purpose": "Clips long content into a scroll region.",
+        "useWhen": "A list or panel taller than its space.",
+        "dontUseWhen": "The whole page (let the page scroll).",
+        "props": "Show scrollbar, Axis",
+        "catalog": "candidate (no catalog entry yet)",
+        "spec": "color/bg/surface, hairline border, 6px overlay scrollbar."
+      }
+    },
+    {
+      "id": "71:164",
+      "name": "IconSwap",
+      "type": "COMPONENT_SET",
+      "page": "IconSwap",
+      "key": "ee8fa068d96758a25591942418cce09dd948fd8a",
+      "description": "Purpose: Places one icon from the icon set.\nUse when: Anywhere an icon appears. Swap the Icon property to any glyph on the Icons page.\nDon't use when: Making a new variant for each icon.\nProps: Icon (swap), Size (16/20/24), Tone\nCatalog: Icon\nSpec: Stroke bound per Tone so swapped icons inherit it. Default size is size/icon. Inverse sits on a padded color/bg/inverse tile: 16 on 28, 20 on 32, 24 on 40.",
+      "pageRole": "library",
+      "parsed": {
+        "purpose": "Places one icon from the icon set.",
+        "useWhen": "Anywhere an icon appears. Swap the Icon property to any glyph on the Icons page.",
+        "dontUseWhen": "Making a new variant for each icon.",
+        "props": "Icon (swap), Size (16/20/24), Tone",
+        "catalog": "Icon",
+        "spec": "Stroke bound per Tone so swapped icons inherit it. Default size is size/icon. Inverse sits on a padded color/bg/inverse tile: 16 on 28, 20 on 32, 24 on 40."
+      }
+    },
+    {
+      "id": "72:12",
+      "name": "ShimmerText",
+      "type": "COMPONENT_SET",
+      "page": "ShimmerText",
+      "key": "d73fe10afffb5df43fcb53e3b57694f5f5a82e53",
+      "description": "Purpose: Shows that an agent or process is working.\nUse when: Streaming or indeterminate work.\nDon't use when: Progress with a known percent (use ProgressRing).\nProps: Label, Show icon, State (Loading/Done)\nCatalog: candidate (no catalog entry yet)\nSpec: Loading text sweep in code at motion/duration/base × 6. The only gradient allowed, and only in text. Done uses color/status/success.",
+      "pageRole": "library",
+      "parsed": {
+        "purpose": "Shows that an agent or process is working.",
+        "useWhen": "Streaming or indeterminate work.",
+        "dontUseWhen": "Progress with a known percent (use ProgressRing).",
+        "props": "Label, Show icon, State (Loading/Done)",
+        "catalog": "candidate (no catalog entry yet)",
+        "spec": "Loading text sweep in code at motion/duration/base × 6. The only gradient allowed, and only in text. Done uses color/status/success."
+      }
+    },
+    {
+      "id": "72:68",
+      "name": "ProgressRing",
+      "type": "COMPONENT_SET",
+      "page": "ProgressRing",
+      "key": "4106d561c54d2abdd4863406b9ea04ff4ac4c5cb",
+      "description": "Purpose: Shows how much of a task is done.\nUse when: Work with a known percent.\nDon't use when: Unknown duration (use ShimmerText).\nProps: Show value, Size (20/40), Progress\nCatalog: candidate (no catalog entry yet)\nSpec: Track color/bg/subtle, arc color/action/primary, color/status/success at 100%.",
+      "pageRole": "library",
+      "parsed": {
+        "purpose": "Shows how much of a task is done.",
+        "useWhen": "Work with a known percent.",
+        "dontUseWhen": "Unknown duration (use ShimmerText).",
+        "props": "Show value, Size (20/40), Progress",
+        "catalog": "candidate (no catalog entry yet)",
+        "spec": "Track color/bg/subtle, arc color/action/primary, color/status/success at 100%."
+      }
+    },
+    {
+      "id": "73:41",
+      "name": "GlowingButton",
+      "type": "COMPONENT_SET",
+      "page": "GlowingButton",
+      "key": "2e89aba23ff900337d62e3c407d28877bb61bbfc",
+      "description": "Purpose: The one agent call-to-action on a screen.\nUse when: A single agent action that must stand out.\nDon't use when: More than one per view, any marketing surface, or a normal primary action (use Button).\nProps: Label, Show icon, Icon, State\nCatalog: candidate (no catalog entry yet; review as possibly brand-only)\nSpec: Primary button with a hairline ring and soft halo in color/status/info.",
+      "pageRole": "library",
+      "parsed": {
+        "purpose": "The one agent call-to-action on a screen.",
+        "useWhen": "A single agent action that must stand out.",
+        "dontUseWhen": "More than one per view, any marketing surface, or a normal primary action (use Button).",
+        "props": "Label, Show icon, Icon, State",
+        "catalog": "candidate (no catalog entry yet; review as possibly brand-only)",
+        "spec": "Primary button with a hairline ring and soft halo in color/status/info."
+      }
+    },
+    {
+      "id": "74:35",
+      "name": "Paper",
+      "type": "COMPONENT_SET",
+      "page": "Paper shaders",
+      "key": "2ee74383ebd9646e1c9ba39c79b54120a3b400a2",
+      "description": "Purpose: A textured backdrop surface.\nUse when: Large backdrops such as a hero or an empty state.\nDon't use when: Behind small controls or dense content.\nProps: Show sample text, Grain (None/Fine/Coarse)\nCatalog: candidate (no catalog entry yet; review as possibly brand-only)\nSpec: Card color with a hairline border. Grain is monotone noise, not a gradient.",
+      "pageRole": "library",
+      "parsed": {
+        "purpose": "A textured backdrop surface.",
+        "useWhen": "Large backdrops such as a hero or an empty state.",
+        "dontUseWhen": "Behind small controls or dense content.",
+        "props": "Show sample text, Grain (None/Fine/Coarse)",
+        "catalog": "candidate (no catalog entry yet; review as possibly brand-only)",
+        "spec": "Card color with a hairline border. Grain is monotone noise, not a gradient."
+      }
+    },
+    {
+      "id": "75:58",
+      "name": "UploadDeck",
+      "type": "COMPONENT_SET",
+      "page": "Upload deck",
+      "key": "259c68523714374f6f519afb48f16240cedeee46",
+      "description": "Purpose: Takes a file a person drops or picks.\nUse when: Uploading a deck or document.\nDon't use when: Picking from files already in the product (use List).\nProps: Title, Hint, State (Default/Dragging/Uploading/Done/Error)\nCatalog: candidate (no catalog entry yet; review as possibly product-only)\nSpec: Dashed hairline on color/bg/surface. Uploading swaps in ProgressRing 40. At most one Secondary action.",
+      "pageRole": "library",
+      "parsed": {
+        "purpose": "Takes a file a person drops or picks.",
+        "useWhen": "Uploading a deck or document.",
+        "dontUseWhen": "Picking from files already in the product (use List).",
+        "props": "Title, Hint, State (Default/Dragging/Uploading/Done/Error)",
+        "catalog": "candidate (no catalog entry yet; review as possibly product-only)",
+        "spec": "Dashed hairline on color/bg/surface. Uploading swaps in ProgressRing 40. At most one Secondary action."
+      }
+    },
+    {
+      "id": "76:42",
+      "name": "Status",
+      "type": "COMPONENT_SET",
+      "page": "Status",
+      "key": "53856b490d9ecfc4711962ef2738bf899953299c",
+      "description": "Purpose: Names a status.\nUse when: Marking a state a person needs to notice, next to the thing it describes.\nDon't use when: As a button, or with a tone outside the four status roles plus Neutral.\nProps: Label, Show dot, Tone (Neutral/Success/Warning/Error/Info), Style (Dot/Tag)\nCatalog: Badge (Style=Tag)\nSpec: Tag uses radius/badge, never a pill. Info is text-only, never a fill. Neutral uses color/fg/muted.",
+      "pageRole": "library",
+      "parsed": {
+        "purpose": "Names a status.",
+        "useWhen": "Marking a state a person needs to notice, next to the thing it describes.",
+        "dontUseWhen": "As a button, or with a tone outside the four status roles plus Neutral.",
+        "props": "Label, Show dot, Tone (Neutral/Success/Warning/Error/Info), Style (Dot/Tag)",
+        "catalog": "Badge (Style=Tag)",
+        "spec": "Tag uses radius/badge, never a pill. Info is text-only, never a fill. Neutral uses color/fg/muted."
+      }
+    },
+    {
+      "id": "77:41",
+      "name": "ListRow",
+      "type": "COMPONENT_SET",
+      "page": "List rows",
+      "key": "3111895a52f61e30433a232a1cbfbda24204b216",
+      "description": "Purpose: One item in a List.\nUse when: Rows of similar items a person scans or opens.\nDon't use when: A single item on its own (use a card).\nProps: Title, Meta, Show status, Show chevron, Icon, State\nCatalog: candidate (no catalog entry yet)\nSpec: 20px icon, mono meta, optional Status and chevron. Selected adds a 2px bar in color/action/primary.",
+      "pageRole": "library",
+      "parsed": {
+        "purpose": "One item in a List.",
+        "useWhen": "Rows of similar items a person scans or opens.",
+        "dontUseWhen": "A single item on its own (use a card).",
+        "props": "Title, Meta, Show status, Show chevron, Icon, State",
+        "catalog": "candidate (no catalog entry yet)",
+        "spec": "20px icon, mono meta, optional Status and chevron. Selected adds a 2px bar in color/action/primary."
+      }
+    },
+    {
+      "id": "77:103",
+      "name": "List",
+      "type": "COMPONENT",
+      "page": "List rows",
+      "key": "f2e335fb1325793f7401947926da926ded2d6b5d",
+      "description": "Purpose: Holds a set of ListRow items.\nUse when: A scannable set of similar items.\nDon't use when: Mixed content types.\nProps: none (compose from ListRow)\nCatalog: candidate (no catalog entry yet)\nSpec: color/bg/surface, hairline border, 4px padding, color/border/subtle dividers.",
+      "pageRole": "library",
+      "parsed": {
+        "purpose": "Holds a set of ListRow items.",
+        "useWhen": "A scannable set of similar items.",
+        "dontUseWhen": "Mixed content types.",
+        "props": "none (compose from ListRow)",
+        "catalog": "candidate (no catalog entry yet)",
+        "spec": "color/bg/surface, hairline border, 4px padding, color/border/subtle dividers."
+      }
+    },
+    {
+      "id": "78:26",
+      "name": "Tab",
+      "type": "COMPONENT_SET",
+      "page": "Tabs",
+      "key": "fc8d2c954437877f15653c2ed7ac4e77200d5b93",
+      "description": "Purpose: One option in a Tabs bar.\nUse when: Inside Tabs only.\nDon't use when: On its own.\nProps: Label, Count, Show count, Style (Underline/Segmented), State\nCatalog: candidate (no catalog entry yet)\nSpec: Underline: 2px rule under Active. Segmented: Active tile lifts to color/bg/canvas.",
+      "pageRole": "library",
+      "parsed": {
+        "purpose": "One option in a Tabs bar.",
+        "useWhen": "Inside Tabs only.",
+        "dontUseWhen": "On its own.",
+        "props": "Label, Count, Show count, Style (Underline/Segmented), State",
+        "catalog": "candidate (no catalog entry yet)",
+        "spec": "Underline: 2px rule under Active. Segmented: Active tile lifts to color/bg/canvas."
+      }
+    },
+    {
+      "id": "78:40",
+      "name": "Tabs / Underline",
+      "type": "COMPONENT",
+      "page": "Tabs",
+      "key": "310f0f3077d4e6554b3d9cc86a8425543795a84f",
+      "description": "Purpose: Switches between sections of one page.\nUse when: Peer sections of the same object.\nDon't use when: Moving between different pages (use navigation).\nProps: none (compose from Tab; exactly one Active)\nCatalog: candidate (no catalog entry yet)\nSpec: 20px gaps over a 1px color/border/subtle rule.",
+      "pageRole": "library",
+      "parsed": {
+        "purpose": "Switches between sections of one page.",
+        "useWhen": "Peer sections of the same object.",
+        "dontUseWhen": "Moving between different pages (use navigation).",
+        "props": "none (compose from Tab; exactly one Active)",
+        "catalog": "candidate (no catalog entry yet)",
+        "spec": "20px gaps over a 1px color/border/subtle rule."
+      }
+    },
+    {
+      "id": "78:51",
+      "name": "Tabs / Segmented",
+      "type": "COMPONENT",
+      "page": "Tabs",
+      "key": "182e18313302463b4d8e3ce7d14080f56598441e",
+      "description": "Purpose: Switches between views of the same content.\nUse when: Two to four view options.\nDon't use when: Five or more options (use Select).\nProps: none (compose from Tab; exactly one Active)\nCatalog: candidate (no catalog entry yet)\nSpec: 2px gaps inside a color/bg/subtle well.",
+      "pageRole": "library",
+      "parsed": {
+        "purpose": "Switches between views of the same content.",
+        "useWhen": "Two to four view options.",
+        "dontUseWhen": "Five or more options (use Select).",
+        "props": "none (compose from Tab; exactly one Active)",
+        "catalog": "candidate (no catalog entry yet)",
+        "spec": "2px gaps inside a color/bg/subtle well."
+      }
+    },
+    {
+      "id": "93:25",
+      "name": "Social / Logo",
+      "type": "COMPONENT",
+      "page": "Post layouts",
+      "key": "f197b3430dc734e2d028ba617a2ea3ca7c7b77a9",
+      "description": "Purpose: Holds the brand mark on a social slide.\nUse when: Bottom right of every slide, at 40% over a photo and 100% over a solid panel.\nDon't use when: Drawing a brand logo into a layout; swap this instance for the mark from the theme instead.\nProps: none\nCatalog: candidate (no catalog entry yet)\nSpec: 60 × 60, inset 100 from the right and bottom edges.",
+      "pageRole": "templates",
+      "parsed": {
+        "purpose": "Holds the brand mark on a social slide.",
+        "useWhen": "Bottom right of every slide, at 40% over a photo and 100% over a solid panel.",
+        "dontUseWhen": "Drawing a brand logo into a layout; swap this instance for the mark from the theme instead.",
+        "props": "none",
+        "catalog": "candidate (no catalog entry yet)",
+        "spec": "60 × 60, inset 100 from the right and bottom edges."
+      }
+    },
+    {
+      "id": "94:15",
+      "name": "Social / L1 Super",
+      "type": "COMPONENT",
+      "page": "Post layouts",
+      "key": "af2189f9c16a1278fa90164e5086e0f6abd1f2ba",
+      "description": "Purpose: Cover or opener: a super headline over a photo.\nUse when: The first slide of a post. Headline under 70 characters.\nDon't use when: Any slide after the first (use L2 Hero or L10 Headline), or a headline that needs more than five lines.\nProps: Eyebrow, Headline, Byline\nCatalog: candidate (from the OS Social Kit; no catalog entry yet)\nSpec: Text bottom left. Margins 100, bottom 222. Photo fills the frame under a bottom fade. Eyebrow ≤30, byline ≤40.",
+      "pageRole": "templates",
+      "parsed": {
+        "purpose": "Cover or opener: a super headline over a photo.",
+        "useWhen": "The first slide of a post. Headline under 70 characters.",
+        "dontUseWhen": "Any slide after the first (use L2 Hero or L10 Headline), or a headline that needs more than five lines.",
+        "props": "Eyebrow, Headline, Byline",
+        "catalog": "candidate (from the OS Social Kit; no catalog entry yet)",
+        "spec": "Text bottom left. Margins 100, bottom 222. Photo fills the frame under a bottom fade. Eyebrow ≤30, byline ≤40."
+      }
+    },
+    {
+      "id": "94:67",
+      "name": "Social / L2 Hero",
+      "type": "COMPONENT_SET",
+      "page": "Post layouts",
+      "key": "fed85b5b32e93618db415488ae7496aeba8e369a",
+      "description": "Purpose: Cover, chapter break, or statement on a photo or a solid.\nUse when: Opening a post or breaking a carousel into chapters. Middle dims the photo 40%; Bottom fades it.\nDon't use when: A headline over about 90 characters (split it across slides).\nProps: BG (Image/Black), Position (Middle/Bottom), Support (Byline/Dek), Eyebrow, Headline, Byline, Dek\nCatalog: candidate (from the OS Social Kit; no catalog entry yet)\nSpec: Margins 100; Bottom adds 222 at the foot. Headline Social/Headline 52.",
+      "pageRole": "templates",
+      "parsed": {
+        "purpose": "Cover, chapter break, or statement on a photo or a solid.",
+        "useWhen": "Opening a post or breaking a carousel into chapters. Middle dims the photo 40%; Bottom fades it.",
+        "dontUseWhen": "A headline over about 90 characters (split it across slides).",
+        "props": "BG (Image/Black), Position (Middle/Bottom), Support (Byline/Dek), Eyebrow, Headline, Byline, Dek",
+        "catalog": "candidate (from the OS Social Kit; no catalog entry yet)",
+        "spec": "Margins 100; Bottom adds 222 at the foot. Headline Social/Headline 52."
+      }
+    },
+    {
+      "id": "94:68",
+      "name": "Social / L3 Panel",
+      "type": "COMPONENT",
+      "page": "Post layouts",
+      "key": "70a3ddfc710e10fc70a3f5f3040c473dee2c9b63",
+      "description": "Purpose: A context beat over a photo, such as \"Who is X\" or \"Why it matters\".\nUse when: Introducing a person, place, or reason partway through a carousel.\nDon't use when: The opening slide (use L1 Super) or a long passage (use L5 Paragraph).\nProps: Eyebrow, Headline, Byline\nCatalog: candidate (from the OS Social Kit; no catalog entry yet)\nSpec: Canvas-colored panel, padding 80, centered on a 40% dimmed photo. Eyebrow ≤30, headline ≤90 (4 lines), byline ≤40.",
+      "pageRole": "templates",
+      "parsed": {
+        "purpose": "A context beat over a photo, such as \"Who is X\" or \"Why it matters\".",
+        "useWhen": "Introducing a person, place, or reason partway through a carousel.",
+        "dontUseWhen": "The opening slide (use L1 Super) or a long passage (use L5 Paragraph).",
+        "props": "Eyebrow, Headline, Byline",
+        "catalog": "candidate (from the OS Social Kit; no catalog entry yet)",
+        "spec": "Canvas-colored panel, padding 80, centered on a 40% dimmed photo. Eyebrow ≤30, headline ≤90 (4 lines), byline ≤40."
+      }
+    },
+    {
+      "id": "94:77",
+      "name": "Social / L4 Quote",
+      "type": "COMPONENT",
+      "page": "Post layouts",
+      "key": "909de75d27c6b2b38905c814789f5e44a04b0393",
+      "description": "Purpose: A short pull quote.\nUse when: Opening a carousel or standing alone. Quote ≤60 characters, 4 lines at most.\nDon't use when: A long or sourced artist quote (use L8 Artist Quote).\nProps: Label, Quote, Attribution\nCatalog: candidate (from the OS Social Kit; no catalog entry yet)\nSpec: Centered on a solid inverse surface. Label ≤20, attribution ≤40.",
+      "pageRole": "templates",
+      "parsed": {
+        "purpose": "A short pull quote.",
+        "useWhen": "Opening a carousel or standing alone. Quote ≤60 characters, 4 lines at most.",
+        "dontUseWhen": "A long or sourced artist quote (use L8 Artist Quote).",
+        "props": "Label, Quote, Attribution",
+        "catalog": "candidate (from the OS Social Kit; no catalog entry yet)",
+        "spec": "Centered on a solid inverse surface. Label ≤20, attribution ≤40."
+      }
+    },
+    {
+      "id": "96:25",
+      "name": "Social / L5 Paragraph",
+      "type": "COMPONENT_SET",
+      "page": "Post layouts",
+      "key": "97c9a28050ed720cf80bdfdf5b291b93332c0857",
+      "description": "Purpose: Long-form story text.\nUse when: The story needs a full passage. Body 300 to 450 characters.\nDon't use when: Over 600 characters (split into two slides), or a third paragraph slide in a row.\nProps: Position (Top/Bottom), Body, Footer\nCatalog: candidate (from the OS Social Kit; no catalog entry yet)\nSpec: Body Social/Serif Body 42, 820 wide. Footer ≤40.",
+      "pageRole": "templates",
+      "parsed": {
+        "purpose": "Long-form story text.",
+        "useWhen": "The story needs a full passage. Body 300 to 450 characters.",
+        "dontUseWhen": "Over 600 characters (split into two slides), or a third paragraph slide in a row.",
+        "props": "Position (Top/Bottom), Body, Footer",
+        "catalog": "candidate (from the OS Social Kit; no catalog entry yet)",
+        "spec": "Body Social/Serif Body 42, 820 wide. Footer ≤40."
+      }
+    },
+    {
+      "id": "96:26",
+      "name": "Social / L6 Image",
+      "type": "COMPONENT",
+      "page": "Post layouts",
+      "key": "39701a3fda9ec69b78bb15cbdc5adc7571a07301",
+      "description": "Purpose: Lets the photo or artwork carry the slide.\nUse when: The image says more than words would.\nDon't use when: Text over the image (use L2 Hero or L10 Headline), or an image with no credit that is not ours.\nProps: Credit\nCatalog: candidate (from the OS Social Kit; no catalog entry yet)\nSpec: Photo fills the frame. Credit ≤60, required for any image that is not ours.",
+      "pageRole": "templates",
+      "parsed": {
+        "purpose": "Lets the photo or artwork carry the slide.",
+        "useWhen": "The image says more than words would.",
+        "dontUseWhen": "Text over the image (use L2 Hero or L10 Headline), or an image with no credit that is not ours.",
+        "props": "Credit",
+        "catalog": "candidate (from the OS Social Kit; no catalog entry yet)",
+        "spec": "Photo fills the frame. Credit ≤60, required for any image that is not ours."
+      }
+    },
+    {
+      "id": "96:56",
+      "name": "Social / L7 End",
+      "type": "COMPONENT_SET",
+      "page": "Post layouts",
+      "key": "b518a29c71a7a88b530baa223b589434d82dd492",
+      "description": "Purpose: The last slide of a post.\nUse when: Closing a carousel. Takeaway for shares (text top), Question for comments (one real question, never bait; text bottom), Series for saves (text middle).\nDon't use when: Agents: do not use until approved. Never mid-carousel.\nProps: Type (Takeaway/Question/Series), Eyebrow, Main, Support, Handle\nCatalog: candidate (DRAFT in the OS Social Kit; not approved; agents do not use)\nSpec: Eyebrow ≤30, main ≤80 (Series ≤30), support ≤60, handle ≤30. Background defaults to color/bg/inverse; the source kit samples the deepest tone of the cover photo, and the main line the lightest tone. That per-post color is a proposed rule.",
+      "pageRole": "templates",
+      "parsed": {
+        "purpose": "The last slide of a post.",
+        "useWhen": "Closing a carousel. Takeaway for shares (text top), Question for comments (one real question, never bait; text bottom), Series for saves (text middle).",
+        "dontUseWhen": "Agents: do not use until approved. Never mid-carousel.",
+        "props": "Type (Takeaway/Question/Series), Eyebrow, Main, Support, Handle",
+        "catalog": "candidate (DRAFT in the OS Social Kit; not approved; agents do not use)",
+        "spec": "Eyebrow ≤30, main ≤80 (Series ≤30), support ≤60, handle ≤30. Background defaults to color/bg/inverse; the source kit samples the deepest tone of the cover photo, and the main line the lightest tone. That per-post color is a proposed rule."
+      }
+    },
+    {
+      "id": "97:44",
+      "name": "Social / L8 Artist Quote",
+      "type": "COMPONENT_SET",
+      "page": "Post layouts",
+      "key": "2306b5fa5417f598f233c10a61a2dbccc3b6dbe0",
+      "description": "Purpose: The artist speaks, with their face or their work.\nUse when: A sourced quote from the person the post is about. Portrait puts the photo on top and the quote below; Work puts the quote over their work; None is a long text-only quote.\nDon't use when: Agents: do not use until approved. An unsourced quote, or a short punchy line (use L4 Quote).\nProps: Image (Portrait/Work/None), Font (Sans/Serif), Context, Quote, Attribution, Handle\nCatalog: candidate (DRAFT in the OS Social Kit; not approved; agents do not use)\nSpec: Quote ≤70 characters (None: ≤300), attribution ≤40.",
+      "pageRole": "templates",
+      "parsed": {
+        "purpose": "The artist speaks, with their face or their work.",
+        "useWhen": "A sourced quote from the person the post is about. Portrait puts the photo on top and the quote below; Work puts the quote over their work; None is a long text-only quote.",
+        "dontUseWhen": "Agents: do not use until approved. An unsourced quote, or a short punchy line (use L4 Quote).",
+        "props": "Image (Portrait/Work/None), Font (Sans/Serif), Context, Quote, Attribution, Handle",
+        "catalog": "candidate (DRAFT in the OS Social Kit; not approved; agents do not use)",
+        "spec": "Quote ≤70 characters (None: ≤300), attribution ≤40."
+      }
+    },
+    {
+      "id": "97:65",
+      "name": "Social / L9 Split",
+      "type": "COMPONENT_SET",
+      "page": "Post layouts",
+      "key": "41bb2227cb1361a9d2da533bb955834c8b64f5e0",
+      "description": "Purpose: Half color panel, half photo.\nUse when: Bridging two photos in a carousel. The panel takes its color from the previous slide’s photo so the color carries across the swipe.\nDon't use when: Agents: do not use until approved. A headline over 50 characters.\nProps: Image (Right/Left), Font (Serif/Sans), Headline\nCatalog: candidate (DRAFT in the OS Social Kit; not approved; agents do not use)\nSpec: Panel 540 wide, padding 56, headline vertically centered. Panel defaults to color/bg/inverse; per-post color carry is a proposed rule. Logo 50% over the photo, 100% over the panel.",
+      "pageRole": "templates",
+      "parsed": {
+        "purpose": "Half color panel, half photo.",
+        "useWhen": "Bridging two photos in a carousel. The panel takes its color from the previous slide’s photo so the color carries across the swipe.",
+        "dontUseWhen": "Agents: do not use until approved. A headline over 50 characters.",
+        "props": "Image (Right/Left), Font (Serif/Sans), Headline",
+        "catalog": "candidate (DRAFT in the OS Social Kit; not approved; agents do not use)",
+        "spec": "Panel 540 wide, padding 56, headline vertically centered. Panel defaults to color/bg/inverse; per-post color carry is a proposed rule. Logo 50% over the photo, 100% over the panel."
+      }
+    },
+    {
+      "id": "97:92",
+      "name": "Social / L10 Headline",
+      "type": "COMPONENT_SET",
+      "page": "Post layouts",
+      "key": "b4f754710bd95c8a3e521024c80e9ce31ad83739",
+      "description": "Purpose: A headline alone over one photo.\nUse when: News or a statement that needs no eyebrow or byline. Serif for an editorial tone, Sans for a punchy one.\nDon't use when: Agents: do not use until approved. A headline over 70 characters.\nProps: Font (Serif/Sans), Support (None/Dek), Headline, Dek\nCatalog: candidate (DRAFT in the OS Social Kit; not approved; agents do not use)\nSpec: Centered, bottom, padding 200 at the foot. The source Sans size is 68; this uses Social/Headline 64 until the scale is approved. Logo 50%.",
+      "pageRole": "templates",
+      "parsed": {
+        "purpose": "A headline alone over one photo.",
+        "useWhen": "News or a statement that needs no eyebrow or byline. Serif for an editorial tone, Sans for a punchy one.",
+        "dontUseWhen": "Agents: do not use until approved. A headline over 70 characters.",
+        "props": "Font (Serif/Sans), Support (None/Dek), Headline, Dek",
+        "catalog": "candidate (DRAFT in the OS Social Kit; not approved; agents do not use)",
+        "spec": "Centered, bottom, padding 200 at the foot. The source Sans size is 68; this uses Social/Headline 64 until the scale is approved. Logo 50%."
+      }
+    }
+  ]
+}

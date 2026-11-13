@@ -7,7 +7,7 @@ Atomic is a shared kit of colors, type, and pieces. A brand adds values. It does
 
 ## Read this first
 
-- Foundations lists every token, what it is for, and its value in Neutral and Harbor.
+- Foundations lists every token, what it is for, and its value in Neutral and Okvy.
 - Components lists the five pieces and when to use them.
 - The gallery shows those pieces in light and dark, for both themes.
 

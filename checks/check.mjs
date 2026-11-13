@@ -2,7 +2,9 @@ import { collectFindings } from "../scripts/audit.mjs";
 import { engineerIssues } from "../scripts/engineer.mjs";
 import { decisionIssues } from "../scripts/sync-product.mjs";
 import { layerSyncIssues } from "../scripts/sync.mjs";
-import { rawValues, readJson, renderThemes } from "../scripts/tokens.mjs";
+import { figmaDriftIssues } from "./figma-drift.mjs";
+import { assertHash } from "../scripts/figma-lib.mjs";
+import { rawValues, readJson, renderThemes, withoutMeta } from "../scripts/tokens.mjs";
 
 const errors = [];
 
@@ -97,16 +99,35 @@ function same(left, right, path) {
 }
 
 const schema = readJson("tokens/schema.json");
-const semantic = readJson("tokens/semantic.json");
-const base = readJson("tokens/base.json");
-const neutral = readJson("themes/neutral.json");
-const harbor = readJson("themes/harbor.json");
+const semanticFile = readJson("tokens/semantic.json");
+const baseFile = readJson("tokens/base.json");
+const neutralFile = readJson("themes/neutral.json");
+const okvyFile = readJson("themes/okvy.json");
 const template = readJson("themes/_template.json");
-const light = readJson("tokens/modes/light.json");
-const dark = readJson("tokens/modes/dark.json");
+const lightFile = readJson("tokens/modes/light.json");
+const darkFile = readJson("tokens/modes/dark.json");
+
+for (const [path, value] of [
+  ["themes/neutral.json", neutralFile],
+  ["themes/okvy.json", okvyFile],
+  ["tokens/base.json", baseFile],
+  ["tokens/semantic.json", semanticFile],
+  ["tokens/modes/light.json", lightFile],
+  ["tokens/modes/dark.json", darkFile],
+]) {
+  const hashIssue = assertHash(path, value);
+  if (hashIssue) fail(hashIssue);
+}
+
+const semantic = withoutMeta(semanticFile);
+const base = withoutMeta(baseFile);
+const neutral = withoutMeta(neutralFile);
+const okvy = withoutMeta(okvyFile);
+const light = withoutMeta(lightFile);
+const dark = withoutMeta(darkFile);
 
 validate(neutral, schema, schema, "themes/neutral.json");
-validate(harbor, schema, schema, "themes/harbor.json");
+validate(okvy, schema, schema, "themes/okvy.json");
 
 for (const group of ["color", "font", "space", "radius", "motion", "size"]) {
   same(base[group], neutral[group], `tokens/base.json ${group}`);
@@ -164,23 +185,24 @@ for (const spec of Object.values(semantic)) {
 }
 
 const css = renderThemes();
-for (const themeName of ["neutral", "harbor"]) {
+for (const themeName of ["neutral", "okvy"]) {
   for (const modeName of ["light", "dark"]) {
     if (!css.includes(`[data-theme="${themeName}"][data-mode="${modeName}"]`)) {
       fail(`CSS is missing ${themeName} ${modeName}`);
     }
   }
 }
-if (!css.includes(neutral.color.accent) || !css.includes(harbor.color.accent)) {
+if (!css.includes(neutral.color.accent) || !css.includes(okvy.color.accent)) {
   fail("CSS is missing a theme accent");
 }
-if (neutral.color.accent === harbor.color.accent) {
-  fail("harbor must change the accent so the swap is visible");
+if (neutral.color.accent === okvy.color.accent) {
+  fail("okvy must change the accent so the swap is visible");
 }
 
 for (const issue of layerSyncIssues()) fail(issue);
 for (const issue of decisionIssues()) fail(issue);
 for (const issue of engineerIssues()) fail(issue);
+for (const issue of figmaDriftIssues()) fail(issue);
 for (const finding of collectFindings()) {
   fail(`${finding.file}:${finding.line} has a raw value: ${finding.raw}`);
 }

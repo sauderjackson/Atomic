@@ -1,0 +1,15 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "Checkbox",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "Lets a person turn one option on or off, or pick several from a list.",
+  "source": "figma",
+  "purpose": "Lets a person turn one option on or off, or pick several from a list.",
+  "useWhen": "Multiple independent choices, or one opt-in that is submitted with a form.",
+  "dontUseWhen": "A setting that takes effect at once (use Toggle) or one choice from a set (use Select or Tabs).",
+  "props": "Label, Show label, Checked (Off/On/Mixed), State",
+  "catalog": "candidate (no catalog entry yet)",
+  "figmaKey": "707f91403e72e4e97889f130cfcacf8fd2cecc3e",
+  "figmaId": "59:50"
+}

@@ -1,0 +1,15 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "Toggle",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "Turns a setting on or off right away.",
+  "source": "figma",
+  "purpose": "Turns a setting on or off right away.",
+  "useWhen": "A setting that applies the moment it changes.",
+  "dontUseWhen": "An option that waits for a form submit (use Checkbox).",
+  "props": "Label, Show label, Checked, State",
+  "catalog": "candidate (no catalog entry yet)",
+  "figmaKey": "98c4dc5e89e6aebd77e2010d12af950b145e02c9",
+  "figmaId": "61:32"
+}

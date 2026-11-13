@@ -11,9 +11,9 @@
           "light": "#f6f6f5",
           "dark": "#141412"
         },
-        "harbor": {
-          "light": "#f4f7f8",
-          "dark": "#10181e"
+        "okvy": {
+          "light": "#ffffff",
+          "dark": "#000000"
         }
       }
     },
@@ -27,9 +27,9 @@
           "light": "#eeeeec",
           "dark": "#232320"
         },
-        "harbor": {
-          "light": "#e7eef1",
-          "dark": "#1c2a33"
+        "okvy": {
+          "light": "#f2f2f2",
+          "dark": "#141414"
         }
       }
     },
@@ -43,9 +43,9 @@
           "light": "#e2e2df",
           "dark": "#32322e"
         },
-        "harbor": {
-          "light": "#d5e0e6",
-          "dark": "#2a3c48"
+        "okvy": {
+          "light": "#e6e6e6",
+          "dark": "#262626"
         }
       }
     },
@@ -59,9 +59,9 @@
           "light": "#141412",
           "dark": "#f6f6f5"
         },
-        "harbor": {
-          "light": "#10181e",
-          "dark": "#f4f7f8"
+        "okvy": {
+          "light": "#000000",
+          "dark": "#ffffff"
         }
       }
     },
@@ -75,9 +75,9 @@
           "light": "#5e5e58",
           "dark": "#a3a39d"
         },
-        "harbor": {
-          "light": "#4e6878",
-          "dark": "#8ea3b0"
+        "okvy": {
+          "light": "#595959",
+          "dark": "#b8b8b8"
         }
       }
     },
@@ -89,11 +89,11 @@
       "values": {
         "neutral": {
           "light": "#f6f6f5",
-          "dark": "#f6f6f5"
+          "dark": "#141412"
         },
-        "harbor": {
-          "light": "#f4f7f8",
-          "dark": "#f4f7f8"
+        "okvy": {
+          "light": "#ffffff",
+          "dark": "#000000"
         }
       }
     },
@@ -107,9 +107,9 @@
           "light": "#c8c8c4",
           "dark": "#474742"
         },
-        "harbor": {
-          "light": "#b7c7d1",
-          "dark": "#3b5160"
+        "okvy": {
+          "light": "#d9d9d9",
+          "dark": "#404040"
         }
       }
     },
@@ -123,9 +123,9 @@
           "light": "#5e6a71",
           "dark": "#5e6a71"
         },
-        "harbor": {
-          "light": "#2f6fed",
-          "dark": "#2f6fed"
+        "okvy": {
+          "light": "#000000",
+          "dark": "#000000"
         }
       }
     },
@@ -136,12 +136,12 @@
       "type": "color",
       "values": {
         "neutral": {
-          "light": "#5e6a71",
-          "dark": "#5e6a71"
+          "light": "#141412",
+          "dark": "#f6f6f5"
         },
-        "harbor": {
-          "light": "#2f6fed",
-          "dark": "#2f6fed"
+        "okvy": {
+          "light": "#000000",
+          "dark": "#ffffff"
         }
       }
     },
@@ -155,9 +155,9 @@
           "light": "#e2e2df",
           "dark": "#32322e"
         },
-        "harbor": {
-          "light": "#d5e0e6",
-          "dark": "#2a3c48"
+        "okvy": {
+          "light": "#e6e6e6",
+          "dark": "#262626"
         }
       }
     },
@@ -171,9 +171,9 @@
           "light": "#2f6f4e",
           "dark": "#2f6f4e"
         },
-        "harbor": {
-          "light": "#2f6f4e",
-          "dark": "#2f6f4e"
+        "okvy": {
+          "light": "#00a182",
+          "dark": "#00a182"
         }
       }
     },
@@ -187,9 +187,9 @@
           "light": "#8a5a12",
           "dark": "#8a5a12"
         },
-        "harbor": {
-          "light": "#8a5a12",
-          "dark": "#8a5a12"
+        "okvy": {
+          "light": "#e57a00",
+          "dark": "#e57a00"
         }
       }
     },
@@ -203,9 +203,9 @@
           "light": "#8f2d2d",
           "dark": "#8f2d2d"
         },
-        "harbor": {
-          "light": "#8f2d2d",
-          "dark": "#8f2d2d"
+        "okvy": {
+          "light": "#ff5a4e",
+          "dark": "#ff5a4e"
         }
       }
     },
@@ -219,9 +219,9 @@
           "light": "#2c5f8a",
           "dark": "#2c5f8a"
         },
-        "harbor": {
-          "light": "#2c5f8a",
-          "dark": "#2c5f8a"
+        "okvy": {
+          "light": "#3a9ad9",
+          "dark": "#3a9ad9"
         }
       }
     },
@@ -232,12 +232,12 @@
       "type": "fontFamily",
       "values": {
         "neutral": {
-          "light": "ui-sans-serif, system-ui, sans-serif",
-          "dark": "ui-sans-serif, system-ui, sans-serif"
+          "light": "\"Inter\", ui-sans-serif, system-ui, sans-serif",
+          "dark": "\"Inter\", ui-sans-serif, system-ui, sans-serif"
         },
-        "harbor": {
-          "light": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
-          "dark": "\"Trebuchet MS\", \"Segoe UI\", sans-serif"
+        "okvy": {
+          "light": "\"Inter\", ui-sans-serif, system-ui, sans-serif",
+          "dark": "\"Inter\", ui-sans-serif, system-ui, sans-serif"
         }
       }
     },
@@ -251,7 +251,7 @@
           "light": "40px",
           "dark": "40px"
         },
-        "harbor": {
+        "okvy": {
           "light": "40px",
           "dark": "40px"
         }
@@ -267,7 +267,7 @@
           "light": "28px",
           "dark": "28px"
         },
-        "harbor": {
+        "okvy": {
           "light": "28px",
           "dark": "28px"
         }
@@ -283,7 +283,7 @@
           "light": "16px",
           "dark": "16px"
         },
-        "harbor": {
+        "okvy": {
           "light": "16px",
           "dark": "16px"
         }
@@ -299,7 +299,7 @@
           "light": "14px",
           "dark": "14px"
         },
-        "harbor": {
+        "okvy": {
           "light": "14px",
           "dark": "14px"
         }
@@ -315,7 +315,7 @@
           "light": 400,
           "dark": 400
         },
-        "harbor": {
+        "okvy": {
           "light": 400,
           "dark": 400
         }
@@ -331,9 +331,9 @@
           "light": 600,
           "dark": 600
         },
-        "harbor": {
-          "light": 600,
-          "dark": 600
+        "okvy": {
+          "light": 500,
+          "dark": 500
         }
       }
     },
@@ -347,7 +347,7 @@
           "light": 1.5,
           "dark": 1.5
         },
-        "harbor": {
+        "okvy": {
           "light": 1.5,
           "dark": 1.5
         }
@@ -363,7 +363,7 @@
           "light": 1.25,
           "dark": 1.25
         },
-        "harbor": {
+        "okvy": {
           "light": 1.25,
           "dark": 1.25
         }
@@ -379,7 +379,7 @@
           "light": "8px",
           "dark": "8px"
         },
-        "harbor": {
+        "okvy": {
           "light": "8px",
           "dark": "8px"
         }
@@ -395,7 +395,7 @@
           "light": "12px",
           "dark": "12px"
         },
-        "harbor": {
+        "okvy": {
           "light": "12px",
           "dark": "12px"
         }
@@ -411,7 +411,7 @@
           "light": "16px",
           "dark": "16px"
         },
-        "harbor": {
+        "okvy": {
           "light": "16px",
           "dark": "16px"
         }
@@ -427,7 +427,7 @@
           "light": "48px",
           "dark": "48px"
         },
-        "harbor": {
+        "okvy": {
           "light": "48px",
           "dark": "48px"
         }
@@ -443,9 +443,9 @@
           "light": "8px",
           "dark": "8px"
         },
-        "harbor": {
-          "light": "16px",
-          "dark": "16px"
+        "okvy": {
+          "light": "4px",
+          "dark": "4px"
         }
       }
     },
@@ -459,9 +459,9 @@
           "light": "999px",
           "dark": "999px"
         },
-        "harbor": {
-          "light": "999px",
-          "dark": "999px"
+        "okvy": {
+          "light": "4px",
+          "dark": "4px"
         }
       }
     },
@@ -475,7 +475,7 @@
           "light": "120ms",
           "dark": "120ms"
         },
-        "harbor": {
+        "okvy": {
           "light": "120ms",
           "dark": "120ms"
         }
@@ -491,7 +491,7 @@
           "light": "cubic-bezier(0.2, 0, 0, 1)",
           "dark": "cubic-bezier(0.2, 0, 0, 1)"
         },
-        "harbor": {
+        "okvy": {
           "light": "cubic-bezier(0.2, 0, 0, 1)",
           "dark": "cubic-bezier(0.2, 0, 0, 1)"
         }
@@ -507,7 +507,7 @@
           "light": "44px",
           "dark": "44px"
         },
-        "harbor": {
+        "okvy": {
           "light": "44px",
           "dark": "44px"
         }
@@ -523,7 +523,7 @@
           "light": "1px",
           "dark": "1px"
         },
-        "harbor": {
+        "okvy": {
           "light": "1px",
           "dark": "1px"
         }
@@ -539,7 +539,7 @@
           "light": "2px",
           "dark": "2px"
         },
-        "harbor": {
+        "okvy": {
           "light": "2px",
           "dark": "2px"
         }
@@ -555,7 +555,7 @@
           "light": "20px",
           "dark": "20px"
         },
-        "harbor": {
+        "okvy": {
           "light": "20px",
           "dark": "20px"
         }
@@ -697,8 +697,8 @@
     },
     {
       "id": 2,
-      "rule": "The repo is the source of truth. Figma mirrors it.",
-      "why": "Two sources that both lead will drift.",
+      "rule": "Figma owns token values and visual specs. The repo owns the token contract, the rules, and component behavior. Agents may regenerate token files and catalog entries but must not overwrite component source. All changes land through a pull request that passes Gate.",
+      "why": "Two sources that both lead will drift. Values move one way: Figma to the repo.",
       "doc": "RULES.md"
     },
     {
@@ -739,9 +739,9 @@
     },
     {
       "id": 9,
-      "rule": "Harbor is a test theme, not a brand.",
-      "why": "It exists to prove a second accent restyles the system.",
-      "doc": "themes/harbor.json"
+      "rule": "Okvy is the brand theme. Neutral is the plain default. Switching between them must restyle every component with no component edit.",
+      "why": "It proves a brand fills the kit without forking it.",
+      "doc": "themes/okvy.json"
     },
     {
       "id": 10,
@@ -793,8 +793,8 @@
     },
     {
       "id": 18,
-      "rule": "The first live surface is web, and the first export is CSS variables.",
-      "why": "Social, thumbnail, video, and Tailwind wait until this base is the source.",
+      "rule": "The first live surface is web, and the first export is CSS variables. Social, thumbnail, and video follow as short specs in specs/.",
+      "why": "One export keeps the kit readable. Specs extend it without forking the base.",
       "doc": "BRIEF.md"
     },
     {

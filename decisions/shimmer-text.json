@@ -1,0 +1,15 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "ShimmerText",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "Shows that an agent or process is working.",
+  "source": "figma",
+  "purpose": "Shows that an agent or process is working.",
+  "useWhen": "Streaming or indeterminate work.",
+  "dontUseWhen": "Progress with a known percent (use ProgressRing).",
+  "props": "Label, Show icon, State (Loading/Done)",
+  "catalog": "candidate (no catalog entry yet)",
+  "figmaKey": "d73fe10afffb5df43fcb53e3b57694f5f5a82e53",
+  "figmaId": "72:12"
+}

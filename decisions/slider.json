@@ -1,0 +1,15 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "Slider",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "Picks one value on a range.",
+  "source": "figma",
+  "purpose": "Picks one value on a range.",
+  "useWhen": "A value where the rough position matters more than the exact number.",
+  "dontUseWhen": "An exact number (use Input) or fewer than five steps (use Tabs Segmented).",
+  "props": "Value, Show value, State",
+  "catalog": "candidate (no catalog entry yet)",
+  "figmaKey": "2cdd0bd9a4ae71ec685c3b0b00e67185879c8902",
+  "figmaId": "62:24"
+}

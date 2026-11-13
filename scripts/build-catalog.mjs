@@ -1,7 +1,7 @@
 import { readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { cssName, rawValues, readJson, resolveRef, root } from "./tokens.mjs";
+import { cssName, rawValues, readJson, resolveRef, root, withoutMeta } from "./tokens.mjs";
 
 export const componentSources = [
   ["components/atoms/button/button.md", "Button"],
@@ -11,7 +11,7 @@ export const componentSources = [
   ["components/atoms/icon/icon.md", "Icon"],
 ];
 
-const themeNames = ["neutral", "harbor"];
+const themeNames = ["neutral", "okvy"];
 const modeNames = ["light", "dark"];
 
 export function buildCatalog() {
@@ -45,9 +45,13 @@ function normalizeRules(rules) {
 }
 
 function buildTokens() {
-  const semantic = readJson("tokens/semantic.json");
-  const themes = Object.fromEntries(themeNames.map((name) => [name, rawValues(readJson(`themes/${name}.json`))]));
-  const modes = Object.fromEntries(modeNames.map((name) => [name, readJson(`tokens/modes/${name}.json`)]));
+  const semantic = withoutMeta(readJson("tokens/semantic.json"));
+  const themes = Object.fromEntries(
+    themeNames.map((name) => [name, rawValues(withoutMeta(readJson(`themes/${name}.json`)))]),
+  );
+  const modes = Object.fromEntries(
+    modeNames.map((name) => [name, withoutMeta(readJson(`tokens/modes/${name}.json`))]),
+  );
   const tokens = {};
   for (const [name, spec] of Object.entries(semantic)) {
     const css = cssName(name);
@@ -86,7 +90,7 @@ function markdownFiles(dir, out = []) {
   for (const entry of readdirSync(dir)) {
     const path = join(dir, entry);
     if (statSync(path).isDirectory()) markdownFiles(path, out);
-    else if (entry.endsWith(".md")) out.push(path);
+    else if (entry.endsWith(".md") && !entry.endsWith(".figma-proposed.md")) out.push(path);
   }
   return out;
 }

@@ -1,0 +1,76 @@
+{
+  "fileUrl": "https://www.figma.com/design/N2DLpNwbJwzoNqFWgQdVwl/Atomic",
+  "fileKey": "N2DLpNwbJwzoNqFWgQdVwl",
+  "ignorePageNames": ["---"],
+  "ignoreNodeNames": ["Page info"],
+  "dividerPages": [
+    { "name": "Foundations", "id": "28:34" },
+    { "name": "Components", "id": "28:35" },
+    { "name": "Patterns", "id": "28:36" },
+    { "name": "Social", "id": "88:2" },
+    { "name": "Thumbnails", "id": "88:26" },
+    { "name": "Decks", "id": "88:33" },
+    { "name": "Ads", "id": "110:21" }
+  ],
+  "pages": {
+    "foundations": [
+      { "name": "Color", "id": "0:1" },
+      { "name": "Typography", "id": "28:3" },
+      { "name": "Radius", "id": "28:4" },
+      { "name": "Elevation and layers", "id": "28:5" },
+      { "name": "Motion", "id": "28:6" },
+      { "name": "Icons", "id": "28:7" }
+    ],
+    "library": [
+      { "name": "Button", "id": "5:83" },
+      { "name": "IconButton", "id": "28:9" },
+      { "name": "Checkbox", "id": "28:11" },
+      { "name": "Input and Textarea", "id": "28:10" },
+      { "name": "Toggle", "id": "28:12" },
+      { "name": "Slider", "id": "28:13" },
+      { "name": "Avatar and FacePile", "id": "28:14" },
+      { "name": "Tooltip", "id": "28:15" },
+      { "name": "Menu and ContextMenu", "id": "28:16" },
+      { "name": "Select", "id": "28:17" },
+      { "name": "Popover and PreviewCard", "id": "28:18" },
+      { "name": "Modal", "id": "28:19" },
+      { "name": "ScrollContainer", "id": "28:20" },
+      { "name": "IconSwap", "id": "28:21" },
+      { "name": "ShimmerText", "id": "28:22" },
+      { "name": "ProgressRing", "id": "28:23" },
+      { "name": "GlowingButton", "id": "28:24" },
+      { "name": "Paper shaders", "id": "28:25" },
+      { "name": "Upload deck", "id": "28:26" },
+      { "name": "Status", "id": "28:28" },
+      { "name": "List rows", "id": "28:29" },
+      { "name": "Tabs", "id": "28:30" }
+    ],
+    "templates": [
+      { "name": "Post layouts", "id": "93:24" },
+      { "name": "Recipes", "id": "100:28" },
+      { "name": "Social motion", "id": "116:15" },
+      { "name": "Feed post", "id": "88:3" },
+      { "name": "Square post", "id": "88:7" },
+      { "name": "Story", "id": "88:11" },
+      { "name": "Carousel", "id": "88:15" },
+      { "name": "Thumbnail", "id": "88:27" },
+      { "name": "Slide layouts", "id": "88:34" },
+      { "name": "Google Display", "id": "110:22" },
+      { "name": "Responsive display", "id": "110:23" },
+      { "name": "Social ads", "id": "110:24" }
+    ],
+    "private": [
+      { "name": "_Playground", "id": "28:32" },
+      { "name": "_Specs", "id": "28:33" }
+    ]
+  },
+  "collections": {
+    "Primitive": { "id": "VariableCollectionId:5:2", "modes": ["Neutral", "Okvy"] },
+    "Semantic": { "id": "VariableCollectionId:5:47", "modes": ["Light", "Dark"] },
+    "Lead": {
+      "id": "VariableCollectionId:121:30",
+      "modes": ["Blue", "Red", "Yellow", "Green", "Orange", "Purple"],
+      "status": "proposed"
+    }
+  }
+}

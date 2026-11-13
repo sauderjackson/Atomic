@@ -1,0 +1,15 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "Menu",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "Holds a short list of actions.",
+  "source": "figma",
+  "purpose": "Holds a short list of actions.",
+  "useWhen": "A menu from a trigger, or a ContextMenu at the pointer.",
+  "dontUseWhen": "More than about seven items (chunk them or use a page).",
+  "props": "none (compose from MenuItem and Menu Separator)",
+  "catalog": "candidate (no catalog entry yet)",
+  "figmaKey": "4b5b8ec683ac2e484f11219f0ac39afa6d7405a8",
+  "figmaId": "65:91"
+}

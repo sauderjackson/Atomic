@@ -1,0 +1,15 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "Select",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "Picks one option from a list.",
+  "source": "figma",
+  "purpose": "Picks one option from a list.",
+  "useWhen": "Five or more options, or options that change.",
+  "dontUseWhen": "Two to four options (use Tabs Segmented) or several picks (use Checkbox).",
+  "props": "Value, State",
+  "catalog": "candidate (no catalog entry yet)",
+  "figmaKey": "242a1b28b6249efaf65154d5d6a403094dcd7c3a",
+  "figmaId": "66:22"
+}

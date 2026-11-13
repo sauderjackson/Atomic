@@ -1,0 +1,15 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "List",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "Holds a set of ListRow items.",
+  "source": "figma",
+  "purpose": "Holds a set of ListRow items.",
+  "useWhen": "A scannable set of similar items.",
+  "dontUseWhen": "Mixed content types.",
+  "props": "none (compose from ListRow)",
+  "catalog": "candidate (no catalog entry yet)",
+  "figmaKey": "f2e335fb1325793f7401947926da926ded2d6b5d",
+  "figmaId": "77:103"
+}

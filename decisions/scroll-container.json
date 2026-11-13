@@ -1,0 +1,15 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "ScrollContainer",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "Clips long content into a scroll region.",
+  "source": "figma",
+  "purpose": "Clips long content into a scroll region.",
+  "useWhen": "A list or panel taller than its space.",
+  "dontUseWhen": "The whole page (let the page scroll).",
+  "props": "Show scrollbar, Axis",
+  "catalog": "candidate (no catalog entry yet)",
+  "figmaKey": "ee28e1df8ac0a6f77f26cb7a75b688a52578e87b",
+  "figmaId": "71:52"
+}

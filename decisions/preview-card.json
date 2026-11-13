@@ -1,0 +1,15 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "PreviewCard",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "Previews a link or file on hover.",
+  "source": "figma",
+  "purpose": "Previews a link or file on hover.",
+  "useWhen": "A link or file whose content helps a person decide to open it.",
+  "dontUseWhen": "Content a person must act on.",
+  "props": "Title, Meta, Description, Show description",
+  "catalog": "candidate (no catalog entry yet)",
+  "figmaKey": "eabe3cfa22a92a856cd11eaa06c89dbd2d6b97c1",
+  "figmaId": "67:39"
+}

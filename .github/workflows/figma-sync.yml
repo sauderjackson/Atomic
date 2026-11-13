@@ -1,0 +1,67 @@
+name: Figma sync
+
+on:
+  repository_dispatch:
+    types: [figma-library-publish]
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Pull tokens
+        env:
+          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+          FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
+        run: npm run figma:pull
+      - name: Build tokens
+        run: npm run build:tokens
+      - name: Sync components
+        env:
+          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+          FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
+        run: npm run figma:components
+      - name: Build catalog
+        run: npm run build:catalog
+      - name: Open or update sync PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          branch="figma-sync/auto"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$branch"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No Figma changes."
+            exit 0
+          fi
+          git commit -m "chore: sync from Figma publish"
+          git push -f origin "$branch"
+          if gh pr view "$branch" --json number >/dev/null 2>&1; then
+            gh pr edit "$branch" --title "Figma sync" --body "$(cat <<'EOF'
+          Automatic sync from the published Figma library.
+
+          Review token diffs, candidate decisions, and any proposed doc edits.
+          This branch never merges itself into main.
+          EOF
+          )"
+          else
+            gh pr create --base main --head "$branch" --title "Figma sync" --body "$(cat <<'EOF'
+          Automatic sync from the published Figma library.
+
+          Review token diffs, candidate decisions, and any proposed doc edits.
+          This branch never merges itself into main.
+          EOF
+          )"
+          fi

@@ -1,0 +1,16 @@
+{
+  "generatedBy": "scripts/figma-components.mjs",
+  "name": "UploadDeck",
+  "status": "candidate",
+  "uses": 0,
+  "reason": "Takes a file a person drops or picks.",
+  "source": "figma",
+  "purpose": "Takes a file a person drops or picks.",
+  "useWhen": "Uploading a deck or document.",
+  "dontUseWhen": "Picking from files already in the product (use List).",
+  "props": "Title, Hint, State (Default/Dragging/Uploading/Done/Error)",
+  "catalog": "candidate (no catalog entry yet; review as possibly product-only)",
+  "figmaKey": "259c68523714374f6f519afb48f16240cedeee46",
+  "figmaId": "75:58",
+  "needsHuman": true
+}
