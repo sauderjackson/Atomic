@@ -1,43 +1,43 @@
 {
   "fileKey": "N2DLpNwbJwzoNqFWgQdVwl",
+  "design": "figma/DESIGN.md",
   "theme": "light",
-  "mode": "Semantic / Light",
   "layout": "one component per page",
   "sections": [
     {
       "name": "Foundations",
       "pageId": "28:34",
       "pages": [
-        { "name": "Color", "pageId": "0:1", "component": "Color / Swatch" },
-        { "name": "Typography", "pageId": "28:3", "component": "Type / Body" },
-        { "name": "Radius", "pageId": "28:4", "component": "Radius / Control" },
-        { "name": "Elevation and layers", "pageId": "28:5", "component": "Elevation / Surface" },
+        { "name": "Color", "pageId": "0:1", "component": "Color / Ink" },
+        { "name": "Typography", "pageId": "28:3", "component": "Type / Display" },
+        { "name": "Radius", "pageId": "28:4", "component": "Radius / 4px" },
+        { "name": "Elevation and layers", "pageId": "28:5", "component": "Elevation / Card" },
         { "name": "Motion", "pageId": "28:6", "component": "Motion / Control" },
-        { "name": "Icons", "pageId": "28:7", "component": "Icon / Play" }
+        { "name": "Icons", "pageId": "28:7", "component": "Icon / Search" }
       ]
     },
     {
       "name": "Components",
       "pageId": "28:35",
       "pages": [
-        { "name": "Button", "pageId": "5:83", "component": "Button" },
-        { "name": "IconButton", "pageId": "28:9", "component": "IconButton" },
+        { "name": "Button", "pageId": "5:83", "component": "Button / Primary" },
+        { "name": "IconButton", "pageId": "28:9", "component": "Button / Ghost" },
         { "name": "Checkbox", "pageId": "28:11", "component": "Checkbox" },
-        { "name": "Input and Textarea", "pageId": "28:10", "component": "TextInput" },
+        { "name": "Input and Textarea", "pageId": "28:10", "component": "Input / Terminal" },
         { "name": "Toggle", "pageId": "28:12", "component": "Toggle" },
         { "name": "Slider", "pageId": "28:13", "component": "Slider" },
-        { "name": "Avatar and FacePile", "pageId": "28:14", "component": "Avatar" },
+        { "name": "Avatar and FacePile", "pageId": "28:14", "component": "Tile / Logo Trust" },
         { "name": "Tooltip", "pageId": "28:15", "component": "Tooltip" },
-        { "name": "Menu and ContextMenu", "pageId": "28:16", "component": "Menu" },
+        { "name": "Menu and ContextMenu", "pageId": "28:16", "component": "Navigation / Bar" },
         { "name": "Select", "pageId": "28:17", "component": "Select" },
-        { "name": "Popover and PreviewCard", "pageId": "28:18", "component": "Popover" },
-        { "name": "Modal", "pageId": "28:19", "component": "Modal" },
+        { "name": "Popover and PreviewCard", "pageId": "28:18", "component": "Window / Mockup" },
+        { "name": "Modal", "pageId": "28:19", "component": "Card / Product" },
         { "name": "ScrollContainer", "pageId": "28:20", "component": "ScrollContainer" },
         { "name": "IconSwap", "pageId": "28:21", "component": "IconSwap" },
-        { "name": "ShimmerText", "pageId": "28:22", "component": "ShimmerText" },
-        { "name": "ProgressRing", "pageId": "28:23", "component": "ProgressRing" },
-        { "name": "GlowingButton", "pageId": "28:24", "component": "GlowingButton" },
-        { "name": "Paper shaders", "pageId": "28:25", "component": "PaperShader" },
+        { "name": "ShimmerText", "pageId": "28:22", "component": "Link / Ember" },
+        { "name": "ProgressRing", "pageId": "28:23", "component": "Button / Forest" },
+        { "name": "GlowingButton", "pageId": "28:24", "component": "Button / Secondary" },
+        { "name": "Paper shaders", "pageId": "28:25", "component": "Button / Amber" },
         { "name": "Upload deck", "pageId": "28:26", "component": "UploadDeck" }
       ]
     },
@@ -45,8 +45,8 @@
       "name": "Patterns",
       "pageId": "28:36",
       "pages": [
-        { "name": "Status", "pageId": "28:28", "component": "Badge" },
-        { "name": "List rows", "pageId": "28:29", "component": "ListRow" },
+        { "name": "Status", "pageId": "28:28", "component": "Tag / Mono Metadata" },
+        { "name": "List rows", "pageId": "28:29", "component": "Footer / Link Column" },
         { "name": "Tabs", "pageId": "28:30", "component": "Tabs" }
       ]
     }

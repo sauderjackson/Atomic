@@ -18,11 +18,11 @@
       "800": "#1c2a33",
       "900": "#10181e"
     },
-    "accent": "#2f6fed",
-    "success": "#2f6f4e",
-    "warning": "#8a5a12",
-    "error": "#8f2d2d",
-    "info": "#2c5f8a"
+    "accent": "#34785c",
+    "success": "#34785c",
+    "warning": "#c08532",
+    "error": "#cf2d56",
+    "info": "#f54e00"
   },
   "font": {
     "family": {
@@ -56,16 +56,16 @@
   "radius": {
     "none": "0px",
     "sm": "4px",
-    "md": "16px",
-    "full": "999px"
+    "md": "4px",
+    "full": "4px"
   },
   "motion": {
     "duration": {
-      "fast": "120ms",
-      "base": "200ms"
+      "fast": "150ms",
+      "base": "150ms"
     },
     "easing": {
-      "standard": "cubic-bezier(0.2, 0, 0, 1)"
+      "standard": "cubic-bezier(0.4, 0, 0.2, 1)"
     }
   },
   "size": {
