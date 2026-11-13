@@ -1,44 +1,801 @@
 {
+  "generatedBy": "scripts/build-catalog.mjs",
+  "tokens": {
+    "color.bg.canvas": {
+      "css": "--color-bg-canvas",
+      "use": "var(--color-bg-canvas)",
+      "job": "Page background behind all content.",
+      "type": "color",
+      "values": {
+        "neutral": {
+          "light": "#f6f6f5",
+          "dark": "#141412"
+        },
+        "harbor": {
+          "light": "#f4f7f8",
+          "dark": "#10181e"
+        }
+      }
+    },
+    "color.bg.surface": {
+      "css": "--color-bg-surface",
+      "use": "var(--color-bg-surface)",
+      "job": "Surface for inputs, badges, and grouped specimens.",
+      "type": "color",
+      "values": {
+        "neutral": {
+          "light": "#eeeeec",
+          "dark": "#232320"
+        },
+        "harbor": {
+          "light": "#e7eef1",
+          "dark": "#1c2a33"
+        }
+      }
+    },
+    "color.bg.subtle": {
+      "css": "--color-bg-subtle",
+      "use": "var(--color-bg-subtle)",
+      "job": "Quiet fill behind a secondary action.",
+      "type": "color",
+      "values": {
+        "neutral": {
+          "light": "#e2e2df",
+          "dark": "#32322e"
+        },
+        "harbor": {
+          "light": "#d5e0e6",
+          "dark": "#2a3c48"
+        }
+      }
+    },
+    "color.fg.default": {
+      "css": "--color-fg-default",
+      "use": "var(--color-fg-default)",
+      "job": "Default text.",
+      "type": "color",
+      "values": {
+        "neutral": {
+          "light": "#141412",
+          "dark": "#f6f6f5"
+        },
+        "harbor": {
+          "light": "#10181e",
+          "dark": "#f4f7f8"
+        }
+      }
+    },
+    "color.fg.muted": {
+      "css": "--color-fg-muted",
+      "use": "var(--color-fg-muted)",
+      "job": "Secondary text.",
+      "type": "color",
+      "values": {
+        "neutral": {
+          "light": "#5e5e58",
+          "dark": "#a3a39d"
+        },
+        "harbor": {
+          "light": "#4e6878",
+          "dark": "#8ea3b0"
+        }
+      }
+    },
+    "color.fg.onPrimary": {
+      "css": "--color-fg-on-primary",
+      "use": "var(--color-fg-on-primary)",
+      "job": "Text on the primary action.",
+      "type": "color",
+      "values": {
+        "neutral": {
+          "light": "#f6f6f5",
+          "dark": "#f6f6f5"
+        },
+        "harbor": {
+          "light": "#f4f7f8",
+          "dark": "#f4f7f8"
+        }
+      }
+    },
+    "color.border.default": {
+      "css": "--color-border-default",
+      "use": "var(--color-border-default)",
+      "job": "Default border.",
+      "type": "color",
+      "values": {
+        "neutral": {
+          "light": "#c8c8c4",
+          "dark": "#474742"
+        },
+        "harbor": {
+          "light": "#b7c7d1",
+          "dark": "#3b5160"
+        }
+      }
+    },
+    "color.border.focus": {
+      "css": "--color-border-focus",
+      "use": "var(--color-border-focus)",
+      "job": "Focus ring.",
+      "type": "color",
+      "values": {
+        "neutral": {
+          "light": "#5e6a71",
+          "dark": "#5e6a71"
+        },
+        "harbor": {
+          "light": "#2f6fed",
+          "dark": "#2f6fed"
+        }
+      }
+    },
+    "color.action.primary": {
+      "css": "--color-action-primary",
+      "use": "var(--color-action-primary)",
+      "job": "Fill of the one primary action.",
+      "type": "color",
+      "values": {
+        "neutral": {
+          "light": "#5e6a71",
+          "dark": "#5e6a71"
+        },
+        "harbor": {
+          "light": "#2f6fed",
+          "dark": "#2f6fed"
+        }
+      }
+    },
+    "color.action.secondary": {
+      "css": "--color-action-secondary",
+      "use": "var(--color-action-secondary)",
+      "job": "Fill of a secondary action.",
+      "type": "color",
+      "values": {
+        "neutral": {
+          "light": "#e2e2df",
+          "dark": "#32322e"
+        },
+        "harbor": {
+          "light": "#d5e0e6",
+          "dark": "#2a3c48"
+        }
+      }
+    },
+    "color.status.success": {
+      "css": "--color-status-success",
+      "use": "var(--color-status-success)",
+      "job": "Success status.",
+      "type": "color",
+      "values": {
+        "neutral": {
+          "light": "#2f6f4e",
+          "dark": "#2f6f4e"
+        },
+        "harbor": {
+          "light": "#2f6f4e",
+          "dark": "#2f6f4e"
+        }
+      }
+    },
+    "color.status.warning": {
+      "css": "--color-status-warning",
+      "use": "var(--color-status-warning)",
+      "job": "Warning status.",
+      "type": "color",
+      "values": {
+        "neutral": {
+          "light": "#8a5a12",
+          "dark": "#8a5a12"
+        },
+        "harbor": {
+          "light": "#8a5a12",
+          "dark": "#8a5a12"
+        }
+      }
+    },
+    "color.status.error": {
+      "css": "--color-status-error",
+      "use": "var(--color-status-error)",
+      "job": "Error status.",
+      "type": "color",
+      "values": {
+        "neutral": {
+          "light": "#8f2d2d",
+          "dark": "#8f2d2d"
+        },
+        "harbor": {
+          "light": "#8f2d2d",
+          "dark": "#8f2d2d"
+        }
+      }
+    },
+    "color.status.info": {
+      "css": "--color-status-info",
+      "use": "var(--color-status-info)",
+      "job": "Info status.",
+      "type": "color",
+      "values": {
+        "neutral": {
+          "light": "#2c5f8a",
+          "dark": "#2c5f8a"
+        },
+        "harbor": {
+          "light": "#2c5f8a",
+          "dark": "#2c5f8a"
+        }
+      }
+    },
+    "font.family.body": {
+      "css": "--font-family-body",
+      "use": "var(--font-family-body)",
+      "job": "Body and UI font stack.",
+      "type": "fontFamily",
+      "values": {
+        "neutral": {
+          "light": "ui-sans-serif, system-ui, sans-serif",
+          "dark": "ui-sans-serif, system-ui, sans-serif"
+        },
+        "harbor": {
+          "light": "\"Trebuchet MS\", \"Segoe UI\", sans-serif",
+          "dark": "\"Trebuchet MS\", \"Segoe UI\", sans-serif"
+        }
+      }
+    },
+    "font.size.display": {
+      "css": "--font-size-display",
+      "use": "var(--font-size-display)",
+      "job": "Largest type size.",
+      "type": "dimension",
+      "values": {
+        "neutral": {
+          "light": "40px",
+          "dark": "40px"
+        },
+        "harbor": {
+          "light": "40px",
+          "dark": "40px"
+        }
+      }
+    },
+    "font.size.title": {
+      "css": "--font-size-title",
+      "use": "var(--font-size-title)",
+      "job": "Section title size.",
+      "type": "dimension",
+      "values": {
+        "neutral": {
+          "light": "28px",
+          "dark": "28px"
+        },
+        "harbor": {
+          "light": "28px",
+          "dark": "28px"
+        }
+      }
+    },
+    "font.size.body": {
+      "css": "--font-size-body",
+      "use": "var(--font-size-body)",
+      "job": "Body size.",
+      "type": "dimension",
+      "values": {
+        "neutral": {
+          "light": "16px",
+          "dark": "16px"
+        },
+        "harbor": {
+          "light": "16px",
+          "dark": "16px"
+        }
+      }
+    },
+    "font.size.label": {
+      "css": "--font-size-label",
+      "use": "var(--font-size-label)",
+      "job": "Label, button, and badge size.",
+      "type": "dimension",
+      "values": {
+        "neutral": {
+          "light": "14px",
+          "dark": "14px"
+        },
+        "harbor": {
+          "light": "14px",
+          "dark": "14px"
+        }
+      }
+    },
+    "font.weight.body": {
+      "css": "--font-weight-body",
+      "use": "var(--font-weight-body)",
+      "job": "Body weight.",
+      "type": "fontWeight",
+      "values": {
+        "neutral": {
+          "light": 400,
+          "dark": 400
+        },
+        "harbor": {
+          "light": 400,
+          "dark": 400
+        }
+      }
+    },
+    "font.weight.label": {
+      "css": "--font-weight-label",
+      "use": "var(--font-weight-label)",
+      "job": "Label and title weight.",
+      "type": "fontWeight",
+      "values": {
+        "neutral": {
+          "light": 600,
+          "dark": 600
+        },
+        "harbor": {
+          "light": 600,
+          "dark": 600
+        }
+      }
+    },
+    "font.lineHeight.body": {
+      "css": "--font-line-height-body",
+      "use": "var(--font-line-height-body)",
+      "job": "Body line height.",
+      "type": "lineHeight",
+      "values": {
+        "neutral": {
+          "light": 1.5,
+          "dark": 1.5
+        },
+        "harbor": {
+          "light": 1.5,
+          "dark": 1.5
+        }
+      }
+    },
+    "font.lineHeight.title": {
+      "css": "--font-line-height-title",
+      "use": "var(--font-line-height-title)",
+      "job": "Title line height.",
+      "type": "lineHeight",
+      "values": {
+        "neutral": {
+          "light": 1.25,
+          "dark": 1.25
+        },
+        "harbor": {
+          "light": 1.25,
+          "dark": 1.25
+        }
+      }
+    },
+    "space.gap": {
+      "css": "--space-gap",
+      "use": "var(--space-gap)",
+      "job": "Gap inside a control or a row.",
+      "type": "dimension",
+      "values": {
+        "neutral": {
+          "light": "8px",
+          "dark": "8px"
+        },
+        "harbor": {
+          "light": "8px",
+          "dark": "8px"
+        }
+      }
+    },
+    "space.inset": {
+      "css": "--space-inset",
+      "use": "var(--space-inset)",
+      "job": "Horizontal padding inside a control.",
+      "type": "dimension",
+      "values": {
+        "neutral": {
+          "light": "12px",
+          "dark": "12px"
+        },
+        "harbor": {
+          "light": "12px",
+          "dark": "12px"
+        }
+      }
+    },
+    "space.stack": {
+      "css": "--space-stack",
+      "use": "var(--space-stack)",
+      "job": "Space between stacked items.",
+      "type": "dimension",
+      "values": {
+        "neutral": {
+          "light": "16px",
+          "dark": "16px"
+        },
+        "harbor": {
+          "light": "16px",
+          "dark": "16px"
+        }
+      }
+    },
+    "space.section": {
+      "css": "--space-section",
+      "use": "var(--space-section)",
+      "job": "Space between sections.",
+      "type": "dimension",
+      "values": {
+        "neutral": {
+          "light": "48px",
+          "dark": "48px"
+        },
+        "harbor": {
+          "light": "48px",
+          "dark": "48px"
+        }
+      }
+    },
+    "radius.control": {
+      "css": "--radius-control",
+      "use": "var(--radius-control)",
+      "job": "Corner radius of buttons and inputs.",
+      "type": "dimension",
+      "values": {
+        "neutral": {
+          "light": "8px",
+          "dark": "8px"
+        },
+        "harbor": {
+          "light": "16px",
+          "dark": "16px"
+        }
+      }
+    },
+    "radius.badge": {
+      "css": "--radius-badge",
+      "use": "var(--radius-badge)",
+      "job": "Corner radius of badges.",
+      "type": "dimension",
+      "values": {
+        "neutral": {
+          "light": "999px",
+          "dark": "999px"
+        },
+        "harbor": {
+          "light": "999px",
+          "dark": "999px"
+        }
+      }
+    },
+    "motion.duration.control": {
+      "css": "--motion-duration-control",
+      "use": "var(--motion-duration-control)",
+      "job": "Duration of a control state change.",
+      "type": "duration",
+      "values": {
+        "neutral": {
+          "light": "120ms",
+          "dark": "120ms"
+        },
+        "harbor": {
+          "light": "120ms",
+          "dark": "120ms"
+        }
+      }
+    },
+    "motion.easing.standard": {
+      "css": "--motion-easing-standard",
+      "use": "var(--motion-easing-standard)",
+      "job": "Easing of a control state change.",
+      "type": "easing",
+      "values": {
+        "neutral": {
+          "light": "cubic-bezier(0.2, 0, 0, 1)",
+          "dark": "cubic-bezier(0.2, 0, 0, 1)"
+        },
+        "harbor": {
+          "light": "cubic-bezier(0.2, 0, 0, 1)",
+          "dark": "cubic-bezier(0.2, 0, 0, 1)"
+        }
+      }
+    },
+    "size.tap": {
+      "css": "--size-tap",
+      "use": "var(--size-tap)",
+      "job": "Minimum tap target.",
+      "type": "dimension",
+      "values": {
+        "neutral": {
+          "light": "44px",
+          "dark": "44px"
+        },
+        "harbor": {
+          "light": "44px",
+          "dark": "44px"
+        }
+      }
+    },
+    "size.border": {
+      "css": "--size-border",
+      "use": "var(--size-border)",
+      "job": "Border thickness.",
+      "type": "dimension",
+      "values": {
+        "neutral": {
+          "light": "1px",
+          "dark": "1px"
+        },
+        "harbor": {
+          "light": "1px",
+          "dark": "1px"
+        }
+      }
+    },
+    "size.outline": {
+      "css": "--size-outline",
+      "use": "var(--size-outline)",
+      "job": "Focus outline thickness.",
+      "type": "dimension",
+      "values": {
+        "neutral": {
+          "light": "2px",
+          "dark": "2px"
+        },
+        "harbor": {
+          "light": "2px",
+          "dark": "2px"
+        }
+      }
+    },
+    "size.icon": {
+      "css": "--size-icon",
+      "use": "var(--size-icon)",
+      "job": "Icon box size.",
+      "type": "dimension",
+      "values": {
+        "neutral": {
+          "light": "20px",
+          "dark": "20px"
+        },
+        "harbor": {
+          "light": "20px",
+          "dark": "20px"
+        }
+      }
+    }
+  },
   "components": [
     {
       "name": "Button",
       "level": "atom",
       "purpose": "Starts an action.",
-      "props": ["variant", "children", "disabled", "type"],
-      "whenToUse": "Use primary for the single main action on a screen. Use secondary for every other action.",
-      "whenNotToUse": "Do not use two primary buttons on one screen."
+      "props": [
+        {
+          "name": "variant",
+          "values": [
+            "primary",
+            "secondary"
+          ],
+          "default": "secondary",
+          "job": "Chooses the single primary action or a secondary action."
+        },
+        {
+          "name": "children",
+          "job": "The label a person reads."
+        },
+        {
+          "name": "disabled",
+          "default": "false",
+          "job": "Turns the action off."
+        },
+        {
+          "name": "type",
+          "values": [
+            "button",
+            "submit",
+            "reset"
+          ],
+          "default": "button",
+          "job": "Sets the button behavior."
+        }
+      ],
+      "whenToUse": "Use `primary` for the single main action on a screen. Use `secondary` for every other action.",
+      "whenNotToUse": "Do not use two primary buttons on one screen. Do not use a button for navigation that should be a link later. Do not put a raw color on it."
     },
     {
       "name": "TextInput",
       "level": "atom",
       "purpose": "Collects one short line of text.",
-      "props": ["label"],
+      "props": [
+        {
+          "name": "label",
+          "required": true,
+          "job": "Visible name of the field."
+        }
+      ],
       "whenToUse": "Use it for a single short answer, such as a name.",
-      "whenNotToUse": "Do not use it for a long answer or a choice, and do not leave it unlabeled."
+      "whenNotToUse": "Do not use it for a long answer, a choice, or a search that needs its own molecule. Do not leave the field unlabeled."
     },
     {
       "name": "Type",
       "level": "atom",
       "purpose": "Applies a semantic type style.",
-      "props": ["kind", "children"],
-      "whenToUse": "Use display once for the page title, title for a section, body for reading text, and label for a caption.",
-      "whenNotToUse": "Do not set a font size, family, or weight in the caller."
+      "props": [
+        {
+          "name": "kind",
+          "values": [
+            "display",
+            "title",
+            "body",
+            "label"
+          ],
+          "default": "body",
+          "job": "Picks the semantic type style."
+        },
+        {
+          "name": "children",
+          "job": "The text."
+        }
+      ],
+      "whenToUse": "Use `display` once for the page title, `title` for a section, `body` for reading text, and `label` for a short caption.",
+      "whenNotToUse": "Do not set a font size, family, or weight in the caller. Do not use display more than once on a screen."
     },
     {
       "name": "Badge",
       "level": "atom",
       "purpose": "Names a status.",
-      "props": ["tone", "children"],
-      "whenToUse": "Use it to mark success, warning, error, or info next to the thing it describes.",
-      "whenNotToUse": "Do not use it as a button or invent a tone."
+      "props": [
+        {
+          "name": "tone",
+          "values": [
+            "success",
+            "warning",
+            "error",
+            "info"
+          ],
+          "job": "Names the status."
+        },
+        {
+          "name": "children",
+          "job": "The status label."
+        }
+      ],
+      "whenToUse": "Use it to mark a state the person needs to notice, next to the thing it describes.",
+      "whenNotToUse": "Do not use it as a button. Do not invent a tone outside the four status roles."
     },
     {
       "name": "Icon",
       "level": "atom",
       "purpose": "Draws one icon from the active icon set.",
-      "props": ["name", "iconSetId"],
-      "whenToUse": "Use it inside a control or next to a short label.",
-      "whenNotToUse": "Do not import an icon library from a component."
+      "props": [
+        {
+          "name": "name",
+          "values": [
+            "plus",
+            "search",
+            "check",
+            "info"
+          ],
+          "job": "Which icon to draw."
+        },
+        {
+          "name": "iconSetId",
+          "values": [
+            "lucide"
+          ],
+          "job": "The icon set. Any other set fails."
+        }
+      ],
+      "whenToUse": "Use it inside a control or next to a short label. The size comes from `size.icon`.",
+      "whenNotToUse": "Do not import an icon library from a component. Do not use an icon as the only primary action."
+    }
+  ],
+  "rules": [
+    {
+      "id": 1,
+      "rule": "Read AGENTS.md, then RULES.md, then catalog.json, then the component doc for the piece you change.",
+      "why": "An agent that skips this order invents a piece that is not in the system.",
+      "doc": "SKILL.md"
+    },
+    {
+      "id": 2,
+      "rule": "The repo is the source of truth. Figma mirrors it.",
+      "why": "Two sources that both lead will drift.",
+      "doc": "RULES.md"
+    },
+    {
+      "id": 3,
+      "rule": "Components use semantic tokens such as color.action.primary.",
+      "why": "A theme can restyle every screen without a component edit.",
+      "doc": "RULES.md"
+    },
+    {
+      "id": 4,
+      "rule": "Do not rename a role in tokens/schema.json.",
+      "why": "Every reader keys off those names.",
+      "doc": "tokens/schema.json"
+    },
+    {
+      "id": 5,
+      "rule": "A theme supplies values only. It cannot replace a component.",
+      "why": "A brand fills the kit. It does not fork the kit.",
+      "doc": "RULES.md"
+    },
+    {
+      "id": 6,
+      "rule": "Gray steps stay 0 through 900.",
+      "why": "A brand fills the steps. It does not add a step.",
+      "doc": "RULES.md"
+    },
+    {
+      "id": 7,
+      "rule": "Status hues stay success, warning, error, and info.",
+      "why": "A brand may change the color. It may not change the meaning.",
+      "doc": "RULES.md"
+    },
+    {
+      "id": 8,
+      "rule": "Tap targets use size.tap.",
+      "why": "One target size keeps controls easy to hit.",
+      "doc": "RULES.md"
+    },
+    {
+      "id": 9,
+      "rule": "Harbor is a test theme, not a brand.",
+      "why": "It exists to prove a second accent restyles the system.",
+      "doc": "themes/harbor.json"
+    },
+    {
+      "id": 10,
+      "rule": "Every component has a purpose, props, when to use, and when not to use.",
+      "why": "Agents choose from those facts.",
+      "doc": "catalog.json"
+    },
+    {
+      "id": 11,
+      "rule": "One primary action per screen.",
+      "why": "A screen with two primary buttons hides the main action.",
+      "doc": "SKILL.md"
+    },
+    {
+      "id": 12,
+      "rule": "Chunk a screen into small groups.",
+      "why": "A person can hold only a few choices at once.",
+      "doc": "RULES.md"
+    },
+    {
+      "id": 13,
+      "rule": "Prefer a documented prop over a new component.",
+      "why": "Fewer pieces stay easier to use correctly.",
+      "doc": "RULES.md"
+    },
+    {
+      "id": 14,
+      "rule": "Icons go through icons/. Lucide is the default set.",
+      "why": "The icon set can be swapped without rewriting components.",
+      "doc": "RULES.md"
+    },
+    {
+      "id": 15,
+      "rule": "Run build:tokens and build:catalog, and commit both outputs.",
+      "why": "People and agents then read the same values.",
+      "doc": "README.md"
+    },
+    {
+      "id": 16,
+      "rule": "Do not hand-edit catalog.json or AGENTS.md.",
+      "why": "Both files are generated. A hand edit will fail the check.",
+      "doc": "SKILL.md"
+    },
+    {
+      "id": 17,
+      "rule": "Schema and raw-value checks block.",
+      "why": "A broken theme or a raw color should not merge.",
+      "doc": "RULES.md"
+    },
+    {
+      "id": 18,
+      "rule": "The first live surface is web, and the first export is CSS variables.",
+      "why": "Social, thumbnail, video, and Tailwind wait until this base is the source.",
+      "doc": "BRIEF.md"
     }
   ]
 }

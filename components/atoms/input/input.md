@@ -4,8 +4,7 @@ Atom. Collects one short line of text.
 
 ## Props
 
-- `label`: visible name of the field. Required.
-- Other text-input attributes, except `type`.
+- `label` (required): Visible name of the field.
 
 ## When to use
 

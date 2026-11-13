@@ -4,8 +4,8 @@ Atom. Applies a semantic type style.
 
 ## Props
 
-- `kind`: `display`, `title`, `body`, or `label`. Default `body`.
-- `children`: the text.
+- `kind` (`display` or `title` or `body` or `label`, default `body`): Picks the semantic type style.
+- `children` (text): The text.
 
 ## When to use
 
