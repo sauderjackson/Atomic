@@ -13,7 +13,7 @@ Read this file before adding a token, a component, or a theme. The repo is the s
 - The gray steps `0` through `900` are part of the contract. A brand fills those steps. It does not add a step.
 - Status hues stay success, warning, error, and info. A brand may change their values. It may not change their meaning.
 - Tap targets use `size.tap`. Do not invent a second target size.
-- `themes/harbor.json` is a test theme. It is not a brand.
+- `themes/okvy.json` is the brand theme. `themes/neutral.json` is the plain default. Switching between them must restyle every component with no component edit.
 
 ## Components
 

@@ -7,7 +7,7 @@ import { Type } from "@components/atoms/type/Type";
 import "../../tokens/build/themes.css";
 import "./styles.css";
 
-const themes = ["neutral", "harbor"] as const;
+const themes = ["neutral", "okvy"] as const;
 const modes = ["light", "dark"] as const;
 
 type ThemeName = (typeof themes)[number];
@@ -35,7 +35,7 @@ export function App() {
                     aria-pressed={theme === item}
                     onClick={() => setTheme(item)}
                   >
-                    {item === "neutral" ? "Neutral" : "Harbor"}
+                    {item === "neutral" ? "Neutral" : "Okvy"}
                   </Button>
                 </span>
               ))}

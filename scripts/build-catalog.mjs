@@ -11,7 +11,7 @@ export const componentSources = [
   ["components/atoms/icon/icon.md", "Icon"],
 ];
 
-const themeNames = ["neutral", "harbor"];
+const themeNames = ["neutral", "okvy"];
 const modeNames = ["light", "dark"];
 
 export function buildCatalog() {

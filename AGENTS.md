@@ -45,9 +45,9 @@ For any UI, social, thumbnail, or motion task, follow [SKILL.md](SKILL.md).
    Why: One target size keeps controls easy to hit.
    Doc: [RULES.md](RULES.md)
 
-9. Harbor is a test theme, not a brand.
-   Why: It exists to prove a second accent restyles the system.
-   Doc: [themes/harbor.json](themes/harbor.json)
+9. Okvy is the brand theme. Neutral is the plain default. Switching between them must restyle every component with no component edit.
+   Why: It proves a brand fills the kit without forking it.
+   Doc: [themes/okvy.json](themes/okvy.json)
 
 10. Every component has a purpose, props, when to use, and when not to use.
    Why: Agents choose from those facts.

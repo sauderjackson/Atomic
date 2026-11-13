@@ -50,9 +50,9 @@
     },
     {
       "id": 9,
-      "rule": "Harbor is a test theme, not a brand.",
-      "why": "It exists to prove a second accent restyles the system.",
-      "doc": "themes/harbor.json"
+      "rule": "Okvy is the brand theme. Neutral is the plain default. Switching between them must restyle every component with no component edit.",
+      "why": "It proves a brand fills the kit without forking it.",
+      "doc": "themes/okvy.json"
     },
     {
       "id": 10,

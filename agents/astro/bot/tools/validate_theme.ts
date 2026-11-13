@@ -6,7 +6,7 @@ export default defineTool({
   description: "Validate a theme file against tokens/schema.json. A theme supplies values only.",
   effect: "read",
   inputSchema: z.object({
-    theme: z.string().describe("Theme name, such as harbor or neutral."),
+    theme: z.string().describe("Theme name, such as okvy or neutral."),
   }),
   execute({ theme }) {
     return validateThemeName(theme);

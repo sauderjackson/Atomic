@@ -100,13 +100,13 @@ const schema = readJson("tokens/schema.json");
 const semantic = readJson("tokens/semantic.json");
 const base = readJson("tokens/base.json");
 const neutral = readJson("themes/neutral.json");
-const harbor = readJson("themes/harbor.json");
+const okvy = readJson("themes/okvy.json");
 const template = readJson("themes/_template.json");
 const light = readJson("tokens/modes/light.json");
 const dark = readJson("tokens/modes/dark.json");
 
 validate(neutral, schema, schema, "themes/neutral.json");
-validate(harbor, schema, schema, "themes/harbor.json");
+validate(okvy, schema, schema, "themes/okvy.json");
 
 for (const group of ["color", "font", "space", "radius", "motion", "size"]) {
   same(base[group], neutral[group], `tokens/base.json ${group}`);
@@ -164,18 +164,18 @@ for (const spec of Object.values(semantic)) {
 }
 
 const css = renderThemes();
-for (const themeName of ["neutral", "harbor"]) {
+for (const themeName of ["neutral", "okvy"]) {
   for (const modeName of ["light", "dark"]) {
     if (!css.includes(`[data-theme="${themeName}"][data-mode="${modeName}"]`)) {
       fail(`CSS is missing ${themeName} ${modeName}`);
     }
   }
 }
-if (!css.includes(neutral.color.accent) || !css.includes(harbor.color.accent)) {
+if (!css.includes(neutral.color.accent) || !css.includes(okvy.color.accent)) {
   fail("CSS is missing a theme accent");
 }
-if (neutral.color.accent === harbor.color.accent) {
-  fail("harbor must change the accent so the swap is visible");
+if (neutral.color.accent === okvy.color.accent) {
+  fail("okvy must change the accent so the swap is visible");
 }
 
 for (const issue of layerSyncIssues()) fail(issue);

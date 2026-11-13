@@ -5,7 +5,7 @@ description: The space roles a screen may use.
 
 The space roles a screen may use. Write the "What to write" column in a component. The numbers are the values for the two test themes.
 
-| Token | Job | What to write | Neutral light | Neutral dark | Harbor light | Harbor dark |
+| Token | Job | What to write | Neutral light | Neutral dark | Okvy light | Okvy dark |
 | --- | --- | --- | --- | --- | --- | --- |
 | `space.gap` | Gap inside a control or a row. | `var(--space-gap)` | `8px` | `8px` | `8px` | `8px` |
 | `space.inset` | Horizontal padding inside a control. | `var(--space-inset)` | `12px` | `12px` | `12px` | `12px` |

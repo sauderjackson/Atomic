@@ -7,7 +7,7 @@ import { Type } from "@components/atoms/type/Type";
 import "../../../tokens/build/themes.css";
 import "../styles/gallery.css";
 
-const themes = ["neutral", "harbor"] as const;
+const themes = ["neutral", "okvy"] as const;
 const modes = ["light", "dark"] as const;
 
 type ThemeName = (typeof themes)[number];
@@ -23,7 +23,7 @@ export default function Gallery() {
 
 function Stage({ theme, mode }: { theme: ThemeName; mode: ModeName }) {
   const [name, setName] = useState("");
-  const label = `${theme === "neutral" ? "Neutral" : "Harbor"}, ${mode}`;
+  const label = `${theme === "neutral" ? "Neutral" : "Okvy"}, ${mode}`;
   return (
     <section className="gallery-stage" data-mode={mode} data-theme={theme}>
       <Type kind="title">{label}</Type>

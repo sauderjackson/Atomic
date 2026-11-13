@@ -34,7 +34,7 @@ function deref(schema: Schema, root: Schema): Schema {
 export function validateThemeName(name: string): { ok: boolean; theme: string; errors: string[] } {
   const errors: string[] = [];
   if (!/^[a-z0-9-]+$/.test(name) || name.startsWith("_")) {
-    return { ok: false, theme: name, errors: ["Use a theme name such as harbor. A template is not a theme."] };
+    return { ok: false, theme: name, errors: ["Use a theme name such as okvy. A template is not a theme."] };
   }
   let theme: Record<string, unknown>;
   try {
