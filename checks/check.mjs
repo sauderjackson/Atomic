@@ -1,5 +1,6 @@
 import { readdirSync, readFileSync, statSync } from "node:fs";
 import { join, relative } from "node:path";
+import { buildCatalog, renderAgents, renderCatalog } from "../scripts/build-catalog.mjs";
 import { rawValues, readJson, renderThemes, root } from "../scripts/tokens.mjs";
 
 const errors = [];
@@ -186,6 +187,35 @@ if (neutral.color.accent === harbor.color.accent) {
   fail("harbor must change the accent so the swap is visible");
 }
 
+let generated;
+try {
+  generated = buildCatalog();
+} catch (error) {
+  fail(error instanceof Error ? error.message : String(error));
+}
+if (generated) {
+  const catalogPath = join(root, "catalog.json");
+  const agentsPath = join(root, "AGENTS.md");
+  let catalogText = "";
+  let agentsText = "";
+  try {
+    catalogText = readFileSync(catalogPath, "utf8");
+  } catch {
+    fail("catalog.json is missing. Run npm run build:catalog.");
+  }
+  try {
+    agentsText = readFileSync(agentsPath, "utf8");
+  } catch {
+    fail("AGENTS.md is missing. Run npm run build:catalog.");
+  }
+  if (catalogText && catalogText !== renderCatalog(generated.catalog)) {
+    fail("catalog.json is stale. Run npm run build:catalog.");
+  }
+  if (agentsText && agentsText !== renderAgents(generated.catalog.rules)) {
+    fail("AGENTS.md is stale. Run npm run build:catalog.");
+  }
+}
+
 const skipDirs = new Set(["node_modules", "dist", ".git", "tokens", "themes", "agents"]);
 const extensions = new Set([".css", ".ts", ".tsx", ".js", ".jsx", ".mjs", ".md", ".json"]);
 const hex = new RegExp("#" + "[0-9a-fA-F]{3,8}\\b", "g");
@@ -201,7 +231,7 @@ function scan(dir) {
       scan(path);
       continue;
     }
-    if (entry === "package-lock.json" || entry === "BRIEF.md") continue;
+    if (entry === "package-lock.json" || entry === "BRIEF.md" || entry === "catalog.json") continue;
     const dot = entry.lastIndexOf(".");
     if (dot < 0 || !extensions.has(entry.slice(dot))) continue;
     const text = readFileSync(path, "utf8");

@@ -4,8 +4,8 @@ Atom. Names a status.
 
 ## Props
 
-- `tone`: `success`, `warning`, `error`, or `info`.
-- `children`: the status label.
+- `tone` (`success` or `warning` or `error` or `info`): Names the status.
+- `children` (text): The status label.
 
 ## When to use
 

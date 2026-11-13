@@ -4,9 +4,10 @@ Atom. Starts an action.
 
 ## Props
 
-- `variant`: `primary` or `secondary`. Default `secondary`.
-- `children`: the label.
-- Other button attributes, including `disabled` and `type`.
+- `variant` (`primary` or `secondary`, default `secondary`): Chooses the single primary action or a secondary action.
+- `children` (text): The label a person reads.
+- `disabled` (flag, default `false`): Turns the action off.
+- `type` (`button` or `submit` or `reset`, default `button`): Sets the button behavior.
 
 ## When to use
 

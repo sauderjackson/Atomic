@@ -4,8 +4,8 @@ Atom. Draws one icon from the active icon set.
 
 ## Props
 
-- `name`: `plus`, `search`, `check`, or `info`.
-- `iconSetId`: defaults to Lucide. Any other set fails.
+- `name` (`plus` or `search` or `check` or `info`): Which icon to draw.
+- `iconSetId` (default `lucide`): The icon set. Any other set fails.
 
 ## When to use
 

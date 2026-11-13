@@ -32,5 +32,6 @@ Read this file before adding a token, a component, or a theme. The repo is the s
 ## Building
 
 - Run `npm run build:tokens` after a theme or token change. Commit `tokens/build/themes.css`.
+- `catalog.json` and `AGENTS.md` are generated. Run `npm run build:catalog` after a token, component doc, or rule change. Do not hand-edit them.
 - The first live surface is web. Social, thumbnail, and video templates come later.
 - The first export is CSS variables. Tailwind waits.

@@ -95,11 +95,19 @@ function validate(instance: unknown, schema: Schema, root: Schema, path: string,
   }
 }
 
+export type CatalogProp = {
+  name: string;
+  values?: string[];
+  default?: string;
+  required?: boolean;
+  job: string;
+};
+
 export type CatalogEntry = {
   name: string;
   level: string;
   purpose: string;
-  props: string[];
+  props: CatalogProp[];
   whenToUse: string;
   whenNotToUse: string;
 };

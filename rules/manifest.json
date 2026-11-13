@@ -1,0 +1,112 @@
+{
+  "rules": [
+    {
+      "id": 1,
+      "rule": "Read AGENTS.md, then RULES.md, then catalog.json, then the component doc for the piece you change.",
+      "why": "An agent that skips this order invents a piece that is not in the system.",
+      "doc": "SKILL.md"
+    },
+    {
+      "id": 2,
+      "rule": "The repo is the source of truth. Figma mirrors it.",
+      "why": "Two sources that both lead will drift.",
+      "doc": "RULES.md"
+    },
+    {
+      "id": 3,
+      "rule": "Components use semantic tokens such as color.action.primary.",
+      "why": "A theme can restyle every screen without a component edit.",
+      "doc": "RULES.md"
+    },
+    {
+      "id": 4,
+      "rule": "Do not rename a role in tokens/schema.json.",
+      "why": "Every reader keys off those names.",
+      "doc": "tokens/schema.json"
+    },
+    {
+      "id": 5,
+      "rule": "A theme supplies values only. It cannot replace a component.",
+      "why": "A brand fills the kit. It does not fork the kit.",
+      "doc": "RULES.md"
+    },
+    {
+      "id": 6,
+      "rule": "Gray steps stay 0 through 900.",
+      "why": "A brand fills the steps. It does not add a step.",
+      "doc": "RULES.md"
+    },
+    {
+      "id": 7,
+      "rule": "Status hues stay success, warning, error, and info.",
+      "why": "A brand may change the color. It may not change the meaning.",
+      "doc": "RULES.md"
+    },
+    {
+      "id": 8,
+      "rule": "Tap targets use size.tap.",
+      "why": "One target size keeps controls easy to hit.",
+      "doc": "RULES.md"
+    },
+    {
+      "id": 9,
+      "rule": "Harbor is a test theme, not a brand.",
+      "why": "It exists to prove a second accent restyles the system.",
+      "doc": "themes/harbor.json"
+    },
+    {
+      "id": 10,
+      "rule": "Every component has a purpose, props, when to use, and when not to use.",
+      "why": "Agents choose from those facts.",
+      "doc": "catalog.json"
+    },
+    {
+      "id": 11,
+      "rule": "One primary action per screen.",
+      "why": "A screen with two primary buttons hides the main action.",
+      "doc": "SKILL.md"
+    },
+    {
+      "id": 12,
+      "rule": "Chunk a screen into small groups.",
+      "why": "A person can hold only a few choices at once.",
+      "doc": "RULES.md"
+    },
+    {
+      "id": 13,
+      "rule": "Prefer a documented prop over a new component.",
+      "why": "Fewer pieces stay easier to use correctly.",
+      "doc": "RULES.md"
+    },
+    {
+      "id": 14,
+      "rule": "Icons go through icons/. Lucide is the default set.",
+      "why": "The icon set can be swapped without rewriting components.",
+      "doc": "RULES.md"
+    },
+    {
+      "id": 15,
+      "rule": "Run build:tokens and build:catalog, and commit both outputs.",
+      "why": "People and agents then read the same values.",
+      "doc": "README.md"
+    },
+    {
+      "id": 16,
+      "rule": "Do not hand-edit catalog.json or AGENTS.md.",
+      "why": "Both files are generated. A hand edit will fail the check.",
+      "doc": "SKILL.md"
+    },
+    {
+      "id": 17,
+      "rule": "Schema and raw-value checks block.",
+      "why": "A broken theme or a raw color should not merge.",
+      "doc": "RULES.md"
+    },
+    {
+      "id": 18,
+      "rule": "The first live surface is web, and the first export is CSS variables.",
+      "why": "Social, thumbnail, video, and Tailwind wait until this base is the source.",
+      "doc": "BRIEF.md"
+    }
+  ]
+}
