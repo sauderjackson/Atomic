@@ -22,5 +22,6 @@
       "lucide-react": ["./node_modules/lucide-react/dist/lucide-react.d.ts"]
     }
   },
-  "include": ["src", "../components", "../icons"]
+  "include": ["src", "../components", "../icons"],
+  "exclude": ["../components/**/*.figma.tsx", "../components/**/*.figma.ts"]
 }

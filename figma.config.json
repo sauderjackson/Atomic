@@ -1,6 +1,6 @@
 {
   "codeConnect": {
-    "include": ["components/atoms/**/*.figma.ts"],
+    "include": ["components/atoms/**/*.figma.tsx"],
     "parser": "react",
     "importPaths": {
       "components/atoms/*": "@atomic/*"

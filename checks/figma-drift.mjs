@@ -16,10 +16,10 @@ const GENERATED_PATHS = [
 ];
 
 const CODE_CONNECT = [
-  { catalog: "Button", file: "components/atoms/button/button.figma.ts", props: ["variant"] },
-  { catalog: "TextInput", file: "components/atoms/input/input.figma.ts", props: [] },
-  { catalog: "Badge", file: "components/atoms/badge/badge.figma.ts", props: ["tone"] },
-  { catalog: "Icon", file: "components/atoms/icon/icon.figma.ts", props: ["name"] },
+  { catalog: "Button", file: "components/atoms/button/button.figma.tsx", props: ["variant"] },
+  { catalog: "TextInput", file: "components/atoms/input/input.figma.tsx", props: [] },
+  { catalog: "Badge", file: "components/atoms/badge/badge.figma.tsx", props: ["tone"] },
+  { catalog: "Icon", file: "components/atoms/icon/icon.figma.tsx", props: ["name"] },
 ];
 
 function deepEqual(a, b) {
