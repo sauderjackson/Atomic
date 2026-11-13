@@ -11,5 +11,5 @@
   },
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": ["atomic-docs", "atomic-catalog", "astro"]
+  "ignore": ["atomic-docs", "atomic-catalog", "astro", "atomic-product"]
 }

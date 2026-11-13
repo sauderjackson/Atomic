@@ -1,0 +1,8 @@
+{
+  "generatedBy": "scripts/sync-product.mjs",
+  "name": "NoteCard",
+  "status": "candidate",
+  "uses": 1,
+  "reason": "Used once. It joins the kit the second time it shows up.",
+  "source": "examples/product/src/pieces/NoteCard.tsx"
+}

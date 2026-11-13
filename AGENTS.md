@@ -84,3 +84,7 @@ For any UI, social, thumbnail, or motion task, follow [SKILL.md](SKILL.md).
 18. The first live surface is web, and the first export is CSS variables.
    Why: Social, thumbnail, video, and Tailwind wait until this base is the source.
    Doc: [BRIEF.md](BRIEF.md)
+
+19. A new product piece needs an adopt, candidate, or leave-out decision.
+   Why: Nothing undecided ships. A candidate joins the kit on its second use. A product-only piece stays out.
+   Doc: [docs/product.md](docs/product.md)

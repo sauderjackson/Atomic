@@ -1,4 +1,5 @@
 import { collectFindings } from "../scripts/audit.mjs";
+import { decisionIssues } from "../scripts/sync-product.mjs";
 import { layerSyncIssues } from "../scripts/sync.mjs";
 import { rawValues, readJson, renderThemes } from "../scripts/tokens.mjs";
 
@@ -177,6 +178,7 @@ if (neutral.color.accent === harbor.color.accent) {
 }
 
 for (const issue of layerSyncIssues()) fail(issue);
+for (const issue of decisionIssues()) fail(issue);
 for (const finding of collectFindings()) {
   fail(`${finding.file}:${finding.line} has a raw value: ${finding.raw}`);
 }

@@ -796,6 +796,12 @@
       "rule": "The first live surface is web, and the first export is CSS variables.",
       "why": "Social, thumbnail, video, and Tailwind wait until this base is the source.",
       "doc": "BRIEF.md"
+    },
+    {
+      "id": 19,
+      "rule": "A new product piece needs an adopt, candidate, or leave-out decision.",
+      "why": "Nothing undecided ships. A candidate joins the kit on its second use. A product-only piece stays out.",
+      "doc": "docs/product.md"
     }
   ]
 }
