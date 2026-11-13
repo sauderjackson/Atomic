@@ -1,0 +1,177 @@
+{
+  "color.bg.canvas": {
+    "value": "{color.gray.0}",
+    "type": "color",
+    "description": "Page background behind all content."
+  },
+  "color.bg.surface": {
+    "value": "{color.gray.50}",
+    "type": "color",
+    "description": "Surface for inputs, badges, and grouped specimens."
+  },
+  "color.bg.subtle": {
+    "value": "{color.gray.100}",
+    "type": "color",
+    "description": "Quiet fill behind a secondary action."
+  },
+  "color.fg.default": {
+    "value": "{color.gray.900}",
+    "type": "color",
+    "description": "Default text."
+  },
+  "color.fg.muted": {
+    "value": "{color.gray.500}",
+    "type": "color",
+    "description": "Secondary text."
+  },
+  "color.fg.onPrimary": {
+    "value": "{color.gray.0}",
+    "type": "color",
+    "description": "Text on the primary action."
+  },
+  "color.border.default": {
+    "value": "{color.gray.200}",
+    "type": "color",
+    "description": "Default border."
+  },
+  "color.border.focus": {
+    "value": "{color.accent}",
+    "type": "color",
+    "description": "Focus ring."
+  },
+  "color.action.primary": {
+    "value": "{color.accent}",
+    "type": "color",
+    "description": "Fill of the one primary action."
+  },
+  "color.action.secondary": {
+    "value": "{color.gray.100}",
+    "type": "color",
+    "description": "Fill of a secondary action."
+  },
+  "color.status.success": {
+    "value": "{color.success}",
+    "type": "color",
+    "description": "Success status."
+  },
+  "color.status.warning": {
+    "value": "{color.warning}",
+    "type": "color",
+    "description": "Warning status."
+  },
+  "color.status.error": {
+    "value": "{color.error}",
+    "type": "color",
+    "description": "Error status."
+  },
+  "color.status.info": {
+    "value": "{color.info}",
+    "type": "color",
+    "description": "Info status."
+  },
+  "font.family.body": {
+    "value": "{font.family.sans}",
+    "type": "fontFamily",
+    "description": "Body and UI font stack."
+  },
+  "font.size.display": {
+    "value": "{font.size.xl}",
+    "type": "dimension",
+    "description": "Largest type size."
+  },
+  "font.size.title": {
+    "value": "{font.size.lg}",
+    "type": "dimension",
+    "description": "Section title size."
+  },
+  "font.size.body": {
+    "value": "{font.size.md}",
+    "type": "dimension",
+    "description": "Body size."
+  },
+  "font.size.label": {
+    "value": "{font.size.sm}",
+    "type": "dimension",
+    "description": "Label, button, and badge size."
+  },
+  "font.weight.body": {
+    "value": "{font.weight.regular}",
+    "type": "fontWeight",
+    "description": "Body weight."
+  },
+  "font.weight.label": {
+    "value": "{font.weight.medium}",
+    "type": "fontWeight",
+    "description": "Label and title weight."
+  },
+  "font.lineHeight.body": {
+    "value": "{font.lineHeight.body}",
+    "type": "lineHeight",
+    "description": "Body line height."
+  },
+  "font.lineHeight.title": {
+    "value": "{font.lineHeight.title}",
+    "type": "lineHeight",
+    "description": "Title line height."
+  },
+  "space.gap": {
+    "value": "{space.2}",
+    "type": "dimension",
+    "description": "Gap inside a control or a row."
+  },
+  "space.inset": {
+    "value": "{space.3}",
+    "type": "dimension",
+    "description": "Horizontal padding inside a control."
+  },
+  "space.stack": {
+    "value": "{space.4}",
+    "type": "dimension",
+    "description": "Space between stacked items."
+  },
+  "space.section": {
+    "value": "{space.7}",
+    "type": "dimension",
+    "description": "Space between sections."
+  },
+  "radius.control": {
+    "value": "{radius.md}",
+    "type": "dimension",
+    "description": "Corner radius of buttons and inputs."
+  },
+  "radius.badge": {
+    "value": "{radius.full}",
+    "type": "dimension",
+    "description": "Corner radius of badges."
+  },
+  "motion.duration.control": {
+    "value": "{motion.duration.fast}",
+    "type": "duration",
+    "description": "Duration of a control state change."
+  },
+  "motion.easing.standard": {
+    "value": "{motion.easing.standard}",
+    "type": "easing",
+    "description": "Easing of a control state change."
+  },
+  "size.tap": {
+    "value": "{size.tap}",
+    "type": "dimension",
+    "description": "Minimum tap target."
+  },
+  "size.border": {
+    "value": "{size.border}",
+    "type": "dimension",
+    "description": "Border thickness."
+  },
+  "size.outline": {
+    "value": "{size.outline}",
+    "type": "dimension",
+    "description": "Focus outline thickness."
+  },
+  "size.icon": {
+    "value": "{size.icon}",
+    "type": "dimension",
+    "description": "Icon box size."
+  }
+}

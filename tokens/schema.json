@@ -1,0 +1,217 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://atomic.local/tokens/schema.json",
+  "title": "Atomic theme file",
+  "description": "Contract for a brand file. A brand fills values. It does not add keys. Semantic roles that components may use are listed in x-semanticTokens.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["name", "icon", "logo", "color", "font", "space", "radius", "motion", "size"],
+  "$defs": {
+    "hex": {
+      "type": "string",
+      "pattern": "^#[0-9a-fA-F]{6}$",
+      "description": "A six-digit color."
+    },
+    "px": {
+      "type": "string",
+      "pattern": "^[0-9]+px$",
+      "description": "A length in px. Components never write this themselves."
+    },
+    "gray": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["0", "50", "100", "200", "300", "400", "500", "600", "700", "800", "900"],
+      "properties": {
+        "0": { "$ref": "#/$defs/hex" },
+        "50": { "$ref": "#/$defs/hex" },
+        "100": { "$ref": "#/$defs/hex" },
+        "200": { "$ref": "#/$defs/hex" },
+        "300": { "$ref": "#/$defs/hex" },
+        "400": { "$ref": "#/$defs/hex" },
+        "500": { "$ref": "#/$defs/hex" },
+        "600": { "$ref": "#/$defs/hex" },
+        "700": { "$ref": "#/$defs/hex" },
+        "800": { "$ref": "#/$defs/hex" },
+        "900": { "$ref": "#/$defs/hex" }
+      }
+    }
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Theme name. Use neutral for the default test theme."
+    },
+    "icon": {
+      "const": "lucide",
+      "description": "Icon set id. Lucide is the only set in this base."
+    },
+    "logo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["wordmark"],
+      "properties": {
+        "wordmark": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Text logo. The catalog shows this as the theme name."
+        }
+      }
+    },
+    "color": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["gray", "accent", "success", "warning", "error", "info"],
+      "properties": {
+        "gray": { "$ref": "#/$defs/gray" },
+        "accent": { "$ref": "#/$defs/hex", "description": "The one brand accent." },
+        "success": { "$ref": "#/$defs/hex" },
+        "warning": { "$ref": "#/$defs/hex" },
+        "error": { "$ref": "#/$defs/hex" },
+        "info": { "$ref": "#/$defs/hex" }
+      }
+    },
+    "font": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["family", "size", "weight", "lineHeight"],
+      "properties": {
+        "family": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["sans"],
+          "properties": {
+            "sans": { "type": "string", "minLength": 1, "description": "CSS font-family stack." }
+          }
+        },
+        "size": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["sm", "md", "lg", "xl"],
+          "properties": {
+            "sm": { "$ref": "#/$defs/px" },
+            "md": { "$ref": "#/$defs/px" },
+            "lg": { "$ref": "#/$defs/px" },
+            "xl": { "$ref": "#/$defs/px" }
+          }
+        },
+        "weight": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["regular", "medium"],
+          "properties": {
+            "regular": { "type": "integer", "minimum": 1, "maximum": 900 },
+            "medium": { "type": "integer", "minimum": 1, "maximum": 900 }
+          }
+        },
+        "lineHeight": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["body", "title"],
+          "properties": {
+            "body": { "type": "number", "exclusiveMinimum": 0 },
+            "title": { "type": "number", "exclusiveMinimum": 0 }
+          }
+        }
+      }
+    },
+    "space": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["1", "2", "3", "4", "5", "6", "7", "8"],
+      "properties": {
+        "1": { "$ref": "#/$defs/px" },
+        "2": { "$ref": "#/$defs/px" },
+        "3": { "$ref": "#/$defs/px" },
+        "4": { "$ref": "#/$defs/px" },
+        "5": { "$ref": "#/$defs/px" },
+        "6": { "$ref": "#/$defs/px" },
+        "7": { "$ref": "#/$defs/px" },
+        "8": { "$ref": "#/$defs/px" }
+      }
+    },
+    "radius": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["none", "sm", "md", "full"],
+      "properties": {
+        "none": { "$ref": "#/$defs/px" },
+        "sm": { "$ref": "#/$defs/px" },
+        "md": { "$ref": "#/$defs/px" },
+        "full": { "$ref": "#/$defs/px" }
+      }
+    },
+    "motion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["duration", "easing"],
+      "properties": {
+        "duration": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["fast", "base"],
+          "properties": {
+            "fast": { "type": "string", "pattern": "^[0-9]+ms$" },
+            "base": { "type": "string", "pattern": "^[0-9]+ms$" }
+          }
+        },
+        "easing": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["standard"],
+          "properties": {
+            "standard": { "type": "string", "pattern": "^cubic-bezier\\([0-9.\\- ,]+\\)$" }
+          }
+        }
+      }
+    },
+    "size": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tap", "border", "outline", "icon"],
+      "properties": {
+        "tap": { "$ref": "#/$defs/px", "description": "Minimum tap target." },
+        "border": { "$ref": "#/$defs/px" },
+        "outline": { "$ref": "#/$defs/px" },
+        "icon": { "$ref": "#/$defs/px" }
+      }
+    }
+  },
+  "x-semanticTokens": [
+    { "name": "color.bg.canvas", "type": "color", "description": "Page background behind all content." },
+    { "name": "color.bg.surface", "type": "color", "description": "Surface for inputs, badges, and grouped specimens." },
+    { "name": "color.bg.subtle", "type": "color", "description": "Quiet fill behind a secondary action." },
+    { "name": "color.fg.default", "type": "color", "description": "Default text." },
+    { "name": "color.fg.muted", "type": "color", "description": "Secondary text." },
+    { "name": "color.fg.onPrimary", "type": "color", "description": "Text on the primary action." },
+    { "name": "color.border.default", "type": "color", "description": "Default border." },
+    { "name": "color.border.focus", "type": "color", "description": "Focus ring." },
+    { "name": "color.action.primary", "type": "color", "description": "Fill of the one primary action." },
+    { "name": "color.action.secondary", "type": "color", "description": "Fill of a secondary action." },
+    { "name": "color.status.success", "type": "color", "description": "Success status." },
+    { "name": "color.status.warning", "type": "color", "description": "Warning status." },
+    { "name": "color.status.error", "type": "color", "description": "Error status." },
+    { "name": "color.status.info", "type": "color", "description": "Info status." },
+    { "name": "font.family.body", "type": "fontFamily", "description": "Body and UI font stack." },
+    { "name": "font.size.display", "type": "dimension", "description": "Largest type size." },
+    { "name": "font.size.title", "type": "dimension", "description": "Section title size." },
+    { "name": "font.size.body", "type": "dimension", "description": "Body size." },
+    { "name": "font.size.label", "type": "dimension", "description": "Label, button, and badge size." },
+    { "name": "font.weight.body", "type": "fontWeight", "description": "Body weight." },
+    { "name": "font.weight.label", "type": "fontWeight", "description": "Label and title weight." },
+    { "name": "font.lineHeight.body", "type": "lineHeight", "description": "Body line height." },
+    { "name": "font.lineHeight.title", "type": "lineHeight", "description": "Title line height." },
+    { "name": "space.gap", "type": "dimension", "description": "Gap inside a control or a row." },
+    { "name": "space.inset", "type": "dimension", "description": "Horizontal padding inside a control." },
+    { "name": "space.stack", "type": "dimension", "description": "Space between stacked items." },
+    { "name": "space.section", "type": "dimension", "description": "Space between sections." },
+    { "name": "radius.control", "type": "dimension", "description": "Corner radius of buttons and inputs." },
+    { "name": "radius.badge", "type": "dimension", "description": "Corner radius of badges." },
+    { "name": "motion.duration.control", "type": "duration", "description": "Duration of a control state change." },
+    { "name": "motion.easing.standard", "type": "easing", "description": "Easing of a control state change." },
+    { "name": "size.tap", "type": "dimension", "description": "Minimum tap target." },
+    { "name": "size.border", "type": "dimension", "description": "Border thickness." },
+    { "name": "size.outline", "type": "dimension", "description": "Focus outline thickness." },
+    { "name": "size.icon", "type": "dimension", "description": "Icon box size." }
+  ]
+}

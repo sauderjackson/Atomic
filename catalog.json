@@ -1,0 +1,44 @@
+{
+  "components": [
+    {
+      "name": "Button",
+      "level": "atom",
+      "purpose": "Starts an action.",
+      "props": ["variant", "children", "disabled", "type"],
+      "whenToUse": "Use primary for the single main action on a screen. Use secondary for every other action.",
+      "whenNotToUse": "Do not use two primary buttons on one screen."
+    },
+    {
+      "name": "TextInput",
+      "level": "atom",
+      "purpose": "Collects one short line of text.",
+      "props": ["label"],
+      "whenToUse": "Use it for a single short answer, such as a name.",
+      "whenNotToUse": "Do not use it for a long answer or a choice, and do not leave it unlabeled."
+    },
+    {
+      "name": "Type",
+      "level": "atom",
+      "purpose": "Applies a semantic type style.",
+      "props": ["kind", "children"],
+      "whenToUse": "Use display once for the page title, title for a section, body for reading text, and label for a caption.",
+      "whenNotToUse": "Do not set a font size, family, or weight in the caller."
+    },
+    {
+      "name": "Badge",
+      "level": "atom",
+      "purpose": "Names a status.",
+      "props": ["tone", "children"],
+      "whenToUse": "Use it to mark success, warning, error, or info next to the thing it describes.",
+      "whenNotToUse": "Do not use it as a button or invent a tone."
+    },
+    {
+      "name": "Icon",
+      "level": "atom",
+      "purpose": "Draws one icon from the active icon set.",
+      "props": ["name", "iconSetId"],
+      "whenToUse": "Use it inside a control or next to a short label.",
+      "whenNotToUse": "Do not import an icon library from a component."
+    }
+  ]
+}

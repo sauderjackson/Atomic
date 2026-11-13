@@ -1,0 +1,10 @@
+{
+  "name": "atomic",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:tokens": "node scripts/build-tokens.mjs",
+    "check": "node checks/check.mjs",
+    "catalog": "npm run dev --prefix catalog"
+  }
+}
