@@ -1,0 +1,8 @@
+{
+  "generatedBy": "scripts/sync-product.mjs",
+  "name": "PracticeBanner",
+  "status": "leave out",
+  "uses": 2,
+  "reason": "This banner only labels the practice app. It is not a kit piece.",
+  "source": "examples/product/src/pieces/PracticeBanner.tsx"
+}

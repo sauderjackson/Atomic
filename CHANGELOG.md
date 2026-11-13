@@ -1,5 +1,11 @@
 # atomic
 
+## 0.3.0
+
+### Minor Changes
+
+- Add a practice app and a 12-hour decision job. Every new piece is marked adopt, candidate, or leave out. A candidate joins the kit the second time it is used. Run `npx atomic decisions` to see the current calls, and read docs/product.md.
+
 ## 0.2.0
 
 ### Minor Changes

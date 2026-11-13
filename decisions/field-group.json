@@ -1,0 +1,8 @@
+{
+  "generatedBy": "scripts/sync-product.mjs",
+  "name": "FieldGroup",
+  "status": "adopt",
+  "uses": 2,
+  "reason": "Used in two places. It joins the kit.",
+  "source": "examples/product/src/pieces/FieldGroup.tsx"
+}
