@@ -3,7 +3,7 @@ import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { cssName, rawValues, readJson, resolveRef, root } from "./tokens.mjs";
 
-const componentSources = [
+export const componentSources = [
   ["components/atoms/button/button.md", "Button"],
   ["components/atoms/input/input.md", "TextInput"],
   ["components/atoms/type/type.md", "Type"],
