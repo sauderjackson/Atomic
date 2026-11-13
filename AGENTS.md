@@ -77,9 +77,9 @@ For any UI, social, thumbnail, or motion task, follow [SKILL.md](SKILL.md).
    Why: Both files are generated. A hand edit will fail the check.
    Doc: [SKILL.md](SKILL.md)
 
-17. Schema and raw-value checks block.
-   Why: A broken theme or a raw color should not merge.
-   Doc: [RULES.md](RULES.md)
+17. Schema, audit, and layer-sync checks block.
+   Why: A broken theme, a raw color, or a stale catalog should not merge.
+   Doc: [docs/gate.md](docs/gate.md)
 
 18. The first live surface is web, and the first export is CSS variables.
    Why: Social, thumbnail, video, and Tailwind wait until this base is the source.

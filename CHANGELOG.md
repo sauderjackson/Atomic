@@ -1,5 +1,11 @@
 # atomic
 
+## 0.2.0
+
+### Minor Changes
+
+- Add an audit command and a layer-sync check. GitHub runs both, plus the schema check and tests, before a change can merge. Run `npx atomic audit` to see raw colors and sizes, and read docs/gate.md for the full list.
+
 ## 0.1.0
 
 ### Minor Changes

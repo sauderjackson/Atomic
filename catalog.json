@@ -787,9 +787,9 @@
     },
     {
       "id": 17,
-      "rule": "Schema and raw-value checks block.",
-      "why": "A broken theme or a raw color should not merge.",
-      "doc": "RULES.md"
+      "rule": "Schema, audit, and layer-sync checks block.",
+      "why": "A broken theme, a raw color, or a stale catalog should not merge.",
+      "doc": "docs/gate.md"
     },
     {
       "id": 18,
