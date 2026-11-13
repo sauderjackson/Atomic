@@ -1,13 +1,17 @@
 {
   "name": "atomic",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
+  "bin": {
+    "atomic": "./scripts/atomic.mjs"
+  },
   "scripts": {
     "build:tokens": "node scripts/build-tokens.mjs",
     "build:catalog": "node scripts/build-catalog.mjs",
     "build:docs": "node scripts/build-docs.mjs",
     "check": "node checks/check.mjs",
+    "test": "node --test",
     "catalog": "npm run dev --prefix catalog",
     "docs": "npm run dev --prefix docs-site"
   },

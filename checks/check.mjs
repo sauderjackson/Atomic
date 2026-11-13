@@ -1,8 +1,6 @@
-import { readdirSync, readFileSync, statSync } from "node:fs";
-import { join, relative } from "node:path";
-import { buildCatalog, renderAgents, renderCatalog } from "../scripts/build-catalog.mjs";
-import { buildDocsPages } from "../scripts/build-docs.mjs";
-import { rawValues, readJson, renderThemes, root } from "../scripts/tokens.mjs";
+import { collectFindings } from "../scripts/audit.mjs";
+import { layerSyncIssues } from "../scripts/sync.mjs";
+import { rawValues, readJson, renderThemes } from "../scripts/tokens.mjs";
 
 const errors = [];
 
@@ -164,16 +162,6 @@ for (const spec of Object.values(semantic)) {
 }
 
 const css = renderThemes();
-const builtPath = join(root, "tokens/build/themes.css");
-let built = "";
-try {
-  built = readFileSync(builtPath, "utf8");
-} catch {
-  fail("tokens/build/themes.css is missing. Run npm run build:tokens.");
-}
-if (built && built !== css) {
-  fail("tokens/build/themes.css is stale. Run npm run build:tokens.");
-}
 for (const themeName of ["neutral", "harbor"]) {
   for (const modeName of ["light", "dark"]) {
     if (!css.includes(`[data-theme="${themeName}"][data-mode="${modeName}"]`)) {
@@ -188,87 +176,10 @@ if (neutral.color.accent === harbor.color.accent) {
   fail("harbor must change the accent so the swap is visible");
 }
 
-let generated;
-try {
-  generated = buildCatalog();
-} catch (error) {
-  fail(error instanceof Error ? error.message : String(error));
+for (const issue of layerSyncIssues()) fail(issue);
+for (const finding of collectFindings()) {
+  fail(`${finding.file}:${finding.line} has a raw value: ${finding.raw}`);
 }
-if (generated) {
-  const catalogPath = join(root, "catalog.json");
-  const agentsPath = join(root, "AGENTS.md");
-  let catalogText = "";
-  let agentsText = "";
-  try {
-    catalogText = readFileSync(catalogPath, "utf8");
-  } catch {
-    fail("catalog.json is missing. Run npm run build:catalog.");
-  }
-  try {
-    agentsText = readFileSync(agentsPath, "utf8");
-  } catch {
-    fail("AGENTS.md is missing. Run npm run build:catalog.");
-  }
-  if (catalogText && catalogText !== renderCatalog(generated.catalog)) {
-    fail("catalog.json is stale. Run npm run build:catalog.");
-  }
-  if (agentsText && agentsText !== renderAgents(generated.catalog.rules)) {
-    fail("AGENTS.md is stale. Run npm run build:catalog.");
-  }
-}
-
-let docs;
-try {
-  docs = buildDocsPages();
-} catch (error) {
-  fail(error instanceof Error ? error.message : String(error));
-}
-if (docs) {
-  for (const [file, text] of Object.entries(docs)) {
-    const path = join(root, file);
-    let actual = "";
-    try {
-      actual = readFileSync(path, "utf8");
-    } catch {
-      fail(`${file} is missing. Run npm run build:docs.`);
-    }
-    if (actual && actual !== text) fail(`${file} is stale. Run npm run build:docs.`);
-  }
-}
-
-const skipDirs = new Set(["node_modules", "dist", ".git", "tokens", "themes", "agents"]);
-const extensions = new Set([".css", ".ts", ".tsx", ".js", ".jsx", ".mjs", ".md", ".json"]);
-const hex = new RegExp("#" + "[0-9a-fA-F]{3,8}\\b", "g");
-const rgb = new RegExp("rgb" + "a?\\(", "g");
-const px = new RegExp("\\d+" + "px\\b", "g");
-
-function scan(dir) {
-  for (const entry of readdirSync(dir)) {
-    if (skipDirs.has(entry)) continue;
-    const path = join(dir, entry);
-    const stat = statSync(path);
-    if (stat.isDirectory()) {
-      scan(path);
-      continue;
-    }
-    if (entry === "package-lock.json" || entry === "BRIEF.md" || entry === "catalog.json") continue;
-    if (relative(root, path).startsWith(join("docs-site", "src", "content", "docs"))) continue;
-    const dot = entry.lastIndexOf(".");
-    if (dot < 0 || !extensions.has(entry.slice(dot))) continue;
-    const text = readFileSync(path, "utf8");
-    const found = [];
-    for (const pattern of [hex, rgb, px]) {
-      pattern.lastIndex = 0;
-      const match = pattern.exec(text);
-      if (match) found.push(match[0]);
-    }
-    if (found.length > 0) {
-      fail(`${relative(root, path)} has a raw value: ${found.join(", ")}`);
-    }
-  }
-}
-
-scan(root);
 
 if (errors.length > 0) {
   for (const error of errors) console.error(error);
