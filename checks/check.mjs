@@ -1,6 +1,7 @@
 import { readdirSync, readFileSync, statSync } from "node:fs";
 import { join, relative } from "node:path";
 import { buildCatalog, renderAgents, renderCatalog } from "../scripts/build-catalog.mjs";
+import { buildDocsPages } from "../scripts/build-docs.mjs";
 import { rawValues, readJson, renderThemes, root } from "../scripts/tokens.mjs";
 
 const errors = [];
@@ -216,6 +217,25 @@ if (generated) {
   }
 }
 
+let docs;
+try {
+  docs = buildDocsPages();
+} catch (error) {
+  fail(error instanceof Error ? error.message : String(error));
+}
+if (docs) {
+  for (const [file, text] of Object.entries(docs)) {
+    const path = join(root, file);
+    let actual = "";
+    try {
+      actual = readFileSync(path, "utf8");
+    } catch {
+      fail(`${file} is missing. Run npm run build:docs.`);
+    }
+    if (actual && actual !== text) fail(`${file} is stale. Run npm run build:docs.`);
+  }
+}
+
 const skipDirs = new Set(["node_modules", "dist", ".git", "tokens", "themes", "agents"]);
 const extensions = new Set([".css", ".ts", ".tsx", ".js", ".jsx", ".mjs", ".md", ".json"]);
 const hex = new RegExp("#" + "[0-9a-fA-F]{3,8}\\b", "g");
@@ -232,6 +252,7 @@ function scan(dir) {
       continue;
     }
     if (entry === "package-lock.json" || entry === "BRIEF.md" || entry === "catalog.json") continue;
+    if (relative(root, path).startsWith(join("docs-site", "src", "content", "docs"))) continue;
     const dot = entry.lastIndexOf(".");
     if (dot < 0 || !extensions.has(entry.slice(dot))) continue;
     const text = readFileSync(path, "utf8");

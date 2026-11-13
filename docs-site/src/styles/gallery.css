@@ -1,0 +1,22 @@
+.gallery-list {
+  display: grid;
+  gap: var(--space-section);
+}
+
+.gallery-stage {
+  background: var(--color-bg-canvas);
+  color: var(--color-fg-default);
+  font-family: var(--font-family-body);
+  padding: var(--space-stack);
+  display: grid;
+  gap: var(--space-stack);
+  border: var(--size-border) solid var(--color-border-default);
+  border-radius: var(--radius-control);
+}
+
+.gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-gap);
+  align-items: center;
+}
