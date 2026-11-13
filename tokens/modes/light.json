@@ -1,0 +1,16 @@
+{
+  "color.bg.canvas": "{color.gray.0}",
+  "color.bg.surface": "{color.gray.50}",
+  "color.bg.subtle": "{color.gray.100}",
+  "color.fg.default": "{color.gray.900}",
+  "color.fg.muted": "{color.gray.500}",
+  "color.fg.onPrimary": "{color.gray.0}",
+  "color.border.default": "{color.gray.200}",
+  "color.border.focus": "{color.accent}",
+  "color.action.primary": "{color.accent}",
+  "color.action.secondary": "{color.gray.100}",
+  "color.status.success": "{color.success}",
+  "color.status.warning": "{color.warning}",
+  "color.status.error": "{color.error}",
+  "color.status.info": "{color.info}"
+}

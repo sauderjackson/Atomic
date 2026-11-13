@@ -1,0 +1,46 @@
+.button {
+  min-height: var(--size-tap);
+  min-width: var(--size-tap);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-gap);
+  padding-inline: var(--space-inset);
+  border-width: var(--size-border);
+  border-style: solid;
+  border-color: transparent;
+  border-radius: var(--radius-control);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-label);
+  font-weight: var(--font-weight-label);
+  line-height: var(--font-line-height-body);
+  transition-property: background-color, color, border-color;
+  transition-duration: var(--motion-duration-control);
+  transition-timing-function: var(--motion-easing-standard);
+  cursor: pointer;
+}
+
+.button:focus-visible {
+  outline-width: var(--size-outline);
+  outline-style: solid;
+  outline-color: var(--color-border-focus);
+  outline-offset: var(--size-outline);
+}
+
+.button:disabled {
+  cursor: default;
+  background: var(--color-bg-subtle);
+  color: var(--color-fg-muted);
+  border-color: var(--color-border-default);
+}
+
+.button-primary {
+  background: var(--color-action-primary);
+  color: var(--color-fg-on-primary);
+}
+
+.button-secondary {
+  background: var(--color-action-secondary);
+  color: var(--color-fg-default);
+  border-color: var(--color-border-default);
+}
